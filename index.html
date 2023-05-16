@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./animation.css">
 </head>
 <body>
   <main>
     <!-- Top Section -->
-    <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col lg:space-x-20 lg:flex-row mt-3 lg:mt-0 lg:px-5">
       <!-- Right and Top Side -->
-      <section class="border border-primary p-8 rounded-3xl lg:min-h-screen">
+      <section class="border border-primary p-8 rounded-3xl lg:min-h-screen w-full lg:max-w-[350px]">
         <div class="flex justify-between items-center">
           <div>
             <img src="./Assets/images/logo.png" alt="" srcset="">
@@ -38,18 +39,40 @@
               <a href="#" class="Rounded flex justify-center items-center"><i class="fa-brands fa-github"></i></a>
             </div>
             <div>
-              <button class="Btn">
-                <i class="fa-regular fa-envelope mr-2"></i>
+              <button class="Btn flex justify-center items-center">
+                <i class="fa-regular fa-envelope mr-2 text-xl font-bold text-black"></i>
                 <a>Hire Me!</a>
               </button>
             </div>
           </div>
         </div>
+        <!-- Right+ Down -->
       </section>
 
 
-      <section>
-        <div></div>
+      <section class="w-full max-w-3xl">
+        <div class="Heading mt-[70px] mb-9">
+          <p class="text-white">
+            <i class="fa-solid fa-house"></i>
+          </p>
+          <p>Introduce</p>
+        </div>
+        <div class="mb-10">
+          <h1 class="text-[78px] font-light text-white scroll-p-5 leading-[90px] mb-11">Say Hi from <span class="text-Green">Drake</span>, Framer Designer and Developer</h1>
+        <p class="mb-6 text-Primary w-full max-w-[480px]">I design and code beautifully simple things and i love what i do. Just simple like that!</p>
+        </div>
+        <!-- Rotate Animation Image  -->
+        <div class="flex justify-end">
+
+        <div class="relative border border-primary p-4 rounded-full">
+          <img class="rotate-animation" src="./Assets/images/round-text.png" alt="" srcset="">
+
+          <p class="absolute inset-0 flex justify-center items-center text-4xl text-white">
+            <i class="fa-solid fa-arrow-down-long font-thin"></i>
+          </p>
+        </div> 
+        
+        </div>
       </section>
     </div>
   </main>

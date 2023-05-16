@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -32,10 +32,16 @@
 
 @layer components{
  .Btn{
-  @apply w-full uppercase bg-green-500 text-black border-2 border-green-500 rounded-full transition duration-300 ease-in-out px-14 py-3 hover:bg-transparent hover:text-green-500;
+  @apply w-full uppercase bg-Green text-black border-2 border-green-500 rounded-full transition duration-300 ease-in-out px-14 py-3 hover:bg-transparent hover:text-green-500;
  }
  .Rounded{
   @apply border-2 border-[#565656] text-Primary w-[50px] h-[50px] rounded-full transition duration-200 hover:text-green-600 hover:border-green-600;
+ }
+ .UniversalPadding{
+  @apply lg:px-3
+ }
+ .Heading{
+  @apply border border-primary rounded-3xl px-4 py-2 uppercase text-white flex justify-center items-center w-32 space-x-2 font-light text-xs;
  }
 }
   
