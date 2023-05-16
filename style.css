@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    color: #999999;
+    background: black;
+    line-height: 1.7;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* @layer components{
+  @apply Btn: uppercase bg-green-600 border-2 border-green-600 transition duration-300 hover:bg-transparent;
+} */
+  
