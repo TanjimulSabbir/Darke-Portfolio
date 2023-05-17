@@ -38,3 +38,28 @@
     transition: all;
     transition-duration: .3s;
   }
+  .PortfolioBox img{
+    border-radius: 3%;
+  }
+  .PortfolioBox .Heading{
+    background: white;
+    color: black;
+    border: white;
+  }
+  .PortfolioBox:hover{
+    transition: all;
+    transition-duration: .2s;
+    cursor: pointer;
+  }
+  .PortfolioBox:hover .Heading{
+    background-color: black;
+    transition: all;
+    transition-duration: .3s;
+    color: white;
+    border: black;
+  }
+  .PortfolioBox:hover .PortfolioButtomText{
+    transition: all;
+    transition-duration: .3s;
+   text-decoration: underline;
+  }
