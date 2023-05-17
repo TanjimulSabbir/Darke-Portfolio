@@ -766,6 +766,86 @@ svg{
   inset-inline-end: 0.25rem;
 }
 
+.top-2{
+  top: 0.5rem;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.-top-8{
+  top: -2rem;
+}
+
+.-top-7{
+  top: -1.75rem;
+}
+
+.-left-\[78px\]{
+  left: -78px;
+}
+
+.-left-2{
+  left: -0.5rem;
+}
+
+.-left-1{
+  left: -0.25rem;
+}
+
+.-left-\[6px\]{
+  left: -6px;
+}
+
+.-top-\[30px\]{
+  top: -30px;
+}
+
+.-top-\[32px\]{
+  top: -32px;
+}
+
+.-top-\[28px\]{
+  top: -28px;
+}
+
+.-top-\[26px\]{
+  top: -26px;
+}
+
+.-top-\[24px\]{
+  top: -24px;
+}
+
+.-top-\[25px\]{
+  top: -25px;
+}
+
+.-top-\[27px\]{
+  top: -27px;
+}
+
+.-top-\[29px\]{
+  top: -29px;
+}
+
+.-left-7{
+  left: -1.75rem;
+}
+
+.-left-5{
+  left: -1.25rem;
+}
+
+.-left-3{
+  left: -0.75rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -959,12 +1039,20 @@ svg{
   height: 2.5rem;
 }
 
+.h-3{
+  height: 0.75rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
 
 .w-full{
   width: 100%;
+}
+
+.w-3{
+  width: 0.75rem;
 }
 
 .max-w-\[250px\]{
@@ -1968,6 +2056,11 @@ svg{
 .bg-red-700{
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .decoration-slice{
