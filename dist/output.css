@@ -872,6 +872,14 @@ svg{
   margin-top: -1rem;
 }
 
+.mb-\[10px\]{
+  margin-bottom: 10px;
+}
+
+.mb-\[30px\]{
+  margin-bottom: 30px;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -2114,6 +2122,16 @@ svg{
   padding-bottom: 1.5rem;
 }
 
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-\[44px\]{
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
 .pb-\[68px\]{
   padding-bottom: 68px;
 }
@@ -2214,6 +2232,11 @@ svg{
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold{
@@ -2729,6 +2752,10 @@ svg{
 .hover\:text-green-600:hover{
   --tw-text-opacity: 1;
   color: rgb(22 163 74 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover{
+  text-decoration-line: underline;
 }
 
 .before\:hover\:text-center:hover::before{
