@@ -429,10 +429,13 @@ body {
   font-size: 16px;
   scroll-behavior: smooth;
   color: #999999;
-  background: black;
   line-height: 1.7;
   overflow-x: hidden;
   height: 100vh;
+  background-image: url("./Assets/Animation/Water.Waves.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 img {
@@ -797,6 +800,11 @@ ul {
 
 .clear-none{
   clear: none;
+}
+
+.my-24{
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .mb-10{
@@ -1476,10 +1484,22 @@ ul {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-20 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(5rem * var(--tw-space-x-reverse));
+  margin-left: calc(5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
@@ -2032,23 +2052,9 @@ ul {
   padding: 1rem;
 }
 
-.p-8{
-  padding: 2rem;
-}
-
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.px-5{
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .py-5{
@@ -2056,21 +2062,13 @@ ul {
   padding-bottom: 1.25rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pt-6{
   padding-top: 1.5rem;
-}
-
-.pt-8{
-  padding-top: 2rem;
-}
-
-.pt-11{
-  padding-top: 2.75rem;
 }
 
 .text-left{
@@ -2137,6 +2135,11 @@ ul {
 .text-4xl{
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
 }
 
 .text-\[78px\]{
@@ -2663,20 +2666,20 @@ ul {
 }
 
 @media (min-width: 1220px){
+  .lg\:fixed{
+    position: fixed;
+  }
+
   .lg\:mt-0{
     margin-top: 0px;
   }
 
-  .lg\:ml-20{
-    margin-left: 5rem;
+  .lg\:h-screen{
+    height: 100vh;
   }
 
-  .lg\:min-h-screen{
-    min-height: 100vh;
-  }
-
-  .lg\:min-h-full{
-    min-height: 100%;
+  .lg\:max-h-screen{
+    max-height: 100vh;
   }
 
   .lg\:max-w-\[350px\]{
