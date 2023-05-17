@@ -659,15 +659,15 @@ ul {
 }
 
 .Heading{
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
 .Heading > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .Heading{
@@ -675,8 +675,8 @@ ul {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(86 86 86 / var(--tw-border-opacity));
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 0.75rem;
@@ -803,6 +803,26 @@ ul {
   margin-bottom: 10rem;
 }
 
+.my-36{
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+
+.my-\[90px\]{
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.my-32{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.my-28{
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -849,6 +869,10 @@ ul {
 
 .mt-\[70px\]{
   margin-top: 70px;
+}
+
+.mb-24{
+  margin-bottom: 6rem;
 }
 
 .box-border{
@@ -964,6 +988,10 @@ ul {
 
 .max-w-xl{
   max-width: 36rem;
+}
+
+.max-w-\[610\]{
+  max-width: 610;
 }
 
 .flex-shrink{
@@ -2239,6 +2267,10 @@ ul {
   line-height: 90px;
 }
 
+.leading-8{
+  line-height: 2rem;
+}
+
 .text-Green{
   --tw-text-opacity: 1;
   color: rgb(40 233 140 / var(--tw-text-opacity));
@@ -2691,6 +2723,10 @@ ul {
     margin-left: -1rem;
   }
 
+  .lg\:-ml-2{
+    margin-left: -0.5rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -2700,12 +2736,24 @@ ul {
     height: fit-content;
   }
 
+  .lg\:h-screen{
+    height: 100vh;
+  }
+
+  .lg\:max-h-screen{
+    max-height: 100vh;
+  }
+
   .lg\:w-\[392px\]{
     width: 392px;
   }
 
   .lg\:w-full{
     width: 100%;
+  }
+
+  .lg\:w-\[384px\]{
+    width: 384px;
   }
 
   .lg\:min-w-\[350px\]{
@@ -2718,6 +2766,10 @@ ul {
 
   .lg\:max-w-\[392px\]{
     max-width: 392px;
+  }
+
+  .lg\:max-w-\[384px\]{
+    max-width: 384px;
   }
 
   .lg\:items-center{
