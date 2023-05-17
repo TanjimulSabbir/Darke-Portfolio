@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="./animation.css">
 </head>
-<body>
+<body class="bg-black">
   <main>
     <!--Section-1 & From Large Device Fixed-Left Section -->
-    <section class="lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:max-w-[384px] lg:h-screen border border-primary lg:flex lg:justify-center lg:items-center rounded-3xl p-4">
+    <section class="lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:max-w-[392px] lg:h-screen border border-primary lg:flex lg:justify-center lg:items-center rounded-3xl p-4">
       <div>
       <div class="flex justify-between items-center">
         <div>
@@ -48,10 +48,10 @@
     </div>
     </section>
 <!--From Large Device Main Right-Section -->
- <div class="lg:w-full lg:flex lg:justify-center">
+ <div class="lg:w-full lg:-ml-10 lg:flex lg:justify-center">
   
     <!-- Right Flex -->
-  <div class="lg:w-[384px]"></div>
+  <div class="lg:w-[392px]"></div>
  
   <div class="lg:max-w-3xl">
      <!-- Section-2 & Introduce & Large Device Right-Top  -->
@@ -59,7 +59,9 @@
         <div>
         <div class="Heading mt-[70px] mb-12">
           <p class="text-white">
-            <i class="fa-solid fa-house"></i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+              <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+            </svg>
           </p>
           <p>Introduce</p>
         </div>
@@ -78,42 +80,86 @@
         </div>
         <!-- Experience -->
         <div class="mt-14 flex justify-start items-center space-x-24">
-          <h1 class="space-y-4 flex flex-col">
+          <h1 class="space-y-7 flex flex-col">
             <span class="text-Green text-7xl">10+</span>
-            <span class="text-sm">YEARS OF <br>
+            <span class="text-sm leading-5">YEARS OF <br>
               EXPERIENCE</span>
           </h1>
-          <h1 class="space-y-4 flex flex-col">
+          <h1 class="space-y-7 flex flex-col">
             <span class="text-Green text-7xl">182+</span>
-            <span class="text-sm">PROJECTS COMPLETED ON <br> <span>
+            <span class="text-sm leading-5">PROJECTS COMPLETED ON <br> <span>
               15 COUNTRIES</span> </span>
           </h1>
         </div>
         </div>
       </section>
     <!-- Section-3 && About -->
-    <section class="my-28">
-      <!-- About Heading Title -->
-        <div class="Heading my-[90px]">
-          <p class="text-white">
-            <i class="fa-solid fa-user"></i>
+    <section class="my-[90px]">
+      <!-- About Title -->
+        <div class="Heading my-[64px]">
+          <p class="text-white ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+            </svg>
           </p>
           <p>About</p>
         </div>
      
-      <!-- About Heading Text -->
+      <!-- About Heading-Text -->
       <div class="mb-12">
-        <h1 class="text-5xl text-white">Every great design begin with
+        <h1 class="text-5xl text-white leading-[60px] font-light">Every great design begin with
          <br> an even <span class="text-Green">better story</span></h1>
       </div>
+      <!-- About Text -->
       <div>
-        <p class="text-Primary max-w-[610] leading-8">
+        <p class="text-Primary max-w-[610px] leading-8">
           Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chopsone design problem at a time.
         </p>
       </div>
     </section>
+
+    <!-- Section-4 & Resume -->
+    <section class="my-[90px]">
+      <!-- Resume Title -->
+      <div class="Heading my-[64px]">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+          <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+          <path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+      </p>
+      <p>Resume</p>
+      </div>
+      <!-- Resume Heading -->
+      <div class="mb-12">
+        <h1 class="text-5xl text-white">
+          Education & <span class="text-Green">Experience</span>
+        </h1>
+      </div>
+      <div>
+       <div class="relative border-l border-white space-y-8 pl-[74px] pb-[68px]">
+        <p class="transition hover:text-green-600 duration-200 cursor-pointer">2020 - Present</p>
+        <h1>
+          <span class="text-2xl text-white">Framer Desinger & Developer</span> <br>
+          <small>Brunodee Agency</small>
+        </h1>
+        <h1>
+          <span class="text-2xl text-white">Front-End WordPress Developer</span> <br>
+          <small>Envato Market</small>
+        </h1>
+       </div>
+        
+      </div>
+      <ul class="steps steps-vertical">
+        <li class="step step-primary">Register</li>
+        <li class="step step-primary">Choose plan</li>
+        <li class="step">Purchase</li>
+        <li class="step">Receive Product</li>
+      </ul>
+    </section>
   </div>
  </div>
   </main>
+
 </body>
 </html>
