@@ -13,4 +13,14 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
+  .ResumeBox:hover .TitleHover {
+    color: #28e98c;
+    transition: all;
+    transition-duration: .3s;
+  }
+  .ResumeBox:hover .RoundedDot {
+    background-color: #28e98c;
+    transition: all;
+    transition-duration: .3s;
+  }
   
