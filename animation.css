@@ -23,4 +23,14 @@
     transition: all;
     transition-duration: .3s;
   }
+  .ServiceBox:hover{
+    transition: all;
+    transition-duration: .3s;
+    border-color: #28e98c;
+  }
+  .ServiceBox:hover .Projects{
+    transition: all;
+    transition-duration: .3s;
+   text-decoration: underline;
+  }
   
