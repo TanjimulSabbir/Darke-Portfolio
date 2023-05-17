@@ -33,4 +33,8 @@
     transition-duration: .3s;
    text-decoration: underline;
   }
-  
+  .SkillBox:hover{
+    border-color: #28e98c;
+    transition: all;
+    transition-duration: .3s;
+  }

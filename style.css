@@ -46,6 +46,9 @@
  .Heading{
   @apply border border-primary rounded-3xl px-5 py-2 uppercase text-white inline-flex justify-center items-center space-x-3 font-light text-xs;
  }
+ .SkillBox{
+  @apply relative rounded-full pt-[54px] pb-[48px] border-2 border-primary flex flex-col space-y-6 justify-center items-center mb-10;
+ }
 }
   
 /* 9783-C4CE */

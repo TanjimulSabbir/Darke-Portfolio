@@ -691,6 +691,30 @@ svg{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.SkillBox{
+  position: relative;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.SkillBox > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.SkillBox{
+  border-radius: 9999px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(86 86 86 / var(--tw-border-opacity));
+  padding-top: 54px;
+  padding-bottom: 48px;
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -760,6 +784,10 @@ svg{
 
 .inset-0{
   inset: 0px;
+}
+
+.-bottom-10{
+  bottom: -2.5rem;
 }
 
 .-left-\[6px\]{
@@ -840,6 +868,14 @@ svg{
   margin-bottom: 1.5rem;
 }
 
+.mb-\[10px\]{
+  margin-bottom: 10px;
+}
+
+.mb-\[30px\]{
+  margin-bottom: 30px;
+}
+
 .mr-2{
   margin-right: 0.5rem;
 }
@@ -862,22 +898,6 @@ svg{
 
 .mt-\[70px\]{
   margin-top: 70px;
-}
-
-.-mt-2{
-  margin-top: -0.5rem;
-}
-
-.-mt-4{
-  margin-top: -1rem;
-}
-
-.mb-\[10px\]{
-  margin-bottom: 10px;
-}
-
-.mb-\[30px\]{
-  margin-bottom: 30px;
 }
 
 .box-border{
@@ -1061,10 +1081,6 @@ svg{
 
 .transform-none{
   transform: none;
-}
-
-.cursor-pointer{
-  cursor: pointer;
 }
 
 .touch-auto{
@@ -1339,6 +1355,10 @@ svg{
   grid-auto-flow: column dense;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -1521,6 +1541,14 @@ svg{
 
 .justify-items-stretch{
   justify-items: stretch;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-y-12{
+  row-gap: 3rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -1921,6 +1949,10 @@ svg{
   border-width: 1px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-x{
   border-left-width: 1px;
   border-right-width: 1px;
@@ -2117,19 +2149,23 @@ svg{
   padding-right: 0px;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
 }
 
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .py-\[44px\]{
   padding-top: 44px;
   padding-bottom: 44px;
+}
+
+.pb-\[48px\]{
+  padding-bottom: 48px;
 }
 
 .pb-\[68px\]{
@@ -2142,6 +2178,10 @@ svg{
 
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pt-\[54px\]{
+  padding-top: 54px;
 }
 
 .text-left{
@@ -2218,6 +2258,10 @@ svg{
 .text-7xl{
   font-size: 4.5rem;
   line-height: 1;
+}
+
+.text-\[30px\]{
+  font-size: 30px;
 }
 
 .text-\[50px\]{
@@ -2681,10 +2725,6 @@ svg{
   transition-duration: 200ms;
 }
 
-.duration-300{
-  transition-duration: 300ms;
-}
-
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -2740,18 +2780,8 @@ svg{
   }
 }
 
-.hover\:bg-Green:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(40 233 140 / var(--tw-bg-opacity));
-}
-
 .hover\:font-bold:hover{
   font-weight: 700;
-}
-
-.hover\:text-green-600:hover{
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
@@ -2787,6 +2817,10 @@ svg{
 }
 
 @media (min-width: 768px){
+  .md\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:text-\[78px\]{
     font-size: 78px;
   }
