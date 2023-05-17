@@ -1,15 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  daisyui: {
-    styled: true,
-    themes: false,
-    base: true,
-    utils: true,
-    logs: true,
-    rtl: false,
-    prefix: "",
-    darkTheme: "dark",
-  },
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
@@ -28,7 +18,6 @@ Green:"#28e98c"
  
   plugins: [
     require('tailwindcss'),
-    require('autoprefixer'),
-    require("daisyui")
+    require('autoprefixer')
   ],
 }
