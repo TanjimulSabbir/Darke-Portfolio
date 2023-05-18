@@ -8671,6 +8671,16 @@ svg{
   outline-offset: 2px;
 }
 
+.SelectOption{
+  cursor: pointer;
+  border-radius: 0.375rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+  padding: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(40 233 140 / var(--tw-text-opacity));
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -8814,6 +8824,10 @@ svg{
   clear: none;
 }
 
+.m-\[60px\]{
+  margin: 60px;
+}
+
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -8889,6 +8903,10 @@ svg{
   margin-top: 2.75rem;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
 .mt-14{
   margin-top: 3.5rem;
 }
@@ -8901,12 +8919,20 @@ svg{
   margin-top: 0.5rem;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .mt-8{
   margin-top: 2rem;
 }
 
 .mt-\[70px\]{
   margin-top: 70px;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
 }
 
 .box-border{
@@ -9048,10 +9074,6 @@ svg{
   max-width: 480px;
 }
 
-.max-w-md{
-  max-width: 28rem;
-}
-
 .flex-1{
   flex: 1 1 0%;
 }
@@ -9119,6 +9141,10 @@ svg{
 
 .transform-none{
   transform: none;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .touch-auto{
@@ -9981,8 +10007,8 @@ svg{
   border-radius: 9999px;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
+.rounded-md{
+  border-radius: 0.375rem;
 }
 
 .rounded-b{
@@ -10128,9 +10154,9 @@ svg{
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-blue-500{
+.bg-gray-600{
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -10274,11 +10300,6 @@ svg{
   padding-right: 3rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .py-2{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -10297,6 +10318,10 @@ svg{
 .py-\[48px\]{
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 
 .pb-6{
@@ -10421,6 +10446,10 @@ svg{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[10px\]{
+  font-size: 10px;
 }
 
 .font-bold{
@@ -10983,6 +11012,16 @@ svg{
 
 .placeholder\:font-Inter::placeholder{
   font-family: Inter, sans-serif;
+}
+
+.placeholder\:text-white::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-white::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:border-Green:hover{

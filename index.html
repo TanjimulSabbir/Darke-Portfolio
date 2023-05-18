@@ -638,33 +638,66 @@
       </div>
       <!-- Send Message form -->
 <div>
-  <div class="max-w-md">
+  <div class="">
     <form class="flex flex-col">
-      <div class="mb-4 flex flex-col">
+      <div class="flex justify-between">
+      <!-- Full Name + Phone Number + Budget -->
+     <div>
+       <!-- Full Name -->
+       <div class="mb-7 flex flex-col">
         <label for="fullName" class="text-xs uppercase text-white">Full Name <span class="text-red-500">*</span></label>
         <input type="text" id="fullName" placeholder="Your Full Name" class="ContactPlaceHolder placeholder:font-Inter" required/>
       </div>
-      <div class="mb-4">
-        <label for="email" class="text-sm">Email</label>
-        <input type="email" id="email" placeholder="Email" class="border p-2 rounded-lg" />
+
+      <!-- Phone Number -->
+      <div class="mb-7 flex flex-col">
+        <label for="phone" class="text-xs uppercase text-white">Phone <span class="text-Primary normal-case">(optional)</span></label>
+        <input type="tel" id="phone" placeholder="Your Number Phone" class="ContactPlaceHolder placeholder:font-Inter" required/>
       </div>
-      <div class="mb-4">
-        <label for="subject" class="text-sm">Subject</label>
-        <input type="text" id="subject" placeholder="Subject" class="border p-2 rounded-lg" />
+
+      <!-- Budget -->
+      <div class="mb-7 flex flex-col">
+        <label for="budget" class="text-xs uppercase text-white">Your Budget <span class="text-Primary normal-case">(optional)</span></label>
+        <input type="text" id="budget" placeholder="A range budget for your project" class="ContactPlaceHolder placeholder:font-Inter" />
       </div>
-      <div class="mb-4">
-        <label for="message" class="text-sm">Your Message</label>
-        <textarea id="message" rows="4" placeholder="Your Message" class="border p-2 rounded-lg"></textarea>
+     </div>
+
+<!-- Email + Subject -->
+ <div> 
+  <!-- Email -->
+  <div class="mb-7 flex flex-col">
+    <label for="email" class="text-xs uppercase text-white">Email <span class="text-red-500">*</span></label>
+    <input type="email" id="email" placeholder="Your email address" class="ContactPlaceHolder placeholder:font-Inter" required/>
+  </div>
+
+  <!-- Subject -->
+  <div class="mb-7 flex flex-col">
+    <label for="subject" class="text-xs uppercase text-white">Subject <span class="text-red-500">*</span></label>
+    <select id="subject" class="ContactPlaceHolder placeholder:font-Inter placeholder:text-white py-2 cursor-pointer" required>
+      <option class="SelectOption" value="" disabled selected>Select a Subject</option>
+      <option class="SelectOption" value="option1">Landing Page Development</option>
+      <option class="SelectOption" value="option2">Blog Website Development</option>
+      <option class="SelectOption" value="option3">Portfolio Website Development</option>
+      <option class="SelectOption" value="option4">React Project Bux-fix</option>
+    </select>
+  </div>
+</div>
+</div>
+  
+      <div class="mb-7 flex flex-col border-b pb-10 border-Primary">
+        <label for="message" class="text-xs uppercase text-white">Message</label>
+        <textarea id="message" rows="5" cols="5" placeholder="Write your message here..." class="ContactPlaceHolder placeholder:font-Inter"></textarea>
       </div>
-      <div class="mb-4">
-        <label for="attachment" class="text-sm">Attachment</label>
-        <input type="file" id="attachment" class="border p-2 rounded-lg" />
+  
+      <div class="mb-7 flex flex-col mt-6">
+        <label for="attachment" type="file" class="text-xs uppercase text-white">Add an Attachment</label>
       </div>
-      <div>
-        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-lg">Send Message</button>
+      <div class="mt-12 inline-block">
+        <button type="submit" class="Btn">Send Message</button>
       </div>
     </form>
   </div>
+  
   
   
 </div>

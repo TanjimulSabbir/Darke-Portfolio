@@ -58,6 +58,9 @@
  .ContactPlaceHolder{
   @apply placeholder-Primary placeholder:opacity-50 border-none bg-transparent focus:outline-none py-2 placeholder:text-lg
  }
+ .SelectOption{
+ @apply bg-gray-600 p-2 text-Green rounded-md cursor-pointer
+ }
 }
  
 /* 9783-C4CE */
