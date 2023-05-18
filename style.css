@@ -49,6 +49,9 @@
  .SkillBox{
   @apply relative rounded-full pt-[54px] pb-[48px] border-2 border-primary flex flex-col space-y-6 justify-center items-center mb-10;
  }
+ .SliderBtn{
+  @apply bg-transparent border border-primary hover:bg-transparent hover:text-Green hover:border-Green;
+ }
 }
   
 /* 9783-C4CE */

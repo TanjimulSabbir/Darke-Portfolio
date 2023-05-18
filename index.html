@@ -1,10 +1,12 @@
 <!doctype html>
-<html>
+<html data-theme="black">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./animation.css">
 </head>
 <body>
@@ -412,15 +414,86 @@
        <!-- Testimonial Title -->
        <div class="Heading my-[64px]">
         <p>
-          <i class="bi bi-chat-square-text"></i>
+          <i class="bi bi-chat-square-text text-white"></i>
       </p>
       <p>Testimonial</p>
       </div>
       <!-- Testimonial Heading-Text -->
-      
+      <div class="mb-12">
+        <h1 class="text-5xl text-white font-light">
+          Trusted by <span class="text-Green"> Hundered Clients</span>
+        </h1>
+      </div>
+      <!-- Testimonial Box -->
+      <!-- Carousel Box -->
+      <div class="carousel w-full">
+        <div id="item1" class="carousel-item w-full">
+        <!-- Box 01 -->
+<div class="border-2 border-primary px-12 py-[48px] mb-[10px] rounded-3xl">
+  <!-- Author image and Designation -->
+  <div class="flex items-center justify-start space-x-5 mb-10">
+    <img class="h-11 w-11 rounded-full" src="./Assets/images/testimonial-1.jpg" alt="" srcset="">
+    <div>
+      <h3 class="text-lg text-white">Paublo Dybala</h3>
+      <p class="text-sm">
+        <span class="text-Primary">CEO of </span>
+        <span class="text-Green">IBM Global</span>
+      </p>
+    </div>
+  </div>
+  <p class="text-2xl text-white mb-[30px] leading-[36px] font-light">“Drake - A Developer with the creativity, professional and  master of code. Much more than what i'm expect. High quality product & flexiable price. Recommended!.”</p>
+  <h1 class="Projects text-xs text-white uppercase transition hover:underline duration-200">PROJECT</h1>
+    </div>
+        </div> 
+        <div id="item2" class="carousel-item w-full">
+          <!-- Box 02 -->
+<div class="border-2 border-primary px-12 py-[48px] mb-[10px] rounded-3xl">
+  <!-- Author image and Designation -->
+  <div class="flex items-center justify-start space-x-5 mb-10">
+    <img class="h-11 w-11 rounded-full" src="./Assets/images/testimonial-2.jpg" alt="" srcset="">
+    <div>
+      <h3 class="text-lg text-white">Christina Morillo</h3>
+      <p class="text-sm">
+        <span class="text-Primary">Product Management of  </span>
+        <span class="text-Green">Invision App Inc</span>
+      </p>
+    </div>
+  </div>
+  <p class="text-2xl text-white mb-[30px] leading-[36px] font-light">“Drake was a real pleasure to work with and we look forward to working with him again. He's definitely the kind of designer that you can trust with any project from A-Z.”</p>
+  <h1 class="Projects text-xs text-white uppercase transition hover:underline duration-200">PROJECT</h1>
+    </div>
+        </div> 
+        <div id="item3" class="carousel-item w-full">
+         <!-- Box 03 -->
+<div class="border-2 border-primary px-12 py-[48px] mb-[10px] rounded-3xl">
+  <!-- Author image and Designation -->
+  <div class="flex items-center justify-start space-x-5 mb-10">
+    <img class="h-11 w-11 rounded-full" src="./Assets/images/testimonial-3.jpg" alt="" srcset="">
+    <div>
+      <h3 class="text-lg text-white">Phil Foden</h3>
+      <p class="text-sm">
+        <span class="text-Primary">Phil Foden </span>
+        <span class="text-Green">Envato LLC</span>
+      </p>
+    </div>
+  </div>
+  <p class="text-2xl text-white mb-[30px] leading-[36px] font-light">“Extremely profressional and fast service!. Drake is a master of code and he also very creative. We done 3 projects with him and certain will continue.”</p>
+  <h1 class="Projects text-xs text-white uppercase transition hover:underline duration-200">PROJECT</h1>
+    </div>
+        </div> 
+      </div> 
+      <div id="SlideBtnDiv" class="mt-16 flex justify-start items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a id="LeftBtn" href="" class="btn btn-circle SliderBtn">❮</a>
+        <span  class="mx-5 text-sm"> <span id="SlideDisplay" class="text-white transition-opacity duration-700">1</span> / 3</span> 
+        <a id="RightBtn" href="" class="btn btn-circle SliderBtn">❯</a>
+      </div>
     </section>
+
+    <!--  -->
   </div>
  </div>
   </main>
+  <script src="./index.js"></script>
+  <script src="./Slide.js"></script>
 </body>
 </html>
