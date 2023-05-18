@@ -8632,6 +8632,17 @@ svg{
   color: rgb(40 233 140 / var(--tw-text-opacity));
 }
 
+.BrandImageHover{
+  opacity: 0.3;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.BrandImageHover:hover{
+  opacity: 1;
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -8830,6 +8841,10 @@ svg{
   margin-top: 3.5rem;
 }
 
+.mt-16{
+  margin-top: 4rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -8840,10 +8855,6 @@ svg{
 
 .mt-\[70px\]{
   margin-top: 70px;
-}
-
-.mt-16{
-  margin-top: 4rem;
 }
 
 .box-border{
@@ -9022,16 +9033,6 @@ svg{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-x-2{
-  --tw-translate-x: 0.5rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-28{
-  --tw-translate-x: 7rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .\!transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
@@ -9050,22 +9051,6 @@ svg{
 
 .transform-none{
   transform: none;
-}
-
-@keyframes bounce{
-  0%, 100%{
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50%{
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce{
-  animation: bounce 1s infinite;
 }
 
 .touch-auto{
@@ -9532,8 +9517,8 @@ svg{
   justify-items: stretch;
 }
 
-.gap-2{
-  gap: 0.5rem;
+.gap-20{
+  gap: 5rem;
 }
 
 .gap-5{
@@ -10177,11 +10162,6 @@ svg{
   padding-right: 3rem;
 }
 
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -10497,10 +10477,6 @@ svg{
   -moz-osx-font-smoothing: auto;
 }
 
-.opacity-10{
-  opacity: 0.1;
-}
-
 .bg-blend-normal{
   background-blend-mode: normal;
 }
@@ -10763,12 +10739,6 @@ svg{
   transition-duration: 150ms;
 }
 
-.transition-all{
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-opacity{
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -10777,10 +10747,6 @@ svg{
 
 .duration-200{
   transition-duration: 200ms;
-}
-
-.duration-300{
-  transition-duration: 300ms;
 }
 
 .duration-700{
@@ -10903,6 +10869,10 @@ svg{
 
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .sm\:space-x-3 > :not([hidden]) ~ :not([hidden]){

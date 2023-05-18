@@ -52,6 +52,9 @@
  .SliderBtn{
   @apply bg-transparent border border-primary hover:bg-transparent hover:text-Green hover:border-Green;
  }
+ .BrandImageHover{
+ @apply opacity-30 transition-all duration-300 hover:opacity-100 
+ }
 }
-  
+ 
 /* 9783-C4CE */
