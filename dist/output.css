@@ -790,6 +790,10 @@ svg{
   bottom: -2.5rem;
 }
 
+.-bottom-16{
+  bottom: -4rem;
+}
+
 .-left-\[6px\]{
   left: -6px;
 }
@@ -798,40 +802,12 @@ svg{
   top: -25px;
 }
 
-.end-1{
-  inset-inline-end: 0.25rem;
-}
-
-.-bottom-5{
-  bottom: -1.25rem;
-}
-
-.-bottom-12{
-  bottom: -3rem;
-}
-
-.bottom-6{
-  bottom: 1.5rem;
-}
-
-.-bottom-6{
-  bottom: -1.5rem;
-}
-
-.-bottom-16{
-  bottom: -4rem;
-}
-
-.-bottom-14{
-  bottom: -3.5rem;
-}
-
 .bottom-5{
   bottom: 1.25rem;
 }
 
-.left-3{
-  left: 0.75rem;
+.end-1{
+  inset-inline-end: 0.25rem;
 }
 
 .left-5{
@@ -1048,31 +1024,21 @@ svg{
   height: fit-content;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
-.min-h-full{
-  min-height: 100%;
-}
-
 .min-h-fit{
   min-height: -moz-fit-content;
   min-height: fit-content;
 }
 
-.min-h-min{
-  min-height: -moz-min-content;
-  min-height: min-content;
+.min-h-\[500px\]{
+  min-height: 500px;
 }
 
-.min-h-max{
-  min-height: -moz-max-content;
-  min-height: max-content;
+.min-h-\[400px\]{
+  min-height: 400px;
 }
 
-.min-h-screen{
-  min-height: 100vh;
+.min-h-\[350px\]{
+  min-height: 350px;
 }
 
 .w-3{
@@ -1081,15 +1047,6 @@ svg{
 
 .w-full{
   width: 100%;
-}
-
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.min-w-full{
-  min-width: 100%;
 }
 
 .max-w-\[250px\]{
@@ -1138,6 +1095,12 @@ svg{
 
 .border-separate{
   border-collapse: separate;
+}
+
+.scale-150{
+  --tw-scale-x: 1.5;
+  --tw-scale-y: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .\!transform{
@@ -1436,6 +1399,10 @@ svg{
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -1624,10 +1591,6 @@ svg{
   gap: 1.25rem;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
 .gap-y-12{
   row-gap: 3rem;
 }
@@ -1650,10 +1613,28 @@ svg{
   margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-y-2 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-40 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(10rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(10rem * var(--tw-space-y-reverse));
 }
 
 .space-y-7 > :not([hidden]) ~ :not([hidden]){
@@ -1666,42 +1647,6 @@ svg{
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
-}
-
-.space-x-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-16 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(4rem * var(--tw-space-y-reverse));
-}
-
-.space-y-24 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(6rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(6rem * var(--tw-space-y-reverse));
-}
-
-.space-y-40 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(10rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(10rem * var(--tw-space-y-reverse));
-}
-
-.space-x-6 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-x-5 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
@@ -2478,10 +2423,6 @@ svg{
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
 }
 
-.leading-3{
-  line-height: .75rem;
-}
-
 .leading-5{
   line-height: 1.25rem;
 }
@@ -2490,12 +2431,12 @@ svg{
   line-height: 2rem;
 }
 
-.leading-\[90px\]{
-  line-height: 90px;
-}
-
 .leading-\[50px\]{
   line-height: 50px;
+}
+
+.leading-\[90px\]{
+  line-height: 90px;
 }
 
 .text-Green{
@@ -3021,12 +2962,22 @@ svg{
     max-width: 392px;
   }
 
+  .lg\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .lg\:items-center{
     align-items: center;
   }
 
   .lg\:justify-center{
     justify-content: center;
+  }
+
+  .lg\:space-x-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0px * var(--tw-space-x-reverse));
+    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 }
 
