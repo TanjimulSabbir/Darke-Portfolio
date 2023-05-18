@@ -11,7 +11,7 @@ Primary:"#999999",
 Green:"#28e98c"
       },
       borderColor:{
-        primary:"#565656"
+        Primary:"#565656"
       }
     },
   },

@@ -8580,7 +8580,7 @@ svg{
   border-radius: 1.5rem;
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(86 86 86 / var(--tw-border-opacity));
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 0.5rem;
@@ -8612,7 +8612,7 @@ svg{
   border-radius: 9999px;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(86 86 86 / var(--tw-border-opacity));
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
   padding-top: 54px;
   padding-bottom: 48px;
 }
@@ -8620,7 +8620,7 @@ svg{
 .SliderBtn{
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(86 86 86 / var(--tw-border-opacity));
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
   background-color: transparent;
 }
 
@@ -8817,8 +8817,16 @@ svg{
   margin-bottom: 0.5rem;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
 }
 
 .mb-\[10px\]{
@@ -8855,6 +8863,38 @@ svg{
 
 .mt-\[70px\]{
   margin-top: 70px;
+}
+
+.mb-24{
+  margin-bottom: 6rem;
+}
+
+.mb-28{
+  margin-bottom: 7rem;
+}
+
+.mb-32{
+  margin-bottom: 8rem;
+}
+
+.mb-36{
+  margin-bottom: 9rem;
+}
+
+.mb-\[150px\]{
+  margin-bottom: 150px;
+}
+
+.mb-\[154px\]{
+  margin-bottom: 154px;
+}
+
+.mb-\[153px\]{
+  margin-bottom: 153px;
+}
+
+.mb-\[152px\]{
+  margin-bottom: 152px;
 }
 
 .box-border{
@@ -8964,8 +9004,21 @@ svg{
   height: 0.75rem;
 }
 
+.h-full{
+  height: 100%;
+}
+
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .min-h-\[350px\]{
   min-height: 350px;
+}
+
+.min-h-full{
+  min-height: 100%;
 }
 
 .w-11{
@@ -8986,6 +9039,10 @@ svg{
 
 .max-w-\[480px\]{
   max-width: 480px;
+}
+
+.flex-1{
+  flex: 1 1 0%;
 }
 
 .flex-shrink{
@@ -9525,6 +9582,10 @@ svg{
   gap: 1.25rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .gap-y-12{
   row-gap: 3rem;
 }
@@ -9545,6 +9606,12 @@ svg{
   --tw-space-x-reverse: 0;
   margin-right: calc(6rem * var(--tw-space-x-reverse));
   margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
@@ -9587,6 +9654,24 @@ svg{
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-y-\[10px\] > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(10px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(10px * var(--tw-space-y-reverse));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
@@ -10019,14 +10104,14 @@ svg{
   border-style: none;
 }
 
-.border-primary{
+.border-Primary{
   --tw-border-opacity: 1;
   border-color: rgb(86 86 86 / var(--tw-border-opacity));
 }
 
-.border-Primary{
+.border-primary{
   --tw-border-opacity: 1;
-  border-color: rgb(153 153 153 / var(--tw-border-opacity));
+  border-color: hsl(var(--p) / var(--tw-border-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
@@ -10153,12 +10238,12 @@ svg{
   padding: 0px;
 }
 
-.p-4{
-  padding: 1rem;
+.p-10{
+  padding: 2.5rem;
 }
 
-.p-40{
-  padding: 10rem;
+.p-4{
+  padding: 1rem;
 }
 
 .px-0{
@@ -10184,6 +10269,10 @@ svg{
 .py-\[48px\]{
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 
 .pb-\[68px\]{
@@ -10748,14 +10837,14 @@ svg{
   transition-duration: 150ms;
 }
 
-.transition-opacity{
-  transition-property: opacity;
+.transition-all{
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.transition-all{
-  transition-property: all;
+.transition-opacity{
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -10764,12 +10853,12 @@ svg{
   transition-duration: 200ms;
 }
 
-.duration-700{
-  transition-duration: 700ms;
-}
-
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-700{
+  transition-duration: 700ms;
 }
 
 .ease-in{
@@ -10934,6 +11023,10 @@ svg{
 
   .md\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 
   .md\:text-\[78px\]{
