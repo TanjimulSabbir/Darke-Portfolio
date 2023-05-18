@@ -12,6 +12,9 @@ Green:"#28e98c"
       },
       borderColor:{
         Primary:"#565656"
+      },
+      fontFamily:{
+Inter:"Inter, sans-serif"
       }
     },
   },

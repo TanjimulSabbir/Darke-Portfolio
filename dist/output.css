@@ -8643,6 +8643,34 @@ svg{
   opacity: 1;
 }
 
+.ContactPlaceHolder{
+  border-style: none;
+  background-color: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.ContactPlaceHolder::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-placeholder-opacity));
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  opacity: 0.5;
+}
+
+.ContactPlaceHolder::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-placeholder-opacity));
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  opacity: 0.5;
+}
+
+.ContactPlaceHolder:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .sr-only{
   position: absolute;
   width: 1px;
@@ -8821,6 +8849,10 @@ svg{
   margin-bottom: 5rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -8833,8 +8865,20 @@ svg{
   margin-bottom: 10px;
 }
 
+.mb-\[152px\]{
+  margin-bottom: 152px;
+}
+
 .mb-\[30px\]{
   margin-bottom: 30px;
+}
+
+.mb-\[33px\]{
+  margin-bottom: 33px;
+}
+
+.mb-\[60px\]{
+  margin-bottom: 60px;
 }
 
 .mr-2{
@@ -8863,38 +8907,6 @@ svg{
 
 .mt-\[70px\]{
   margin-top: 70px;
-}
-
-.mb-24{
-  margin-bottom: 6rem;
-}
-
-.mb-28{
-  margin-bottom: 7rem;
-}
-
-.mb-32{
-  margin-bottom: 8rem;
-}
-
-.mb-36{
-  margin-bottom: 9rem;
-}
-
-.mb-\[150px\]{
-  margin-bottom: 150px;
-}
-
-.mb-\[154px\]{
-  margin-bottom: 154px;
-}
-
-.mb-\[153px\]{
-  margin-bottom: 153px;
-}
-
-.mb-\[152px\]{
-  margin-bottom: 152px;
 }
 
 .box-border{
@@ -9008,11 +9020,6 @@ svg{
   height: 100%;
 }
 
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .min-h-\[350px\]{
   min-height: 350px;
 }
@@ -9039,6 +9046,10 @@ svg{
 
 .max-w-\[480px\]{
   max-width: 480px;
+}
+
+.max-w-md{
+  max-width: 28rem;
 }
 
 .flex-1{
@@ -9638,6 +9649,12 @@ svg{
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .space-y-40 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(10rem * calc(1 - var(--tw-space-y-reverse)));
@@ -9656,22 +9673,10 @@ svg{
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
-.space-y-\[10px\] > :not([hidden]) ~ :not([hidden]){
+.space-y-\[6px\] > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
-  margin-top: calc(10px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(10px * var(--tw-space-y-reverse));
-}
-
-.space-y-3 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  margin-top: calc(6px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(6px * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]){
@@ -9976,6 +9981,10 @@ svg{
   border-radius: 9999px;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -10119,6 +10128,11 @@ svg{
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-blue-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -10242,6 +10256,10 @@ svg{
   padding: 2.5rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .p-4{
   padding: 1rem;
 }
@@ -10254,6 +10272,16 @@ svg{
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .py-6{
@@ -10522,6 +10550,11 @@ svg{
 .text-blue-500{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -10942,6 +10975,14 @@ svg{
       background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
     }
   }
+}
+
+.placeholder\:font-Inter::-moz-placeholder{
+  font-family: Inter, sans-serif;
+}
+
+.placeholder\:font-Inter::placeholder{
+  font-family: Inter, sans-serif;
 }
 
 .hover\:border-Green:hover{

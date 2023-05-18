@@ -55,6 +55,9 @@
  .BrandImageHover{
  @apply opacity-30 transition-all duration-300 hover:opacity-100 
  }
+ .ContactPlaceHolder{
+  @apply placeholder-Primary placeholder:opacity-50 border-none bg-transparent focus:outline-none py-2 placeholder:text-lg
+ }
 }
  
 /* 9783-C4CE */
