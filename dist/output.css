@@ -10024,6 +10024,11 @@ svg{
   border-color: rgb(86 86 86 / var(--tw-border-opacity));
 }
 
+.border-Primary{
+  --tw-border-opacity: 1;
+  border-color: rgb(153 153 153 / var(--tw-border-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -10150,6 +10155,10 @@ svg{
 
 .p-4{
   padding: 1rem;
+}
+
+.p-40{
+  padding: 10rem;
 }
 
 .px-0{
@@ -10745,12 +10754,22 @@ svg{
   transition-duration: 150ms;
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-200{
   transition-duration: 200ms;
 }
 
 .duration-700{
   transition-duration: 700ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
 }
 
 .ease-in{
@@ -10834,6 +10853,11 @@ svg{
       background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
     }
   }
+}
+
+.hover\:border-Green:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(40 233 140 / var(--tw-border-opacity));
 }
 
 .hover\:font-bold:hover{
