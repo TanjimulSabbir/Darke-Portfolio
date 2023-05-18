@@ -8675,10 +8675,10 @@ svg{
   cursor: pointer;
   border-radius: 0.375rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   padding: 0.5rem;
   --tw-text-opacity: 1;
-  color: rgb(40 233 140 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .sr-only{
@@ -8824,10 +8824,6 @@ svg{
   clear: none;
 }
 
-.m-\[60px\]{
-  margin: 60px;
-}
-
 .mx-5{
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -8863,12 +8859,12 @@ svg{
   margin-bottom: 5rem;
 }
 
-.mb-4{
-  margin-bottom: 1rem;
-}
-
 .mb-6{
   margin-bottom: 1.5rem;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
 }
 
 .mb-8{
@@ -8903,10 +8899,6 @@ svg{
   margin-top: 2.75rem;
 }
 
-.mt-12{
-  margin-top: 3rem;
-}
-
 .mt-14{
   margin-top: 3.5rem;
 }
@@ -8919,8 +8911,8 @@ svg{
   margin-top: 0.5rem;
 }
 
-.mt-6{
-  margin-top: 1.5rem;
+.mt-4{
+  margin-top: 1rem;
 }
 
 .mt-8{
@@ -8929,10 +8921,6 @@ svg{
 
 .mt-\[70px\]{
   margin-top: 70px;
-}
-
-.mb-7{
-  margin-bottom: 1.75rem;
 }
 
 .box-border{
@@ -9072,6 +9060,11 @@ svg{
 
 .max-w-\[480px\]{
   max-width: 480px;
+}
+
+.max-w-fit{
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .flex-1{
@@ -10007,10 +10000,6 @@ svg{
   border-radius: 9999px;
 }
 
-.rounded-md{
-  border-radius: 0.375rem;
-}
-
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -10154,11 +10143,6 @@ svg{
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-gray-600{
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -10280,10 +10264,6 @@ svg{
 
 .p-10{
   padding: 2.5rem;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .p-4{
@@ -10446,10 +10426,6 @@ svg{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[10px\]{
-  font-size: 10px;
 }
 
 .font-bold{
@@ -10635,6 +10611,16 @@ svg{
 .subpixel-antialiased{
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
+}
+
+.placeholder-white::-moz-placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-white::placeholder{
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
 .bg-blend-normal{
@@ -11012,16 +10998,6 @@ svg{
 
 .placeholder\:font-Inter::placeholder{
   font-family: Inter, sans-serif;
-}
-
-.placeholder\:text-white::-moz-placeholder{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.placeholder\:text-white::placeholder{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:border-Green:hover{

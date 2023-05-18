@@ -535,9 +535,9 @@
     <!-- Section-10 & Pricing -->
     <section class="my-[90px]">
       <!-- Pricing Title -->
-      <div class="Heading my-[64px]">
+      <div class="Heading my-[64px] inline-flex items-center">
        <p>
-         <i class="bi bi-chat-square-text text-white"></i>
+        <i class="bi bi-cart2 text-white"></i>
      </p>
      <p>Pricing</p>
      </div>
@@ -625,7 +625,7 @@
       <!-- Contact Title -->
       <div class="Heading my-[64px]">
        <p>
-         <i class="bi bi-chat-square-text text-white"></i>
+        <i class="bi bi-chat-dots text-white"></i>
      </p>
      <p>Contact</p>
      </div>
@@ -673,7 +673,7 @@
   <!-- Subject -->
   <div class="mb-7 flex flex-col">
     <label for="subject" class="text-xs uppercase text-white">Subject <span class="text-red-500">*</span></label>
-    <select id="subject" class="ContactPlaceHolder placeholder:font-Inter placeholder:text-white py-2 cursor-pointer" required>
+    <select id="subject" class="ContactPlaceHolder placeholder:font-Inter placeholder-white py-2 cursor-pointer" required>
       <option class="SelectOption" value="" disabled selected>Select a Subject</option>
       <option class="SelectOption" value="option1">Landing Page Development</option>
       <option class="SelectOption" value="option2">Blog Website Development</option>
@@ -686,13 +686,14 @@
   
       <div class="mb-7 flex flex-col border-b pb-10 border-Primary">
         <label for="message" class="text-xs uppercase text-white">Message</label>
-        <textarea id="message" rows="5" cols="5" placeholder="Write your message here..." class="ContactPlaceHolder placeholder:font-Inter"></textarea>
+        <textarea id="message" rows="3"  placeholder="Write your message here..." class="ContactPlaceHolder placeholder:font-Inter"></textarea>
       </div>
   
-      <div class="mb-7 flex flex-col mt-6">
+      <div class="mb-7 flex items-center justify-start space-x-2 mt-4">
+        <i class="bi bi-cloud-arrow-up text-sm text-white"></i>
         <label for="attachment" type="file" class="text-xs uppercase text-white">Add an Attachment</label>
       </div>
-      <div class="mt-12 inline-block">
+      <div class="mt-8 max-w-fit">
         <button type="submit" class="Btn">Send Message</button>
       </div>
     </form>
