@@ -17,22 +17,59 @@
 <body>
 	<main class="py-5 md:pb-5">
 
-<header>
-	<!-- Right Side Header Menu -->
-	<div class="absolute right-6 md:right-16 top-16">
-		<p class="Rounded flex inset-0 items-center justify-center cursor-pointer text-lg"><i class="bi bi-grid"></i></p>
-	</div>
+		<header>
+			<!-- Right Side Header Menu -->
+			<div onclick="handleRightHeaderMenu()" class="absolute right-6 md:right-16 top-16 z-40">
+				<p class="Rounded flex inset-0 items-center justify-center cursor-pointer text-lg">
+					<i class="bi bi-grid"></i>
+				</p>
+				<!-- Menu List Box -->
+				
 
-	<!-- Left Side Header Menu -->
-	<div class="absolute -left-[5px] top-10 z-50">
-		<p class="Rounded border-none hover:border-none flex inset-0 items-center justify-center cursor-pointer text-lg"><i class="bi bi-gear text-Green"></i></p>
-	</div>
-</header>
+				<!-- Left Side Header Menu -->
+				<div class="absolute -left-[5px] top-10 z-50">
+					<p
+						class="Rounded border-none hover:border-none flex inset-0 items-center justify-center cursor-pointer text-lg">
+						<i class="bi bi-gear text-Green"></i>
+					</p>
+				</div>
+		</header>
 
-
-
-
-
+		<div class="absolute top-0 right-1 w-screen min-h-screen bg-black bg-opacity-80">
+			<h1>Menu</h1>
+			<a class="flex flex-col justify-start items-center space-x-3" href="#home">
+				<span></span>
+				<span class="block">Home</span>
+			</a>
+			<a class="flex flex-col justify-start items-center space-x-3" href="#about">
+				<span></span>
+				<span class="block">About</span>
+			</a>
+			<a class="flex flex-col justify-start items-center space-x-3" href="#resume">
+				<span></span>
+				<span>Resume</span>
+			</a>
+			<a class="flex flex-col justify-start items-center space-x-3" href="#services">
+				<span></span>
+				<span>Services</span>
+			</a>
+			<a class="flex flex-col justify-start items-center space-x-3" href="#skills">
+				<span></span>
+				<span>Skills</span>
+			</a>
+			<a class="flex flex-col justify-start items-center space-x-3" href="#portfolios">
+				<span></span>
+				<span>Portfolios</span>
+			</a>
+			<a class="flex flex-col justify-start items-center space-x-3" href="#testimonial">
+				<span></span>
+				<span>Testimonial</span>
+			</a>
+			<a class="flex flex-col justify-start items-center space-x-3" href="#contact">
+				<span></span>
+				<span>Contact</span>
+			</a>
+		</div>
 
 		<!--Section-1 & From Large Device Fixed-Left Section -->
 		<section
@@ -66,10 +103,10 @@
 							</a>
 							<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
 								<i class="fa-brands fa-instagram text-Primary"></i>
-							<a>
-							<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
-								<i class="fa-brands fa-github text-Primary"></i>
-							</a>
+								<a>
+									<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
+										<i class="fa-brands fa-github text-Primary"></i>
+									</a>
 						</div>
 						<div>
 							<button class="Btn flex justify-center items-center">
@@ -385,7 +422,9 @@
 									<p>WordPress</p>
 								</div>
 							</div>
-							<h1 class="absolute PortfolioFooterText -bottom-16 text-xl sm:text-2xl text-white font-light">Bureau -
+							<h1
+								class="absolute PortfolioFooterText -bottom-16 text-xl sm:text-2xl text-white font-light">
+								Bureau -
 								Architecture Studio Website</h1>
 						</div>
 						<!-- Image 02 + 03 -->

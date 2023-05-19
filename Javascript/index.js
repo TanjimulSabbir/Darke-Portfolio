@@ -12,5 +12,15 @@ const handleSubmit = (event) => {
         alert("Please, Input required data.")
     } else {
         alert(`Dear ${fullName}, Thank you for contacting me. I have got you message!`)
-    } 
+    }
+}
+
+// Right Header Menu Function
+
+const handleRightHeaderMenu = () => {
+    alert("Hey, I am Clicking!")
+
+    document.getElementById("MenuDiv").innerHTML = <div>
+        
+    </div>
 }
