@@ -8912,21 +8912,6 @@ i{
   margin-bottom: 64px;
 }
 
-.my-\[36px\]{
-  margin-top: 36px;
-  margin-bottom: 36px;
-}
-
-.my-\[42px\]{
-  margin-top: 42px;
-  margin-bottom: 42px;
-}
-
-.my-\[50px\]{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -9015,60 +9000,20 @@ i{
   margin-top: 2rem;
 }
 
-.mt-\[60px\]{
-  margin-top: 60px;
-}
-
-.mt-20{
-  margin-top: 5rem;
-}
-
-.mt-\[64px\]{
-  margin-top: 64px;
-}
-
-.mt-\[24px\]{
-  margin-top: 24px;
-}
-
-.mt-\[32px\]{
-  margin-top: 32px;
+.mt-\[20px\]{
+  margin-top: 20px;
 }
 
 .mt-\[36px\]{
   margin-top: 36px;
 }
 
-.mb-\[36px\]{
-  margin-bottom: 36px;
+.mt-\[60px\]{
+  margin-top: 60px;
 }
 
-.mt-\[48px\]{
-  margin-top: 48px;
-}
-
-.mb-\[54px\]{
-  margin-bottom: 54px;
-}
-
-.mt-\[54px\]{
-  margin-top: 54px;
-}
-
-.mt-\[40px\]{
-  margin-top: 40px;
-}
-
-.mt-\[38px\]{
-  margin-top: 38px;
-}
-
-.mt-\[28px\]{
-  margin-top: 28px;
-}
-
-.mt-\[20px\]{
-  margin-top: 20px;
+.mt-\[64px\]{
+  margin-top: 64px;
 }
 
 .box-border{
@@ -9764,10 +9709,6 @@ i{
   gap: 1.25rem;
 }
 
-.gap-6{
-  gap: 1.5rem;
-}
-
 .gap-y-12{
   row-gap: 3rem;
 }
@@ -10292,6 +10233,11 @@ i{
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -10765,6 +10711,10 @@ i{
   text-decoration-style: wavy;
 }
 
+.decoration-1{
+  text-decoration-thickness: 1px;
+}
+
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11053,12 +11003,24 @@ i{
   transition-duration: 150ms;
 }
 
+.delay-150{
+  transition-delay: 150ms;
+}
+
 .duration-200{
   transition-duration: 200ms;
 }
 
 .duration-300{
   transition-duration: 300ms;
+}
+
+.duration-1000{
+  transition-duration: 1000ms;
+}
+
+.duration-500{
+  transition-duration: 500ms;
 }
 
 .ease-in{
@@ -11183,20 +11145,22 @@ i{
   text-align: center;
 }
 
-@media (min-width: 576px){
-  .sm\:my-0{
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+.group:hover .group-hover\:underline{
+  text-decoration-line: underline;
+}
 
+.group:hover .group-hover\:underline-offset-4{
+  text-underline-offset: 4px;
+}
+
+.group:hover .group-hover\:underline-offset-8{
+  text-underline-offset: 8px;
+}
+
+@media (min-width: 576px){
   .sm\:my-\[116px\]{
     margin-top: 116px;
     margin-bottom: 116px;
-  }
-
-  .sm\:my-\[140px\]{
-    margin-top: 140px;
-    margin-bottom: 140px;
   }
 
   .sm\:my-\[60px\]{
@@ -11204,20 +11168,12 @@ i{
     margin-bottom: 60px;
   }
 
-  .sm\:mt-\[140px\]{
-    margin-top: 140px;
-  }
-
-  .sm\:-mt-20{
-    margin-top: -5rem;
-  }
-
-  .sm\:-mt-14{
-    margin-top: -3.5rem;
-  }
-
   .sm\:-mt-10{
     margin-top: -2.5rem;
+  }
+
+  .sm\:mt-\[140px\]{
+    margin-top: 140px;
   }
 
   .sm\:grid-cols-2{
@@ -11275,22 +11231,6 @@ i{
   .md\:my-\[60px\]{
     margin-top: 60px;
     margin-bottom: 60px;
-  }
-
-  .md\:mb-20{
-    margin-bottom: 5rem;
-  }
-
-  .md\:mt-\[116px\]{
-    margin-top: 116px;
-  }
-
-  .md\:mb-10{
-    margin-bottom: 2.5rem;
-  }
-
-  .md\:mb-5{
-    margin-bottom: 1.25rem;
   }
 
   .md\:block{

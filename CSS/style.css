@@ -67,7 +67,12 @@
  .UniversalPadding{
   @apply px-4 sm:px-6 md:px-10;
 }
-
+.PortfolioFooterText{
+  @apply decoration-1 group-hover:underline group-hover:underline-offset-8;
+}
+.PortfolioBtnHover{
+  @apply group-hover:bg-Primary group-hover:text-white;
+}
 }
  
 /* 9783-C4CE */

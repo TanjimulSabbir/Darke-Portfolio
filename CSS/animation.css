@@ -46,13 +46,14 @@
     color: black;
     border: white;
     transition: .5s;
+    text-transform: capitalize;
   }
-  .PortfolioBox:hover{
+  /* .PortfolioBox:hover{
     transition: all;
     transition-duration: .2s;
     cursor: pointer;
-  }
-  .PortfolioBox:hover .Heading{
+  } */
+  /* .PortfolioBox:hover .Heading{
     background-color: black;
     color: white;
     border: black;
@@ -70,4 +71,4 @@
   .PortfolioButtomText{
     font-weight: 300;
     transition: all;
-  }
+  } */
