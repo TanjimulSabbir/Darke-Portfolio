@@ -44,28 +44,28 @@
   @apply border-2 border-[#565656] text-Primary w-[50px] h-[50px] rounded-full transition duration-200 hover:text-green-600 hover:border-green-600;
  }
  .UniversalPadding{
-  @apply lg:px-3
+  @apply lg:px-3;
  }
  .Heading{
   @apply border border-Primary rounded-3xl px-[18px] py-[9px] uppercase text-white inline-flex justify-center items-center space-x-3 font-light text-xs;
  }
  .SkillBox{
-  @apply relative rounded-full pt-[54px] pb-[48px] border-2 border-primary flex flex-col space-y-6 justify-center items-center mb-10;
+  @apply relative rounded-[85px] pt-[54px] pb-[48px] px-14 border-2 border-primary flex flex-col space-y-6 justify-center items-center mb-10;
  }
  .SliderBtn{
   @apply bg-transparent border border-Primary hover:bg-transparent hover:text-Green hover:border-Green;
  }
  .BrandImageHover{
- @apply opacity-30 transition-all duration-300 hover:opacity-100 
+ @apply opacity-30 transition-all duration-300 hover:opacity-100;
  }
  .ContactPlaceHolder{
-  @apply placeholder-Primary placeholder:opacity-50 border-none bg-transparent focus:outline-none py-2 placeholder:text-lg
+  @apply placeholder-Primary placeholder:opacity-50 border-none bg-transparent focus:outline-none py-2 placeholder:text-lg;
  }
  .SelectOption{
- @apply bg-black p-2 text-white rounded-md cursor-pointer
+ @apply bg-black p-2 text-white rounded-md cursor-pointer;
  }
  .UniversalPadding{
-  @apply px-4 sm:px-6 md:px-10 
+  @apply px-4 sm:px-6 md:px-10;
 }
 
 }

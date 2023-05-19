@@ -39,7 +39,7 @@
     transition-duration: .3s;
   }
   .PortfolioBox img{
-    border-radius: 3%;
+    border-radius: 6%;
   }
   .PortfolioBox .Heading{
     background: white;
