@@ -11,7 +11,8 @@ Primary:"#999999",
 Green:"#28e98c"
       },
       borderColor:{
-        Primary:"#565656"
+        Primary:"#565656",
+        Secondary:"#999999"
       },
       fontFamily:{
 Inter:"Inter, sans-serif"

@@ -8592,10 +8592,10 @@ i{
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(86 86 86 / var(--tw-border-opacity));
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 9px;
+  padding-bottom: 9px;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 300;
@@ -8890,6 +8890,26 @@ i{
   margin-bottom: 64px;
 }
 
+.my-\[70px\]{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.my-\[80px\]{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.my-\[58px\]{
+  margin-top: 58px;
+  margin-bottom: 58px;
+}
+
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -8940,6 +8960,10 @@ i{
 
 .mb-\[60px\]{
   margin-bottom: 60px;
+}
+
+.ml-\[6px\]{
+  margin-left: 6px;
 }
 
 .mr-2{
@@ -11085,6 +11109,16 @@ i{
 }
 
 @media (min-width: 640px){
+  .sm\:my-20{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .sm\:my-12{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
   .sm\:block{
     display: block;
   }
@@ -11121,13 +11155,52 @@ i{
     margin-bottom: 60px;
   }
 
+  .md\:my-\[78px\]{
+    margin-top: 78px;
+    margin-bottom: 78px;
+  }
+
   .md\:my-\[90px\]{
     margin-top: 90px;
     margin-bottom: 90px;
   }
 
+  .md\:my-\[68px\]{
+    margin-top: 68px;
+    margin-bottom: 68px;
+  }
+
+  .md\:my-\[110px\]{
+    margin-top: 110px;
+    margin-bottom: 110px;
+  }
+
+  .md\:my-\[116px\]{
+    margin-top: 116px;
+    margin-bottom: 116px;
+  }
+
+  .md\:my-\[54px\]{
+    margin-top: 54px;
+    margin-bottom: 54px;
+  }
+
+  .md\:my-\[128px\]{
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
+
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:flex{
     display: flex;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:min-h-\[360px\]{
@@ -11140,6 +11213,10 @@ i{
 
   .md\:max-w-\[610px\]{
     max-width: 610px;
+  }
+
+  .md\:max-w-3xl{
+    max-width: 48rem;
   }
 
   .md\:grid-cols-3{
@@ -11175,6 +11252,14 @@ i{
        object-fit: cover;
   }
 
+  .md\:p-5{
+    padding: 1.25rem;
+  }
+
+  .md\:p-7{
+    padding: 1.75rem;
+  }
+
   .md\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -11183,6 +11268,16 @@ i{
   .md\:py-\[44px\]{
     padding-top: 44px;
     padding-bottom: 44px;
+  }
+
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:pb-5{
@@ -11220,6 +11315,10 @@ i{
     margin-left: -34px;
   }
 
+  .lg\:block{
+    display: block;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -11246,6 +11345,14 @@ i{
 
   .lg\:max-w-\[392px\]{
     max-width: 392px;
+  }
+
+  .lg\:max-w-\[480px\]{
+    max-width: 480px;
+  }
+
+  .lg\:max-w-\[610px\]{
+    max-width: 610px;
   }
 
   .lg\:grid-cols-1{
