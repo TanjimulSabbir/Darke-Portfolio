@@ -1757,13 +1757,13 @@ i{
   width: 100%;
 }
 
-@media (min-width: 640px){
+@media (min-width: 576px){
   .\!container{
-    max-width: 640px !important;
+    max-width: 576px !important;
   }
 
   .container{
-    max-width: 640px;
+    max-width: 576px;
   }
 }
 
@@ -8631,7 +8631,7 @@ i{
 .SliderBtn{
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: hsl(var(--p) / var(--tw-border-opacity));
+  border-color: rgb(86 86 86 / var(--tw-border-opacity));
   background-color: transparent;
 }
 
@@ -8697,7 +8697,7 @@ i{
   padding-right: 1rem;
 }
 
-@media (min-width: 640px){
+@media (min-width: 576px){
   .UniversalPadding{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -8880,24 +8880,14 @@ i{
   margin-right: auto;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .my-\[48px\]{
   margin-top: 48px;
   margin-bottom: 48px;
-}
-
-.my-\[64px\]{
-  margin-top: 64px;
-  margin-bottom: 64px;
-}
-
-.my-\[70px\]{
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-
-.my-\[80px\]{
-  margin-top: 80px;
-  margin-bottom: 80px;
 }
 
 .my-\[58px\]{
@@ -8905,9 +8895,9 @@ i{
   margin-bottom: 58px;
 }
 
-.my-10{
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
+.my-\[64px\]{
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 
 .mb-10{
@@ -9679,8 +9669,8 @@ i{
   gap: 5rem;
 }
 
-.gap-3{
-  gap: 0.75rem;
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-5{
@@ -10055,6 +10045,10 @@ i{
   border-radius: 0.25rem;
 }
 
+.rounded-2xl{
+  border-radius: 1rem;
+}
+
 .rounded-3xl{
   border-radius: 1.5rem;
 }
@@ -10201,9 +10195,9 @@ i{
   border-color: hsl(var(--p) / var(--tw-border-opacity));
 }
 
-.bg-Primary{
+.bg-Secondary{
   --tw-bg-opacity: 1;
-  background-color: rgb(153 153 153 / var(--tw-bg-opacity));
+  background-color: rgb(101 101 101 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
@@ -10363,14 +10357,9 @@ i{
   padding-bottom: 1.5rem;
 }
 
-.py-\[22px\]{
-  padding-top: 22px;
-  padding-bottom: 22px;
-}
-
-.py-\[44px\]{
-  padding-top: 44px;
-  padding-bottom: 44px;
+.py-9{
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .py-\[48px\]{
@@ -10642,6 +10631,11 @@ i{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#fc4545\]{
+  --tw-text-opacity: 1;
+  color: rgb(252 69 69 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -11021,14 +11015,14 @@ i{
   background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
 }
 
-@media (min-width: 640px){
+@media (min-width: 576px){
   .sm\:container{
     width: 100%;
   }
 
-  @media (min-width: 640px){
+  @media (min-width: 576px){
     .sm\:container{
-      max-width: 640px;
+      max-width: 576px;
     }
   }
 
@@ -11108,15 +11102,15 @@ i{
   text-align: center;
 }
 
-@media (min-width: 640px){
-  .sm\:my-20{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
+@media (min-width: 576px){
   .sm\:my-12{
     margin-top: 3rem;
     margin-bottom: 3rem;
+  }
+
+  .sm\:my-20{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .sm\:block{
@@ -11129,6 +11123,16 @@ i{
 
   .sm\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:py-8{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .sm\:text-5xl{
@@ -11150,29 +11154,9 @@ i{
 }
 
 @media (min-width: 768px){
-  .md\:my-\[60px\]{
-    margin-top: 60px;
-    margin-bottom: 60px;
-  }
-
-  .md\:my-\[78px\]{
-    margin-top: 78px;
-    margin-bottom: 78px;
-  }
-
-  .md\:my-\[90px\]{
-    margin-top: 90px;
-    margin-bottom: 90px;
-  }
-
-  .md\:my-\[68px\]{
-    margin-top: 68px;
-    margin-bottom: 68px;
-  }
-
-  .md\:my-\[110px\]{
-    margin-top: 110px;
-    margin-bottom: 110px;
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .md\:my-\[116px\]{
@@ -11180,19 +11164,14 @@ i{
     margin-bottom: 116px;
   }
 
-  .md\:my-\[54px\]{
-    margin-top: 54px;
-    margin-bottom: 54px;
+  .md\:my-\[60px\]{
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
-  .md\:my-\[128px\]{
-    margin-top: 128px;
-    margin-bottom: 128px;
-  }
-
-  .md\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
+  .md\:my-\[68px\]{
+    margin-top: 68px;
+    margin-bottom: 68px;
   }
 
   .md\:flex{
@@ -11209,10 +11188,6 @@ i{
 
   .md\:w-full{
     width: 100%;
-  }
-
-  .md\:max-w-\[610px\]{
-    max-width: 610px;
   }
 
   .md\:max-w-3xl{
@@ -11235,6 +11210,14 @@ i{
     justify-content: flex-end;
   }
 
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:gap-3{
+    gap: 0.75rem;
+  }
+
   .md\:space-x-6 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));
@@ -11247,32 +11230,17 @@ i{
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
+  .md\:rounded-3xl{
+    border-radius: 1.5rem;
+  }
+
   .md\:object-cover{
     -o-object-fit: cover;
        object-fit: cover;
   }
 
-  .md\:p-5{
-    padding: 1.25rem;
-  }
-
   .md\:p-7{
     padding: 1.75rem;
-  }
-
-  .md\:px-12{
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  .md\:py-\[44px\]{
-    padding-top: 44px;
-    padding-bottom: 44px;
-  }
-
-  .md\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
 
   .md\:px-4{
@@ -11311,8 +11279,8 @@ i{
     top: 0.25rem;
   }
 
-  .lg\:-ml-\[34px\]{
-    margin-left: -34px;
+  .lg\:-ml-10{
+    margin-left: -2.5rem;
   }
 
   .lg\:block{
@@ -11339,20 +11307,16 @@ i{
     min-width: 350px;
   }
 
-  .lg\:max-w-3xl{
-    max-width: 48rem;
-  }
-
   .lg\:max-w-\[392px\]{
     max-width: 392px;
   }
 
-  .lg\:max-w-\[480px\]{
-    max-width: 480px;
-  }
-
   .lg\:max-w-\[610px\]{
     max-width: 610px;
+  }
+
+  .lg\:max-w-2xl{
+    max-width: 42rem;
   }
 
   .lg\:grid-cols-1{
@@ -11365,6 +11329,26 @@ i{
 
   .lg\:justify-center{
     justify-content: center;
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:py-\[44px\]{
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
