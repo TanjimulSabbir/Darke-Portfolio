@@ -9,7 +9,8 @@ const handleSubmit = (event) => {
 
     if (!Values) {
         document.getElementById("errorText").innerText = "* Marked fields are required to fill."
+        alert("Please, Input required data.")
     } else {
-        alert("Message Sent")
-    }
+        alert(`Dear ${fullName}, Thank you for contacting me. I have got you message!`)
+    } 
 }

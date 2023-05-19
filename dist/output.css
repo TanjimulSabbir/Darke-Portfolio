@@ -1777,13 +1777,13 @@ i{
   }
 }
 
-@media (min-width: 1220px){
+@media (min-width: 1250px){
   .\!container{
-    max-width: 1220px !important;
+    max-width: 1250px !important;
   }
 
   .container{
-    max-width: 1220px;
+    max-width: 1250px;
   }
 }
 
@@ -8563,12 +8563,12 @@ i{
 
 .Rounded:hover{
   --tw-border-opacity: 1;
-  border-color: rgb(22 163 74 / var(--tw-border-opacity));
+  border-color: rgb(40 233 140 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
+  color: rgb(40 233 140 / var(--tw-text-opacity));
 }
 
-@media (min-width: 1220px){
+@media (min-width: 1250px){
   .UniversalPadding{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -8711,6 +8711,22 @@ i{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+}
+
+.PortfolioFooterText{
+  text-decoration-thickness: 1px;
+}
+
+.group:hover .PortfolioFooterText{
+  text-decoration-line: underline;
+  text-underline-offset: 8px;
+}
+
+.group:hover .PortfolioBtnHover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .sr-only{
@@ -8892,6 +8908,11 @@ i{
   margin-bottom: 116px;
 }
 
+.my-\[36px\]{
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
 .my-\[48px\]{
   margin-top: 48px;
   margin-bottom: 48px;
@@ -9004,16 +9025,8 @@ i{
   margin-top: 20px;
 }
 
-.mt-\[36px\]{
-  margin-top: 36px;
-}
-
 .mt-\[60px\]{
   margin-top: 60px;
-}
-
-.mt-\[64px\]{
-  margin-top: 64px;
 }
 
 .box-border{
@@ -10233,11 +10246,6 @@ i{
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -10368,6 +10376,11 @@ i{
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-6{
@@ -10711,10 +10724,6 @@ i{
   text-decoration-style: wavy;
 }
 
-.decoration-1{
-  text-decoration-thickness: 1px;
-}
-
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11003,24 +11012,12 @@ i{
   transition-duration: 150ms;
 }
 
-.delay-150{
-  transition-delay: 150ms;
-}
-
 .duration-200{
   transition-duration: 200ms;
 }
 
 .duration-300{
   transition-duration: 300ms;
-}
-
-.duration-1000{
-  transition-duration: 1000ms;
-}
-
-.duration-500{
-  transition-duration: 500ms;
 }
 
 .ease-in{
@@ -11075,9 +11072,9 @@ i{
     }
   }
 
-  @media (min-width: 1220px){
+  @media (min-width: 1250px){
     .sm\:container{
-      max-width: 1220px;
+      max-width: 1250px;
     }
   }
 
@@ -11095,7 +11092,7 @@ i{
 }
 
 @media (prefers-color-scheme: dark){
-  @media (min-width: 1220px){
+  @media (min-width: 1250px){
     .table tr.dark\:lg\:hover:hover th,
     .table tr.dark\:lg\:hover:hover td,
     .table tr.dark\:lg\:hover:nth-child(even):hover th,
@@ -11145,18 +11142,6 @@ i{
   text-align: center;
 }
 
-.group:hover .group-hover\:underline{
-  text-decoration-line: underline;
-}
-
-.group:hover .group-hover\:underline-offset-4{
-  text-underline-offset: 4px;
-}
-
-.group:hover .group-hover\:underline-offset-8{
-  text-underline-offset: 8px;
-}
-
 @media (min-width: 576px){
   .sm\:my-\[116px\]{
     margin-top: 116px;
@@ -11202,10 +11187,6 @@ i{
   .sm\:text-5xl{
     font-size: 3rem;
     line-height: 1;
-  }
-
-  .sm\:text-\[58px\]{
-    font-size: 58px;
   }
 
   .sm\:leading-\[60px\]{
@@ -11311,16 +11292,12 @@ i{
     line-height: 1;
   }
 
-  .md\:text-\[78px\]{
-    font-size: 78px;
-  }
-
-  .md\:leading-\[90px\]{
-    line-height: 90px;
+  .md\:text-\[58px\]{
+    font-size: 58px;
   }
 }
 
-@media (min-width: 1220px){
+@media (min-width: 1250px){
   .lg\:fixed{
     position: fixed;
   }
@@ -11331,6 +11308,11 @@ i{
 
   .lg\:top-1{
     top: 0.25rem;
+  }
+
+  .lg\:my-\[116px\]{
+    margin-top: 116px;
+    margin-bottom: 116px;
   }
 
   .lg\:-ml-10{
@@ -11381,6 +11363,10 @@ i{
     align-items: center;
   }
 
+  .lg\:justify-end{
+    justify-content: flex-end;
+  }
+
   .lg\:justify-center{
     justify-content: center;
   }
@@ -11399,10 +11385,18 @@ i{
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .lg\:text-\[78px\]{
+    font-size: 78px;
+  }
+
+  .lg\:leading-\[90px\]{
+    line-height: 90px;
+  }
 }
 
 @media (prefers-color-scheme: dark){
-  @media (min-width: 1220px){
+  @media (min-width: 1250px){
     .dark\:lg\:hover\:\[paint-order\:markers\]:hover{
       paint-order: markers;
     }

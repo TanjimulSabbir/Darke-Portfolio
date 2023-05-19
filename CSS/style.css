@@ -41,7 +41,7 @@
   @apply w-full uppercase bg-Green text-black border-2 border-green-500 rounded-full transition duration-300 ease-in-out px-14 py-3 hover:bg-transparent hover:text-green-500;
  }
  .Rounded{
-  @apply border-2 border-[#565656] text-Primary w-[50px] h-[50px] rounded-full transition duration-200 hover:text-green-600 hover:border-green-600;
+  @apply border-2 border-[#565656] text-Primary w-[50px] h-[50px] rounded-full transition duration-200 hover:text-Green hover:border-Green;
  }
  .UniversalPadding{
   @apply lg:px-3;
@@ -71,7 +71,7 @@
   @apply decoration-1 group-hover:underline group-hover:underline-offset-8;
 }
 .PortfolioBtnHover{
-  @apply group-hover:bg-Primary group-hover:text-white;
+  @apply group-hover:bg-black group-hover:text-white;
 }
 }
  

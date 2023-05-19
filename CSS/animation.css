@@ -39,7 +39,7 @@
     transition-duration: .3s;
   }
   .PortfolioBox img{
-    border-radius: 6%;
+    border-radius: 40px;
   }
   .PortfolioBox .Heading{
     background: white;
@@ -72,3 +72,7 @@
     font-weight: 300;
     transition: all;
   } */
+
+  .Rounded:hover i{
+color: #28e98c;
+  }
