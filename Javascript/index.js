@@ -34,7 +34,7 @@ const handleRightHeaderMenu = () => {
         setTimeout(function () {
             document.getElementById("RightMenuContainer").style.display = "none";
             document.getElementById("openDrawer").style.display = "block";
-        }, 1000);
+        }, 100);
     } else {
         StopClick = true;
     }

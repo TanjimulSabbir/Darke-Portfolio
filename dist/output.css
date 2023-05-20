@@ -10295,6 +10295,10 @@ i{
   --tw-bg-opacity: 0.75;
 }
 
+.bg-opacity-30{
+  --tw-bg-opacity: 0.3;
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
