@@ -12,21 +12,26 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<!-- Animation Style Sheet -->
 	<link rel="stylesheet" href="./CSS/animation.css">
+	<!-- Icon -->
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
-<body>
-	<main class="py-5 md:pb-5">
+<body class="scroll-smooth">
+	<main class="py-5 md:pb-5 lg:pt-0">
 
 		<header>
 			<!-- Right Side Header Menu -->
+			<!-- onclick="handleOpen()" id="openDrawer"-->
+
 			<div class="absolute right-6 md:right-16 top-16 z-40">
-				<p  onclick="handleRightHeaderMenu()" class="Rounded flex inset-0 items-center justify-center cursor-pointer text-lg">
-						<label for="my-drawer-4" class="drawer-button"><i class="bi bi-grid"></i></label>
+				<label for="my-drawer-4" >
+				<p class="Rounded flex inset-0 items-center justify-center cursor-pointer text-lg">
+				<i class="bi bi-grid"></i>
 				</p>
-				
+			</label>
 			</div>
 				<!-- Left Side Header Menu -->
-				<div class="absolute left-4 top-10">
+				<div class="absolute left-[14px] top-10 z-50">
 					<p
 						class="Rounded border-none hover:border-none cursor-pointer text-lg">
 						<i class="bi bi-gear text-Green"></i>
@@ -35,59 +40,89 @@
 		</header>
 
 		<!-- Menu List Box -->
-		<div id="RightMenuContainer" class="absolute right-0 w-screen min-h-screen border border-green-600">
+		<!-- id="RightMenuContainer"  onclick="handleRightHeaderMenu()" -->
+
+		<div class="fixed right-0 w-screen h-full min-h-full bg-black bg-opacity-75 z-30 scroll-smooth">
 			<div class="drawer drawer-end">
 				<input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-				<div class="drawer-content">
+				<div class="drawer-content ">
 				</div> 
-				<div class="drawer-side relative">
-				  <label for="my-drawer-4" id="DrawerClose" class="drawer-overlay"></label>
-				  <ul class="menu p-4 w-full bg-base-100 text-base-content">
-					<!-- Sidebar content here -->
-					<li><a>Sidebar Item 1</a></li>
-					<li><a>Sidebar Item 2</a></li>
+				<div class="drawer-side">
+				  <label for="my-drawer-4" class="drawer-overlay"></label>
+				 <div class="pl-20 pt-14 h-full w-full max-w-[345px] bg-black text-base-content"> 
+					<p class="pl-4 mb-7 text-lg text-Primary">Menu</p>
+				  <ul class="menu text-Primary">
+					<li class="group">
+                        <a class="hover:bg-transparent" href="#home">
+                            <i class="las la-home text-[20px] text-Primary group-hover:text-Green transition-all duration-700"></i> 
+							<span class="text-xs group-hover:text-white transition-all duration-500">Home</span>
+                        </a>
+                    </li>
+                 	<li class="group transition-all duration-200">
+                        <a class="hover:bg-transparent" href="#about">
+                            <i class="lar la-user text-[20px] text-Primary  group-hover:text-Green transition-all duration-500"></i> 
+							<span class="text-xs group-hover:text-white transition-all duration-500">About</span>
+                        </a>
+                    </li>
+                 	<li class="group transition-all duration-200">
+                        <a class="hover:bg-transparent" href="#resume">
+                            <i class="las la-briefcase text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i> 
+							<span class="text-xs group-hover:text-white transition-all duration-500">Resume</span>
+                        </a>
+                    </li>
+                 	<li class="group transition-all duration-200">
+                        <a class="hover:bg-transparent" href="#services">
+                            <i class="las la-stream text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i> 
+							<span class="text-xs group-hover:text-white transition-all duration-500">Services</span>
+                        </a>
+                    </li>
+                 	<li class="group transition-all duration-200">
+                        <a class="hover:bg-transparent" href="#skills">
+                            <i class="las la-shapes text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i> 
+							<span class="text-xs group-hover:text-white transition-all duration-500">Skills</span>
+                        </a>
+                    </li>
+                 	<li class="group transition-all duration-200">
+                        <a class="hover:bg-transparent" href="#portfolios">
+                            <i class="las la-grip-vertical text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i> 
+							<span class="text-xs group-hover:text-white transition-all duration-500">Portfolios</span>
+                        </a>
+                    </li>
+                 	<li class="group transition-all duration-200">
+                        <a class="hover:bg-transparent" href="#testimonial">
+                            <i class="lar la-comment text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i> 
+							<span class="text-xs group-hover:text-white transition-all duration-500">Testimonial</span>
+                        </a>
+                    </li>
+                 	<li class="group transition-all duration-200">
+                        <a class="hover:bg-transparent" href="#contact">
+                            <i class="las la-envelope text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i> 
+							<span class="text-xs group-hover:text-white transition-all duration-500">Contact</span>
+                        </a>
+                    </li>
 				  </ul>
+				  <div class="pl-5 mt-12">
+					<p class="text-Primary mb-4">Social</p>
+					<ul class="flex items-center space-x-3">
+						<li class="group">
+							<a href=""><i class="lab la-twitter group-hover:text-Green duration-500"></i></a>
+						</li>
+						<li class="group">
+							<a href=""><i class="lab la-dribbble group-hover:text-Green duration-500"></i></a>
+						</li>
+						<li class="group">
+							<a href=""><i class="lab la-instagram group-hover:text-Green duration-500"></i></a>
+						</li>
+					</ul>
+				</div>
+				</div>
 				</div>
 			  </div>
 		</div>
-		<!-- <div class="absolute top-0 right-1 w-screen min-h-screen bg-black bg-opacity-80">
-			<h1>Menu</h1>
-			<a class="flex flex-col justify-start items-center space-x-3" href="#home">
-				<span></span>
-				<span class="block">Home</span>
-			</a>
-			<a class="flex flex-col justify-start items-center space-x-3" href="#about">
-				<span></span>
-				<span class="block">About</span>
-			</a>
-			<a class="flex flex-col justify-start items-center space-x-3" href="#resume">
-				<span></span>
-				<span>Resume</span>
-			</a>
-			<a class="flex flex-col justify-start items-center space-x-3" href="#services">
-				<span></span>
-				<span>Services</span>
-			</a>
-			<a class="flex flex-col justify-start items-center space-x-3" href="#skills">
-				<span></span>
-				<span>Skills</span>
-			</a>
-			<a class="flex flex-col justify-start items-center space-x-3" href="#portfolios">
-				<span></span>
-				<span>Portfolios</span>
-			</a>
-			<a class="flex flex-col justify-start items-center space-x-3" href="#testimonial">
-				<span></span>
-				<span>Testimonial</span>
-			</a>
-			<a class="flex flex-col justify-start items-center space-x-3" href="#contact">
-				<span></span>
-				<span>Contact</span>
-			</a>
-		</div> -->
+		
 
 		<!--Section-1 & From Large Device Fixed-Left Section -->
-		<section
+		<section 
 			class="lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:h-screen border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-4 md:p-7 md:max-w-3xl lg:max-w-[392px] md:mx-auto">
 			<div>
 				<div class="flex justify-between items-center">
@@ -109,6 +144,7 @@
 						<p class="text-[#999999] text-sm pt-6">© 2022 Drake. All Rights Reserved</p>
 					</div>
 					<div>
+						
 						<div class="Social flex py-6 justify-center items-center">
 							<a href="#" class="Rounded flex justify-center items-center">
 								<i class="fa-brands fa-twitter text-Primary"></i>
@@ -118,11 +154,12 @@
 							</a>
 							<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
 								<i class="fa-brands fa-instagram text-Primary"></i>
-								<a>
+							</a>
 									<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
 										<i class="fa-brands fa-github text-Primary"></i>
 									</a>
 						</div>
+	
 						<div>
 							<button class="Btn flex justify-center items-center">
 								<i class="fa-regular fa-envelope mr-2 text-xl font-bold text-black"></i>
@@ -141,7 +178,7 @@
 
 			<div class="md:max-w-3xl mx-auto">
 				<!-- Section-2 & Introduce & Large Device Right-Top  -->
-				<section>
+				<section id="home">
 					<div>
 						<div class="Heading mt-[60px] mb-14">
 							<p class="text-white">
@@ -149,7 +186,7 @@
 							</p>
 							<p>Introduce</p>
 						</div>
-						<div class="mb-10">
+						<div class="mb-10 select-all">
 							<h1
 								class="text-[50px] leading-[65px] md:text-[58px] lg:text-[78px] font-light text-white scroll-p-5 lg:leading-[90px] mb-11">
 								Say Hi from <span class="text-Green">Drake</span>, Framer Designer and Developer</h1>
@@ -181,7 +218,7 @@
 					</div>
 				</section>
 				<!-- Section-3 && About -->
-				<section class="my-[64px] sm:my-[116px]">
+				<section id="about" class="my-[64px] sm:my-[116px]">
 					<!-- About Title -->
 					<div class="Heading my-[48px] md:my-[60px]">
 						<p>
@@ -210,7 +247,7 @@
 				</section>
 
 				<!-- Section-4 & Resume -->
-				<section class="my-[58px] md:my-[116px]">
+				<section id="resume" class="my-[58px] md:my-[116px]">
 					<!-- Resume Title -->
 					<div class="Heading my-10 sm:my-[60px]">
 						<p>
@@ -220,7 +257,7 @@
 					</div>
 					<!-- Resume Heading-Text -->
 					<div class="mb-12">
-						<h1 class="text-[38px] sm:text-5xl text-white font-light">
+						<h1 class="text-[38px] sm:text-5xl text-white font-light select-all">
 							Education & <span class="text-Green">Experience</span>
 						</h1>
 					</div>
@@ -280,7 +317,7 @@
 					</div>
 				</section>
 				<!-- Section-5 & Service -->
-				<section class="my-[64px] md:my-[116px]">
+				<section id="services" class="my-[64px] md:my-[116px]">
 					<!-- Service Heading-Text -->
 					<div class="Heading my-[48px] sm:my-[60px]">
 						<p>
@@ -344,7 +381,7 @@
 				</section>
 
 				<!-- Section-6 & Skills -->
-				<section class="my-[64px] sm:my-[116px]">
+				<section id="skills" class="my-[64px] sm:my-[116px]">
 					<!-- Skill Title -->
 					<div class="Heading my-[48px] md:my-[60px]">
 						<p>
@@ -399,7 +436,7 @@
 					</div>
 				</section>
 				<!-- Section-7 & Portfolio -->
-				<section class="my-[64px] sm:my-[116px]">
+				<section id="portfolios" class="my-[64px] sm:my-[116px]">
 					<!-- Portfolio Title -->
 					<div class="Heading my-[48px] sm:my-[60px]">
 						<p>
@@ -537,7 +574,7 @@
 					</div>
 				</section>
 				<!-- Section-8 & Testimonial-->
-				<section class="my-[116px]">
+				<section id="testimonial" aria-colcount="testimonial" class="my-[116px]">
 					<!-- Testimonial Title -->
 					<div class="Heading my-[48px] sm:my-[60px]">
 						<p>
@@ -641,8 +678,8 @@
 				</section>
 
 				<!-- Section-9 & Brand -->
-				<section class="my-[116px]">
-					<!-- Testimonial Title -->
+				<section id="" class="my-[116px]">
+					<!-- Brand Title -->
 					<div class="mb-[60px]">
 						<p class="text-sm text-white uppercase font-light">WORK WITH 60+ BRANDS WORLDWIDE</p>
 					</div>
@@ -721,12 +758,12 @@
 							<!-- 03 -->
 							<div class="mb-[152px]">
 								<ul class="text-sm text-white font-light space-y-4">
-									<li>Need your wireframe</li>
-									<li>Design with Figma, Framer</li>
-									<li>Implement with Webflow, React, WordPress, Laravel/PHP</li>
-									<li>Remote/Online</li>
-									<li>Work in business days, no weekend.</li>
-									<li>Support 6 months</li>
+									<li class="group transition-all duration-200">Need your wireframe</li>
+									<li class="group transition-all duration-200">Design with Figma, Framer</li>
+									<li class="group transition-all duration-200">Implement with Webflow, React, WordPress, Laravel/PHP</li>
+									<li class="group transition-all duration-200">Remote/Online</li>
+									<li class="group transition-all duration-200">Work in business days, no weekend.</li>
+									<li class="group transition-all duration-200">Support 6 months</li>
 								</ul>
 							</div>
 							<!-- 04 -->
@@ -753,14 +790,14 @@
 							<!-- 03 -->
 							<div class="mb-20">
 								<ul class="text-sm text-white font-light space-y-4">
-									<li>Don't need wireframe or anything</li>
-									<li>Design with Figma, Framer from scratch</li>
-									<li>Implement with Webflow, React, WordPress, Laravel/PHP</li>
-									<li>Remote/Online</li>
-									<li>Work with both weekend</li>
-									<li>Support 12 months</li>
-									<li>Your project alway be priority</li>
-									<li>Customer care gifts</li>
+									<li class="group transition-all duration-200">Don't need wireframe or anything</li>
+									<li class="group transition-all duration-200">Design with Figma, Framer from scratch</li>
+									<li class="group transition-all duration-200">Implement with Webflow, React, WordPress, Laravel/PHP</li>
+									<li class="group transition-all duration-200">Remote/Online</li>
+									<li class="group transition-all duration-200">Work with both weekend</li>
+									<li class="group transition-all duration-200">Support 12 months</li>
+									<li class="group transition-all duration-200">Your project alway be priority</li>
+									<li class="group transition-all duration-200">Customer care gifts</li>
 								</ul>
 							</div>
 							<!-- 04 -->
@@ -777,7 +814,7 @@
 					</div>
 				</section>
 				<!-- Section-11 & Contact -->
-				<section class="my-[116px]">
+				<section id="contact" class="my-[116px]">
 					<!-- Contact Title -->
 					<div class="Heading my-[48px] sm:my-[60px]">
 						<p>
