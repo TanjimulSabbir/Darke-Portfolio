@@ -19,23 +19,38 @@
 
 		<header>
 			<!-- Right Side Header Menu -->
-			<div onclick="handleRightHeaderMenu()" class="absolute right-6 md:right-16 top-16 z-40">
-				<p class="Rounded flex inset-0 items-center justify-center cursor-pointer text-lg">
-					<i class="bi bi-grid"></i>
+			<div class="absolute right-6 md:right-16 top-16 z-40">
+				<p  onclick="handleRightHeaderMenu()" class="Rounded flex inset-0 items-center justify-center cursor-pointer text-lg">
+						<label for="my-drawer-4" class="drawer-button"><i class="bi bi-grid"></i></label>
 				</p>
-				<!-- Menu List Box -->
 				
-
+			</div>
 				<!-- Left Side Header Menu -->
-				<div class="absolute -left-[5px] top-10 z-50">
+				<div class="absolute left-4 top-10">
 					<p
-						class="Rounded border-none hover:border-none flex inset-0 items-center justify-center cursor-pointer text-lg">
+						class="Rounded border-none hover:border-none cursor-pointer text-lg">
 						<i class="bi bi-gear text-Green"></i>
 					</p>
 				</div>
 		</header>
 
-		<div class="absolute top-0 right-1 w-screen min-h-screen bg-black bg-opacity-80">
+		<!-- Menu List Box -->
+		<div id="RightMenuContainer" class="absolute right-0 w-screen min-h-screen border border-green-600">
+			<div class="drawer drawer-end">
+				<input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+				<div class="drawer-content">
+				</div> 
+				<div class="drawer-side relative">
+				  <label for="my-drawer-4" id="DrawerClose" class="drawer-overlay"></label>
+				  <ul class="menu p-4 w-full bg-base-100 text-base-content">
+					<!-- Sidebar content here -->
+					<li><a>Sidebar Item 1</a></li>
+					<li><a>Sidebar Item 2</a></li>
+				  </ul>
+				</div>
+			  </div>
+		</div>
+		<!-- <div class="absolute top-0 right-1 w-screen min-h-screen bg-black bg-opacity-80">
 			<h1>Menu</h1>
 			<a class="flex flex-col justify-start items-center space-x-3" href="#home">
 				<span></span>
@@ -69,7 +84,7 @@
 				<span></span>
 				<span>Contact</span>
 			</a>
-		</div>
+		</div> -->
 
 		<!--Section-1 & From Large Device Fixed-Left Section -->
 		<section

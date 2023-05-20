@@ -16,11 +16,23 @@ const handleSubmit = (event) => {
 }
 
 // Right Header Menu Function
+let OpenMenu = false;
+const handleRightHeaderMenu = (e) => {
+    OpenMenu = !OpenMenu;
+    if (OpenMenu) {
+       document.getElementById("RightMenuContainer").style.display="block"
+    }
+    const RightMenuContainer = document.getElementById("RightMenuContainer");
+    const NewDiv = document.createElement("div");
+    NewDiv.innerHTML = ``
+    console.log(RightMenuContainer)
+    RightMenuContainer.appendChild(NewDiv);
+}
 
-const handleRightHeaderMenu = () => {
-    alert("Hey, I am Clicking!")
-
-    document.getElementById("MenuDiv").innerHTML = <div>
-        
-    </div>
+const handleClose = () => {
+    OpenMenu = false;
+    if (!OpenMenu) {
+        document.getElementById("DrawerClose").click();
+        document.getElementById("RightMenuContainer").style.display="none"
+    }
 }
