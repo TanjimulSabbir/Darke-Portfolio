@@ -9224,6 +9224,10 @@ i{
   width: 100vw;
 }
 
+.w-80{
+  width: 20rem;
+}
+
 .max-w-\[250px\]{
   max-width: 250px;
 }
@@ -9239,6 +9243,10 @@ i{
 .max-w-fit{
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.max-w-5xl{
+  max-width: 64rem;
 }
 
 .flex-1{
@@ -10334,6 +10342,16 @@ i{
 
 .bg-transparent{
   background-color: transparent;
+}
+
+.bg-base-100{
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--b1) / var(--tw-bg-opacity));
+}
+
+.bg-\[\#919191\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(145 145 145 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-30{

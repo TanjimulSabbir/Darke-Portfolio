@@ -20,26 +20,25 @@ let StopClick = false;
 let closeDrawer = false;
 document.getElementById("RightMenuContainer").style.display = "none";
 
-const handleOpen = (event) => {
+const handleRightMenuOpen = (event) => {
     StopClick = false;
     closeDrawer = true;
     document.getElementById("RightMenuContainer").style.display = "block";
-    document.getElementById("openDrawer").style.display = "none";
-
+    document.getElementById("MenuOpenDrawer").style.display = "none";
 }
 
 const handleRightHeaderMenu = () => {
     if (StopClick) {
         setTimeout(function () {
             document.getElementById("RightMenuContainer").style.display = "none";
-            document.getElementById("openDrawer").style.display = "block";
+            document.getElementById("MenuOpenDrawer").style.display = "block";
         }, 100);
     } else {
         StopClick = true;
     }
 }
 const handleClicked = (event) => {
-    document.getElementById("openDrawer").click();
+    document.getElementById("MenuOpenDrawer").click();
 }
 
 const RightSideFixedNav = document.getElementById("RightSideFixedNav");
@@ -98,16 +97,16 @@ RightSideFixedNav.innerHTML = `<ul class="menu text-white border border-Primary 
 
 
 
-// const handleOpen = () =>{
+// const handleRightMenuOpen = () =>{
 //     OpenMenu = !OpenMenu;
 //     window.onload = function () {
 //         if (OpenMenu) {
-//             document.getElementById("openDrawer").click();
+//             document.getElementById("MenuOpenDrawer").click();
 //           return  document.getElementById("RightMenuContainer").style.display = "block";
 //         } 
 
 //     };
-//     alert(OpenMenu + "handleOpenBtn")
+//     alert(OpenMenu + "handleRightMenuOpenBtn")
 // }
 
 // const handleRightHeaderMenu = () => {
@@ -126,7 +125,7 @@ console.log(document.getElementById("RightMenuContainer"))
 //     OpenMenu = !OpenMenu;
 //     if (!OpenMenu) {
 //         window.onload=function(){
-//             document.getElementById("openDrawer").click();
+//             document.getElementById("MenuOpenDrawer").click();
 //           };
 //         return document.getElementById("RightMenuContainer").style.display="none";
 //     } else {
@@ -147,7 +146,7 @@ console.log(document.getElementById("RightMenuContainer"))
 // style.display = "block"
 // const container=document.getElementById("RightMenuContainer");
 //     window.onload = function () {
-//                 document.getElementById("openDrawer").click();
+//                 document.getElementById("MenuOpenDrawer").click();
 //     };
 //     console.log(container)
 // }
@@ -159,3 +158,36 @@ console.log(document.getElementById("RightMenuContainer"))
 //     };
 //     document.getElementById("RightMenuContainer").style.display = "none";
 // }
+
+
+// Setting Drawer Menu
+
+// Setting Button for Drawer Open
+
+let SettingOpenDrawerBtn = document.getElementById("SettingOpenDrawer");
+let SettingDrawerContainer = document.getElementById("SettingDrawerContainer");
+
+let SettingOpen = false;
+SettingDrawerContainer.style.display = "none"
+
+const handleSettingOpen = () => {
+    if (SettingOpen) {
+        return ;
+    }
+    SettingOpen = false;
+    SettingDrawerContainer.style.display="block"
+}
+
+
+const handleSettingDrawer = () => {
+    if (SettingOpen) {
+        console.log(SettingDrawerContainer)
+        if (SettingDrawerContainer) {
+            SettingDrawerContainer.style.display="none";
+        }
+        return SettingOpen = false;
+    } else {
+            return SettingOpen = true;
+    }
+}
+alert(SettingOpen);
