@@ -42,6 +42,77 @@ const handleClicked = (event) => {
     document.getElementById("openDrawer").click();
 }
 
+const RightSideFixedNav = document.getElementById("RightSideFixedNav");
+RightSideFixedNav.innerHTML = `
+<ul class="menu text-Primary border py-10 px-5 rounded-3xl">
+							<li class="group" onclick="handleClicked(event)">
+								<a class="hover:bg-transparent" href="#home">
+									<i
+										class="las la-home text-[20px] text-Primary group-hover:text-Green transition-all duration-700"></i>
+									<span class="text-xs group-hover:text-white transition-all duration-500">Home</span>
+								</a>
+							</li>
+							<li class="group" onclick="handleClicked(event)">
+								<a class="hover:bg-transparent" href="#about">
+									<i
+										class="lar la-user text-[20px] text-Primary  group-hover:text-Green transition-all duration-500"></i>
+									<span
+										class="text-xs group-hover:text-white transition-all duration-500">About</span>
+								</a>
+							</li>
+							<li class="group" onclick="handleClicked(event)">
+								<a class="hover:bg-transparent" href="#resume">
+									<i
+										class="las la-briefcase text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+									<span
+										class="text-xs group-hover:text-white transition-all duration-500">Resume</span>
+								</a>
+							</li>
+							<li class="group" onclick="handleClicked(event)">
+								<a class="hover:bg-transparent" href="#services">
+									<i
+										class="las la-stream text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+									<span
+										class="text-xs group-hover:text-white transition-all duration-500">Services</span>
+								</a>
+							</li>
+							<li class="group" onclick="handleClicked(event)">
+								<a class="hover:bg-transparent" href="#skills">
+									<i
+										class="las la-shapes text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+									<span
+										class="text-xs group-hover:text-white transition-all duration-500">Skills</span>
+								</a>
+							</li>
+							<li class="group" onclick="handleClicked(event)">
+								<a class="hover:bg-transparent" href="#portfolios">
+									<i
+										class="las la-grip-vertical text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+									<span
+										class="text-xs group-hover:text-white transition-all duration-500">Portfolios</span>
+								</a>
+							</li>
+							<li class="group" onclick="handleClicked(event)">
+								<a class="hover:bg-transparent" href="#testimonial">
+									<i
+										class="lar la-comment text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+									<span
+										class="text-xs group-hover:text-white transition-all duration-500">Testimonial</span>
+								</a>
+							</li>
+							<li class="group" onclick="handleClicked(event)">
+								<a class="hover:bg-transparent" href="#contact">
+									<i
+										class="las la-envelope text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+									<span
+										class="text-xs group-hover:text-white transition-all duration-500">Contact</span>
+								</a>
+							</li>
+						</ul>
+							</ul>`
+
+
+
 // const handleOpen = () =>{
 //     OpenMenu = !OpenMenu;
 //     window.onload = function () {
