@@ -8868,6 +8868,22 @@ i{
   top: 4rem;
 }
 
+.top-14{
+  top: 3.5rem;
+}
+
+.left-\[16px\]{
+  left: 16px;
+}
+
+.left-\[13px\]{
+  left: 13px;
+}
+
+.left-\[12px\]{
+  left: 12px;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -9418,6 +9434,10 @@ i{
 
 .scroll-p-5{
   scroll-padding: 1.25rem;
+}
+
+.scroll-pt-4{
+  scroll-padding-top: 1rem;
 }
 
 .list-inside{

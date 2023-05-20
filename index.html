@@ -1,5 +1,6 @@
 <!doctype html>
-<html data-theme="black">
+<html data-theme="black" class="scroll-smooth scroll-pt-4
+">
 
 <head>
 	<meta charset="UTF-8">
@@ -17,21 +18,21 @@
 		href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
-<body class="scroll-smooth">
+<body>
 	<main class="py-5 md:pb-5 lg:pt-0">
 
 		<header class="">
 			<!-- Right Side Header Menu -->
 			<!-- onclick="handleOpen()" id="openDrawer"-->
-			<div id="openDrawer" onclick="handleOpen()" class="absolute right-6 md:right-16 top-16 z-40">
-					<label for="my-drawer-4" >
+			<div onclick="handleOpen()" class="absolute right-6 md:right-16 top-16 z-40">
+					<label for="my-drawer-4" id="openDrawer">
 						<p class="Rounded flex inset-0 items-center justify-center cursor-pointer text-lg z-50">
 							<i class="bi bi-grid"></i>
 						</p>
 					</label>
 			</div>
 			<!-- Left Side Header Menu -->
-			<div class="absolute left-[14px] top-10 z-50">
+			<div class="fixed left-[12px] top-14 z-50">
 				<p class="Rounded border-none hover:border-none cursor-pointer text-lg">
 					<i class="bi bi-gear text-Green"></i>
 				</p>
@@ -51,14 +52,14 @@
 					<div class="pl-20 pt-14 h-full w-full max-w-[345px] bg-black text-base-content">
 						<p class="pl-4 mb-7 text-lg text-Primary">Menu</p>
 						<ul class="menu text-Primary">
-							<li class="group">
+							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#home">
 									<i
 										class="las la-home text-[20px] text-Primary group-hover:text-Green transition-all duration-700"></i>
 									<span class="text-xs group-hover:text-white transition-all duration-500">Home</span>
 								</a>
 							</li>
-							<li class="group transition-all duration-200">
+							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#about">
 									<i
 										class="lar la-user text-[20px] text-Primary  group-hover:text-Green transition-all duration-500"></i>
@@ -66,7 +67,7 @@
 										class="text-xs group-hover:text-white transition-all duration-500">About</span>
 								</a>
 							</li>
-							<li class="group transition-all duration-200">
+							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#resume">
 									<i
 										class="las la-briefcase text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
@@ -74,7 +75,7 @@
 										class="text-xs group-hover:text-white transition-all duration-500">Resume</span>
 								</a>
 							</li>
-							<li class="group transition-all duration-200">
+							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#services">
 									<i
 										class="las la-stream text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
@@ -82,7 +83,7 @@
 										class="text-xs group-hover:text-white transition-all duration-500">Services</span>
 								</a>
 							</li>
-							<li class="group transition-all duration-200">
+							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#skills">
 									<i
 										class="las la-shapes text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
@@ -90,7 +91,7 @@
 										class="text-xs group-hover:text-white transition-all duration-500">Skills</span>
 								</a>
 							</li>
-							<li class="group transition-all duration-200">
+							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#portfolios">
 									<i
 										class="las la-grip-vertical text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
@@ -98,7 +99,7 @@
 										class="text-xs group-hover:text-white transition-all duration-500">Portfolios</span>
 								</a>
 							</li>
-							<li class="group transition-all duration-200">
+							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#testimonial">
 									<i
 										class="lar la-comment text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
@@ -106,7 +107,7 @@
 										class="text-xs group-hover:text-white transition-all duration-500">Testimonial</span>
 								</a>
 							</li>
-							<li class="group transition-all duration-200">
+							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#contact">
 									<i
 										class="las la-envelope text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
@@ -200,7 +201,7 @@
 							</p>
 							<p>Introduce</p>
 						</div>
-						<div class="mb-10 select-all">
+						<div class="mb-10">
 							<h1
 								class="text-[50px] leading-[65px] md:text-[58px] lg:text-[78px] font-light text-white scroll-p-5 lg:leading-[90px] mb-11">
 								Say Hi from <span class="text-Green">Drake</span>, Framer Designer and Developer</h1>
@@ -271,7 +272,7 @@
 					</div>
 					<!-- Resume Heading-Text -->
 					<div class="mb-12">
-						<h1 class="text-[38px] sm:text-5xl text-white font-light select-all">
+						<h1 class="text-[38px] sm:text-5xl text-white font-light">
 							Education & <span class="text-Green">Experience</span>
 						</h1>
 					</div>

@@ -29,7 +29,6 @@ const handleOpen = (event) => {
 }
 
 const handleRightHeaderMenu = () => {
-
     if (StopClick) {
         setTimeout(function () {
             document.getElementById("RightMenuContainer").style.display = "none";
@@ -39,7 +38,9 @@ const handleRightHeaderMenu = () => {
         StopClick = true;
     }
 }
-
+const handleClicked = (event) => {
+    document.getElementById("openDrawer").click();
+}
 
 // const handleOpen = () =>{
 //     OpenMenu = !OpenMenu;
