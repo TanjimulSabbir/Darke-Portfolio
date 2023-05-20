@@ -8893,6 +8893,14 @@ i{
   top: 4rem;
 }
 
+.right-4{
+  right: 1rem;
+}
+
+.right-8{
+  right: 2rem;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -11289,6 +11297,10 @@ i{
 }
 
 @media (min-width: 576px){
+  .sm\:right-8{
+    right: 2rem;
+  }
+
   .sm\:my-\[116px\]{
     margin-top: 116px;
     margin-bottom: 116px;
@@ -11297,6 +11309,10 @@ i{
   .sm\:my-\[60px\]{
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+
+  .sm\:mt-6{
+    margin-top: 1.5rem;
   }
 
   .sm\:grid-cols-2{
@@ -11339,6 +11355,18 @@ i{
 @media (min-width: 768px){
   .md\:right-16{
     right: 4rem;
+  }
+
+  .md\:top-16{
+    top: 4rem;
+  }
+
+  .md\:top-14{
+    top: 3.5rem;
+  }
+
+  .md\:top-10{
+    top: 2.5rem;
   }
 
   .md\:mx-auto{
@@ -11444,6 +11472,10 @@ i{
     position: fixed;
   }
 
+  .lg\:absolute{
+    position: absolute;
+  }
+
   .lg\:left-5{
     left: 1.25rem;
   }
@@ -11452,8 +11484,16 @@ i{
     top: 0.25rem;
   }
 
+  .lg\:top-16{
+    top: 4rem;
+  }
+
   .lg\:-ml-8{
     margin-left: -2rem;
+  }
+
+  .lg\:block{
+    display: block;
   }
 
   .lg\:flex{

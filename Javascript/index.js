@@ -42,77 +42,59 @@ const handleClicked = (event) => {
     document.getElementById("openDrawer").click();
 }
 
-// const RightSideFixedNav = document.getElementById("RightSideFixedNav");
-// RightSideFixedNav.innerHTML = `<ul class="menu text-white flex flex-col justify-center items-center border border-Primary py-3 rounded-[33px]">
-// 							<li class="group hover:bg-transparent" onclick="handleClicked(event)">
-// 							<span class="tooltip tooltip-left text-xs" data-tip="Home">	
-//                             <a class="hover:bg-transparent" href="#home">
-// 									<i class="las la-home text-[20px] text-Primary group-hover:text-Green transition-all duration-500"></i>
-// 							</a>
-//                             </span>
-// 							</li>
-// 							<li class="group" onclick="handleClicked(event)">
-//                             <span class="tooltip tooltip-left text-xs" data-tip="About">
-// 								<a class="hover:bg-transparent" href="#about">
-// 									<i
-// 										class="lar la-user text-[20px] text-Primary group-hover:text-Green transition-all duration-500 " data-tip="about">
-//                                     </i>
-// 								</a>
-//                                 </span>
-// 							</li>
-// 							<li class="group" onclick="handleClicked(event)">
-// 							<span class="tooltip tooltip-left text-xs" data-tip="Resume">	
-//                             <a class="hover:bg-transparent" href="#resume">
-// 									<i class="las la-briefcase text-[20px] text-Primary group-hover:text-Green transition-all duration-500 ">
-//                                     </i>
-									
-// 								</a>
-//                                 </span>
-// 							</li>
-// 							<li class="group" onclick="handleClicked(event)">
-// 							<span class="tooltip tooltip-left text-xs" data-tip="Services">	
-//                                 <a class="hover:bg-transparent" href="#services">
-// 									<i class="las la-stream text-[20px] text-Primary group-hover:text-Green transition-all duration-500 "></i>
-									
-// 								</a>
-//                             </span>
-// 							</li>
-// 							<li class="group" onclick="handleClicked(event)">
-//                             <span class="tooltip tooltip-left text-xs" data-tip="Skills">
-// 								<a class="hover:bg-transparent" href="#skills">
-// 									<i class="las la-shapes text-[20px] text-Primary group-hover:text-Green transition-all duration-500"></i>
-									
-// 								</a>
-//                                 </span>
-// 							</li>
-// 							<li class="group" onclick="handleClicked(event)">
-//                             <span class="tooltip tooltip-left text-xs" data-tip="Portfolios">
-// 								<a class="hover:bg-transparent" href="#portfolios">
-// 									<i
-// 										class="las la-grip-vertical text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500 "></i>
-									
-// 								</a>
-//                                 </span>
-// 							</li>
-// 							<li class="group" onclick="handleClicked(event)">
-//                             <span class="tooltip tooltip-left text-xs" data-tip="Testimonial">
-// 								<a class="hover:bg-transparent" href="#testimonial">
-// 									<i
-// 										class="lar la-comment text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500 "></i>
-								
-// 								</a>
-//                                 </span>
-// 							</li>
-// 							<li class="group" onclick="handleClicked(event)">
-//                             <span class="tooltip tooltip-left text-xs" data-tip="Contact">
-// 								<a class="hover:bg-transparent" href="#contact">
-// 									<i
-// 										class="las la-envelope text-[20px] text-Primary group-hover:text-Green transition-all duration-500 "></i>
-// 								</a>
-//                                 </span>
-// 							</li>
-// 						</ul>
-// 							</ul>`
+const RightSideFixedNav = document.getElementById("RightSideFixedNav");
+RightSideFixedNav.innerHTML = `<ul class="menu text-white border border-Primary py-3 rounded-[33px]">
+<li class="group hover:bg-transparent">
+    
+        <a class="tooltip tooltip-left text-xs bg-transparent" href="#home" data-tip="Home">
+            <i
+                class="las la-home text-[20px] text-Primary group-hover:text-Green transition-all duration-500"></i>
+        </a>
+    
+</li>
+<li class="group">
+        <a class="tooltip tooltip-left text-xs bg-transparent" href="#about" data-tip="About">
+            <i class="lar la-user text-[20px] text-Primary group-hover:text-Green transition-all duration-500 "
+                data-tip="about">
+            </i>
+        </a>
+</li>
+<li class="group">
+        <a class="tooltip tooltip-left text-xs bg-transparent" href="#resume" data-tip="Resume">
+            <i
+                class="las la-briefcase text-[20px] text-Primary group-hover:text-Green transition-all duration-500 ">
+            </i>
+        </a>
+</li>
+<li class="group">
+        <a class="tooltip tooltip-left text-xs bg-transparent" href="#services"  data-tip="Services">
+            <i
+                class="las la-stream text-[20px] text-Primary group-hover:text-Green transition-all duration-500 "></i>
+        </a>
+
+</li>
+<li class="group" >
+        <a class="tooltip tooltip-left text-xs bg-transparent" href="#skills" data-tip="Skills">
+            <i
+                class="las la-shapes text-[20px] text-Primary group-hover:text-Green transition-all duration-500"></i>
+        </a>
+</li>
+<li class="group">
+        <a class="tooltip tooltip-left text-xs bg-transparent" href="#portfolios" data-tip="Portfolios">
+            <i class="las la-grip-vertical text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500 "></i>
+        </a>
+</li>
+<li class="group">
+        <a class="tooltip tooltip-left text-xs bg-transparent" href="#testimonial" data-tip="Testimonial">
+            <i class="lar la-comment text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500 "></i>
+        </a>
+</li>
+<li class="group">
+        <a class="tooltip tooltip-left text-xs bg-transparent" href="#contact" data-tip="Contact">
+            <i class="las la-envelope text-[20px] text-Primary group-hover:text-Green transition-all duration-500 "></i>
+        </a>
+</li>
+</ul>`
 
 
 
