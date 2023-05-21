@@ -17,25 +17,67 @@ const handleSubmit = (event) => {
 
 // Right Header Menu Function
 let StopClick = false;
-let closeDrawer = false;
+let ContainerOff = false;
 document.getElementById("RightMenuContainer").style.display = "none";
 
 const handleRightMenuOpen = (event) => {
-    StopClick = false;
-    closeDrawer = true;
+    // StopClick = false;
+    // document.getElementById("RightMenuContainer").style.display = "block";
+    // document.getElementById("MenuOpenDrawer").style.display = "none";
+    // alert(StopClick+"1")
+
+    window.onload = function () { 
+        document.getElementById("MenuOpenDrawer").click();
+    }
     document.getElementById("RightMenuContainer").style.display = "block";
     document.getElementById("MenuOpenDrawer").style.display = "none";
+  
+    StopClick = true;
 }
 
-const handleRightHeaderMenu = () => {
+document.getElementById("drawerContentId").addEventListener("click", function () {
+    ContainerOff = false;
+})
+
+const handleRightHeaderMenu = (event) => {
     if (StopClick) {
-        document.getElementById("MenuOpenDrawer").style.display = "block";
-        setTimeout(function () {
-            document.getElementById("RightMenuContainer").style.display = "none";
-        }, 200);
-    } else {
-        StopClick = true;
+        alert(`stopclick+ContactOff==${ContainerOff}`)
+        if (!ContainerOff) {
+            return ContainerOff = true;
+        }
     }
+    if (ContainerOff) {
+        alert("window function")
+        window.onload = function () { 
+            document.getElementById("MenuOpenDrawer").click();
+        }
+        document.getElementById("RightMenuContainer").style.display = "none";
+        document.getElementById("MenuOpenDrawer").style.display = "block";
+        StopClick = false;
+        ContainerOff = false;
+    }
+  
+
+
+
+    // event.target.style.display = "none";
+    //     window.onload = function () {
+    //         // document.getElementById("MenuOpenDrawer").style.display = "block";
+    //         document.getElementById("RightMenuContainer").style.display = "none";
+    //   }
+
+
+    // if (StopClick) {
+    //     alert(StopClick+"2")
+    //     setTimeout(function () {
+    //         document.getElementById("MenuOpenDrawer").style.display = "block";
+    //         document.getElementById("RightMenuContainer").style.display = "none";
+    //     }, 200);
+    // } else {
+    //     StopClick = true;
+    //     alert(StopClick+"2")
+    // }
+
 }
 const handleClicked = (event) => {
     document.getElementById("MenuOpenDrawer").click();
@@ -118,7 +160,7 @@ const handleSettingDrawer = () => {
         setTimeout(function () {
             SettingDrawerContainer.style.display = "none"
         }, 200);
-        
+
     } else {
         SettingOpen = true;
     }

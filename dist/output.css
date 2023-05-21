@@ -10354,6 +10354,10 @@ i{
   --tw-bg-opacity: 0.3;
 }
 
+.bg-opacity-0{
+  --tw-bg-opacity: 0;
+}
+
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -10478,6 +10482,10 @@ i{
 
 .p-4{
   padding: 1rem;
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .px-0{
@@ -11496,6 +11504,10 @@ i{
 
   .md\:p-7{
     padding: 1.75rem;
+  }
+
+  .md\:p-32{
+    padding: 8rem;
   }
 
   .md\:text-5xl{

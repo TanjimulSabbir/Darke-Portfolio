@@ -25,7 +25,7 @@
 		<header class="">
 			<!-- Right Side Header Menu -->
 			<!-- onclick="handleRightMenuOpen()" id="MenuOpenDrawer"-->
-			<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()" class="fixed lg:absolute right-8 md:right-16 mt-4 md:top-10 lg:top-16">
+			<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()" class="fixed right-8 md:right-16 mt-4 md:top-10 lg:top-16 z-40">
 				<label for="Menu-Drawer">
 					<p class="Rounded flex inset-0 items-center justify-center bg-black border cursor-pointer text-lg">
 						<i class="bi bi-grid"></i>
@@ -46,14 +46,14 @@
 		<!-- id="RightMenuContainer"  onclick="handleRightHeaderMenu()" -->
 
 		<div id="RightMenuContainer" onclick="handleRightHeaderMenu()"
-			class="fixed right-0 w-screen h-full min-h-full bg-black bg-opacity-30 z-30">
+			class="fixed right-0 w-full h-full min-h-full z-30">
 			<div class="drawer drawer-end">
 				<input id="Menu-Drawer" type="checkbox" class="drawer-toggle" />
 				<div class="drawer-content ">
 				</div>
 				<div class="drawer-side">
 					<label for="Menu-Drawer" class="drawer-overlay"></label>
-					<div class="pl-20 pt-14 h-full w-full max-w-[345px] bg-black text-base-content">
+					<div id="drawerContentId" class="pl-20 pt-14 h-full w-full max-w-[345px] bg-black text-base-content">
 						<p class="pl-4 mb-7 text-lg text-Primary">Menu</p>
 						<ul class="Hovered menu text-Primary">
 							<li class="group" onclick="handleClicked(event)">
@@ -152,7 +152,7 @@
 					</div> 
 					<div class="drawer-side">
 						<label for="Setting-Drawer" class="drawer-overlay"></label>
-						<div class="w-full max-w-5xl bg-[#191919] p-32 text-white">
+						<div class="w-full max-w-5xl bg-[#191919] p-4 md:p-32 text-white">
 							<div class="global-color">
 								<div class="inner">
 									<div class="overlay"></div>
@@ -192,7 +192,6 @@
 				  </div>
 			</div>
 		</div>
-
 		<!--Section-1 & From Large Device Fixed-Left Section -->
 		<section
 			class="relative lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:h-screen border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-4 md:p-7 md:max-w-3xl lg:max-w-[392px] md:mx-auto" data-theme="dracula">

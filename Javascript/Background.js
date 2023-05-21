@@ -1,6 +1,6 @@
 const BackgroundColorChange = (color) => {
-    const htmlElement = document.getElementById("HtmlElement");
-  const newTheme = color; // Change to the desired theme
+ document.body.style.backgroundColor = color;
+  const newTheme = color; 
 
-  htmlElement.dataset.theme = newTheme;
+  // htmlElement.dataset.theme = newTheme;
 }
