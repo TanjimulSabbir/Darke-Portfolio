@@ -1,0 +1,88 @@
+
+.global-color .inner .global-color-option .global-color-option-inner .themes li a::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    opacity: 0;
+    transition: .3s;
+}
+.global-color .inner .global-color-option .global-color-option-inner .themes li a:hover::before,
+.global-color .inner .global-color-option .global-color-option-inner .themes li.active a::before {
+    opacity: 1;
+}
+
+.global-color.active .inner .global-color-option {
+    margin-right: 0;
+}
+
+.global-color .global-color-option .color-boxed a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    background: #28e98c;
+}
+.global-color .global-color-option .color-boxed a::before {
+    content: '';
+    border: 1px solid #fff;
+    position: absolute;
+    border-radius: 50%;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .3s;
+}
+.global-color .global-color-option .color-boxed a::after {
+    content: '';
+    position: absolute;
+    border: none;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0;
+}
+.global-color .global-color-option .color-boxed a.clr-active::after,
+.global-color .global-color-option .color-boxed a:hover::after,
+.global-color .global-color-option .color-boxed a:hover::before,
+.global-color .global-color-option .color-boxed a.clr-active::before {
+    opacity: 1;
+}
+.global-color .global-color-option .color-boxed a:nth-child(2) {
+    background: #e4af12;
+}
+.global-color .global-color-option .color-boxed a:nth-child(3) {
+    background: #fe6f1d;
+}
+.global-color .global-color-option .color-boxed a:nth-child(4) {
+    background: #14c5fd;
+}
+.global-color .global-color-option .color-boxed a:nth-child(5) {
+    background: #c0c0c0;
+}
+.global-color .global-color-option .color-boxed a:nth-child(6) {
+    background: #1338f3;
+}
+.global-color .global-color-option .color-boxed a:nth-child(7) {
+    background: #f31313;
+}
+.global-color .global-color-option .color-boxed a:nth-child(8) {
+    background: #ff99cc;
+}
+.global-color .global-color-option .color-boxed a:nth-child(9) {
+    background: #cceb00;
+}
+.global-color .global-color-option .color-boxed a i {
+    font-size: 14px;
+}

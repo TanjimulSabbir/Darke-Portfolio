@@ -1,6 +1,5 @@
 <!doctype html>
-<html data-theme="black" class="scroll-smooth scroll-pt-4
-">
+<html id="HtmlElement" data-theme="black" class="scroll-smooth scroll-pt-4">
 
 <head>
 	<meta charset="UTF-8">
@@ -15,13 +14,13 @@
 	<link rel="stylesheet" href="./CSS/animation.css">
 	<!-- Setting Menu CSS Style Sheet -->
 	<link rel="stylesheet" href="./CSS/SettingMenu.css">
-	<!-- Icon -->
+	<!-- -->
 	<link rel="stylesheet"
 		href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
 
 <body>
-	<main class="py-5 md:pb-5 lg:pt-0">
+	<main class="my-5 md:mb-5 lg:mt-0">
 
 		<header class="">
 			<!-- Right Side Header Menu -->
@@ -56,18 +55,17 @@
 					<label for="Menu-Drawer" class="drawer-overlay"></label>
 					<div class="pl-20 pt-14 h-full w-full max-w-[345px] bg-black text-base-content">
 						<p class="pl-4 mb-7 text-lg text-Primary">Menu</p>
-						<ul class="menu text-Primary">
+						<ul class="Hovered menu text-Primary">
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#home">
-									<i
-										class="las la-home text-[20px] text-Primary group-hover:text-Green transition-all duration-700"></i>
+									<i	class="las la-home text-[20px] text-Primary group-hover:text-Green transition-all duration-700"></i>
 									<span class="text-xs group-hover:text-white transition-all duration-500">Home</span>
 								</a>
 							</li>
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#about">
 									<i
-										class="lar la-user text-[20px] text-Primary  group-hover:text-Green transition-all duration-500"></i>
+										class="lar la-user text-[20px] text-Primary group-hover:text-Green transition-all duration-500"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">About</span>
 								</a>
@@ -156,37 +154,35 @@
 						<label for="Setting-Drawer" class="drawer-overlay"></label>
 						<div class="w-full max-w-5xl bg-[#191919] p-32 text-white">
 							<div class="global-color">
-								<span class="setting-toggle">
-									<i class="las la-cog"></i>
-								</span>
 								<div class="inner">
 									<div class="overlay"></div>
 									<div class="global-color-option">
-										<span class="close-settings">
+										<span class="absolute right-5 top-5 text-xl cursor-pointer">
 											<i class="las la-times"></i>
 										</span>
-										<h2 class="text-[34px] font-extralight leading-[41px] mb-8 md:mb-14">Configuration</h2>
+										<h2 class="text-[34px] font-extralight leading-[1.2rem] mb-10 md:mb-20">Configuration</h2>
 										<div class="global-color-option-inner">
-											<p class="text-[13px] uppercase mb-4 md:mb-7">Colors</p>
-											<div class="color-boxed mb-8 md:mb-16">
-												<a href="#" class="clr-active" onclick="color1();"></a>
-												<a href="#" onclick="color2();"></a>
-												<a href="#" onclick="color3();"></a>
-												<a href="#" onclick="color4();"></a>
-												<a href="#" onclick="color5();"></a>
-												<a href="#" onclick="color6();"></a>
-												<a href="#" onclick="color7();"></a>
-												<a href="#" onclick="color8();"></a>
+											<p class="text-[13px] uppercase mb-4 md:mb-8">Colors</p>
+											<div class="color-boxed mb-10 md:mb-[109px] flex gap-7 pt-7">
+												<a href="#" class="clr-active" onclick="handleChangeColor('#28e98c');"></a>
+												<a href="#" onclick="handleChangeColor('#e4af12')"></a>
+												<a href="#" onclick="handleChangeColor('#fe6f1d');"></a>
+												<a href="#" onclick="handleChangeColor('#14c5fd');"></a>
+												<a href="#" onclick="handleChangeColor('#c0c0c0');"></a>
+												<a href="#" onclick="handleChangeColor('#1338f3');"></a>
+												<a href="#" onclick="handleChangeColor('#f31313');"></a>
+												<a href="#" onclick="handleChangeColor('#ff99cc');"></a>
+            <a href="#" onclick="handleChangeColor('#cceb00');"></a>
 											</div>
 						
-											<p class="text-Primary mb-4 md:mb-7 uppercase">THREE DIMENSIONAL SHAPES</p>
-											<ul class="text-sm font-medium grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-5 md:gap-10">
-												<li><a href="./home1.html">Earth Lines Sphere</a></li>
-												<li><a href="./home2.html">3D Abstract Ball</a></li>
-												<li><a href="./home3.html">Water Waves</a></li>
-												<li><a href="./home4.html">Liquids Wavy</a></li>
-												<li><a href="./home6.html">Solid Color</a></li>
-												<li><a href="./home5.html">Simple Strings</a></li>
+											<p class="text-[13px] uppercase mb-5 md:mb-12">Three Dimension Shapes</p>
+											<ul class="text-sm font-medium grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-6 md:gap-12">
+												<li class="btn btn-accent" onclick="BackgroundColorChange('#B799FF')"><p>Earth Lines Sphere</p></li>
+												<li class="btn btn-accent" onclick="BackgroundColorChange('#ACBCFF')"><p>3D Abstract Ball</p></li>
+												<li class="btn btn-accent" onclick="BackgroundColorChange('#62B6B7')"><p>Water Waves</p></li>
+												<li class="btn btn-accent" onclick="BackgroundColorChange('#81C6E8')"><p>Liquids Wavy</p></li>
+												<li class="btn btn-accent" onclick="BackgroundColorChange('#231955')"><p>Solid Color</p></li>
+												<li class="btn btn-accent" onclick="BackgroundColorChange('#8294C4')"><p>Simple Strings</p></li>
 											</ul>
 										</div>
 									</div>
@@ -200,7 +196,7 @@
 
 		<!--Section-1 & From Large Device Fixed-Left Section -->
 		<section
-			class="lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:h-screen border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-4 md:p-7 md:max-w-3xl lg:max-w-[392px] md:mx-auto">
+			class="relative lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:h-screen border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-4 md:p-7 md:max-w-3xl lg:max-w-[392px] md:mx-auto" data-theme="dracula">
 			<div>
 				<div class="flex justify-between items-center">
 					<div>
@@ -238,8 +234,8 @@
 						</div>
 
 						<div>
-							<button class="Btn flex justify-center items-center">
-								<i class="fa-regular fa-envelope mr-2 text-xl font-bold text-black"></i>
+							<button class="Btn flex justify-center items-center group">
+								<i class="las la-envelope mr-2 text-xl font-bold text-black group-hover:text-Green duration-500 custom-hover"></i>
 								<a>Hire Me!</a>
 							</button>
 						</div>
@@ -249,24 +245,23 @@
 		</section>
 		<!--From Large Device Main Right-Section -->
 
-		<div class="UniversalPadding lg:w-full lg:-ml-8 lg:flex lg:justify-end">
+		<div class="UniversalPadding lg:w-screen min-h-full lg:-ml-8 lg:flex lg:justify-end" data-theme="dracula">
 			<!-- Right Flex -->
 			<div class="lg:w-[392px]"></div>
 
-			<div class="md:max-w-3xl mx-auto">
+			<div class="w-full md:max-w-3xl mx-auto">
 				<!-- Section-2 & Introduce & Large Device Right-Top  -->
-				<section id="home">
-					<div>
+				<section id="home" >
 						<div class="Heading mt-[60px] mb-14">
 							<p class="text-white">
-								<i class="bi bi-house-door"></i>
+								<i class="las la-home"></i>
 							</p>
 							<p>Introduce</p>
 						</div>
 						<div class="mb-10">
 							<h1
 								class="text-[50px] leading-[65px] md:text-[58px] lg:text-[78px] font-light text-white scroll-p-5 lg:leading-[90px] mb-11">
-								Say Hi from <span class="text-Green">Drake</span>, Framer Designer and Developer</h1>
+								Say Hi from <span class="ChangeColor text-Green">Drake</span>, Framer Designer and Developer</h1>
 							<p class="mb-6 text-Primary w-full max-w-[480px]">I design and code beautifully simple
 								things and i love what i do. Just simple like that!</p>
 						</div>
@@ -282,24 +277,23 @@
 						<!-- Experience -->
 						<div class="mt-14 flex justify-start items-center space-x-24">
 							<h1 class="space-y-7 flex flex-col">
-								<span class="text-Green text-5xl md:text-7xl font-light">10+</span>
+								<span class="text-Green text-5xl md:text-7xl font-light ChangeColor">10+</span>
 								<span class="text-sm leading-6">YEARS OF <br>
 									EXPERIENCE</span>
 							</h1>
 							<h1 class="space-y-7 flex flex-col">
-								<span class="text-Green  text-5xl md:text-7xl font-light">182+</span>
-								<span class="text-sm leading-6">PROJECTS COMPLETED ON 15 <br><span>COUNTRIES</span>
+								<span class="text-Green text-5xl md:text-7xl font-light ChangeColor">182+</span>
+								<span class="text-sm leading-6">PROJECTS COMPLETED ON 15 <br> COUNTRIES
 								</span>
 							</h1>
 						</div>
-					</div>
 				</section>
 				<!-- Section-3 && About -->
 				<section id="about" class="my-[64px] sm:my-[116px]">
 					<!-- About Title -->
 					<div class="Heading my-[48px] md:my-[60px]">
 						<p>
-							<i class="fa-regular fa-user"></i>
+							<i class="las la-user"></i>
 						</p>
 						<p>About</p>
 					</div>
@@ -308,7 +302,7 @@
 					<div class="mb-10">
 						<h1 class="text-[38px] sm:text-5xl leading-[50px] text-white sm:leading-[60px] font-light">Every
 							great design begin with
-							<br class="hidden  md:block"> an even <span class="text-Green">better
+							<br class="hidden md:block"> an even <span class="ChangeColor text-Green">better
 								story</span>
 						</h1>
 					</div>
@@ -328,14 +322,14 @@
 					<!-- Resume Title -->
 					<div class="Heading my-10 sm:my-[60px]">
 						<p>
-							<i class="bi bi-briefcase"></i>
+							<i class="las la-briefcase"></i>
 						</p>
 						<p>Resume</p>
 					</div>
 					<!-- Resume Heading-Text -->
 					<div class="mb-12">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light">
-							Education & <span class="text-Green">Experience</span>
+							Education & <span class="ChangeColor text-Green">Experience</span>
 						</h1>
 					</div>
 					<!-- Expericen and Education -->
@@ -398,14 +392,14 @@
 					<!-- Service Heading-Text -->
 					<div class="Heading my-[48px] sm:my-[60px]">
 						<p>
-							<i class="bi bi-stack"></i>
+							<i class="las la-stream "></i>
 						</p>
 						<p>Service</p>
 					</div>
 					<!-- Service Heading-Text -->
 					<div class="mb-12">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light">
-							My <span class="text-Green">Specializations</span>
+							My <span class="ChangeColor text-Green">Specializations</span>
 						</h1>
 					</div>
 					<!--Service Border Box -->
@@ -462,14 +456,14 @@
 					<!-- Skill Title -->
 					<div class="Heading my-[48px] md:my-[60px]">
 						<p>
-							<i class="bi bi-grid-1x2"></i>
+							<i class="las la-shapes"></i>
 						</p>
 						<p>My Skills</p>
 					</div>
 					<!-- Skill Heading-Text -->
 					<div class="mb-12">
 						<h1 class="text-[38px] md:text-5xl text-white font-light">
-							My <span class="text-Green">Advantages</span>
+							My <span class="ChangeColor text-Green">Advantages</span>
 						</h1>
 					</div>
 					<!--Skills Border Box -->
@@ -477,37 +471,37 @@
 						<!-- 01 -->
 						<div class="SkillBox">
 							<img src="./Assets/images/figma.png" alt="" srcset="">
-							<h1 class="text-Green text-[30px] font-light">92%</h1>
+							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">Figma</p>
 						</div>
 						<!-- 02 -->
 						<div class="SkillBox">
 							<img src="./Assets/images/framer.png" alt="" srcset="">
-							<h1 class="text-Green text-[30px] font-light">92%</h1>
+							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">Framer</p>
 						</div>
 						<!-- 03 -->
 						<div class="SkillBox">
 							<img src="./Assets/images/webflow.png" alt="" srcset="">
-							<h1 class="text-Green text-[30px] font-light">92%</h1>
+							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">Webflow</p>
 						</div>
 						<!-- 04 -->
 						<div class="SkillBox">
 							<img src="./Assets/images/react.png" alt="" srcset="">
-							<h1 class="text-Green text-[30px] font-light">92%</h1>
+							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">React</p>
 						</div>
 						<!-- 05 -->
 						<div class="SkillBox">
 							<img src="./Assets/images/wordpress.png" alt="" srcset="">
-							<h1 class="text-Green text-[30px] font-light">92%</h1>
+							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">WordPress</p>
 						</div>
 						<!-- 06 -->
 						<div class="SkillBox">
 							<img src="./Assets/images/laravel.png" alt="" srcset="">
-							<h1 class="text-Green text-[30px] font-light">92%</h1>
+							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">Laravel/PHP</p>
 						</div>
 					</div>
@@ -517,14 +511,14 @@
 					<!-- Portfolio Title -->
 					<div class="Heading my-[48px] sm:my-[60px]">
 						<p>
-							<i class="bi bi-columns-gap"></i>
+							<i class="lar la-comment"></i>
 						</p>
 						<p>Portfolio</p>
 					</div>
 					<!-- Portfolio Heading-Text -->
 					<div class="mb-12">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light">
-							Featured <span class="text-Green"> Projects</span>
+							Featured <span class="ChangeColor text-Green"> Projects</span>
 						</h1>
 					</div>
 					<!--Image Box -->
@@ -662,7 +656,7 @@
 					<!-- Testimonial Heading-Text -->
 					<div class="mb-12">
 						<h1 class="text-[38px] leading-[53px] sm:text-5xl sm:leading-[60px] text-white font-light">
-							Trusted by <span class="text-Green"> Hundered Clients</span>
+							Trusted by <span class="ChangeColor text-Green"> Hundered Clients</span>
 						</h1>
 					</div>
 					<!-- Testimonial Box -->
@@ -679,7 +673,7 @@
 										<h3 class="text-lg text-white">Paublo Dybala</h3>
 										<p class="text-sm">
 											<span class="text-Primary">CEO of </span>
-											<span class="text-Green">IBM Global</span>
+											<span class="ChangeColor text-Green">IBM Global</span>
 										</p>
 									</div>
 								</div>
@@ -810,7 +804,7 @@
 					<!-- Pricing Heading-Text -->
 					<div class="mb-12">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light">
-							My <span class="text-Green"> Pricing</span>
+							My <span class="text-Green ChangeColor"> Pricing</span>
 						</h1>
 					</div>
 
@@ -818,7 +812,7 @@
 					<div class="flex flex-col md:flex-row justify-center h-full min-h-full gap-4 md:gap-6">
 						<!-- Table 01 -->
 						<div
-							class="flex-1 border border-Primary rounded-3xl flex flex-col p-10 transition-all hover:border-Green duration-300">
+							class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col p-10 transition-all hover:border-Green duration-300">
 							<!-- 01 -->
 							<div class="flex justify-between mb-8">
 								<h2 class="text-lg text-white font-light uppercase">Basic</h2>
@@ -852,7 +846,7 @@
 						</div>
 						<!-- Table 02 -->
 						<div
-							class="flex-1 border border-Primary rounded-3xl flex flex-col  p-10 transition-all hover:border-Green duration-300">
+							class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col  p-10 transition-all hover:border-Green duration-300">
 							<!-- 01 -->
 							<div class="flex justify-between mb-8">
 								<h2 class="text-lg text-white font-light uppercase">PREMIUM</h2>
@@ -890,7 +884,7 @@
 					<div class="text-sm text-white mt-16 space-y-[6px]">
 						<p>Don't find any package match with your plan!</p>
 						<p>Want to setup a new tailor-made package for only you?.
-							<a class="text-Green underline" href="#">Contact Us</a>
+							<a class="text-Green underline ChangeColor" href="#">Contact Us</a>
 						</p>
 					</div>
 				</section>
@@ -906,7 +900,7 @@
 					<!-- Contact Heading-Text -->
 					<div class="my-[60px]">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light mb-[33px]">
-							Let's Work <span class="text-Green">Together!</span>
+							Let's Work <span class="text-Green ChangeColor">Together!</span>
 						</h1>
 						<h4 class="text-2xl text-white font-light">hello@drake.design</h4>
 					</div>
@@ -1005,6 +999,8 @@
 	</main>
 	<script src="./Javascript/index.js"></script>
 	<script src="./Javascript/Slide.js"></script>
+ <script src="./Javascript/Color.js"></script>
+ <script src="./Javascript/Background.js"></script>
 </body>
 
 </html>

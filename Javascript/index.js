@@ -42,7 +42,7 @@ const handleClicked = (event) => {
 }
 
 const RightSideFixedNav = document.getElementById("RightSideFixedNav");
-RightSideFixedNav.innerHTML = `<ul class="menu text-white border border-Primary py-3 rounded-[33px]">
+RightSideFixedNav.innerHTML = `<ul class="Hovered menu text-white border border-Primary py-3 rounded-[33px]">
 <li class="group hover:bg-transparent">
     
         <a class="tooltip tooltip-left text-xs bg-transparent" href="#home" data-tip="Home">
