@@ -29,10 +29,10 @@ const handleRightMenuOpen = (event) => {
 
 const handleRightHeaderMenu = () => {
     if (StopClick) {
+        document.getElementById("MenuOpenDrawer").style.display = "block";
         setTimeout(function () {
             document.getElementById("RightMenuContainer").style.display = "none";
-            document.getElementById("MenuOpenDrawer").style.display = "block";
-        }, 100);
+        }, 200);
     } else {
         StopClick = true;
     }
@@ -95,77 +95,13 @@ RightSideFixedNav.innerHTML = `<ul class="menu text-white border border-Primary 
 </li>
 </ul>`
 
-
-
-// const handleRightMenuOpen = () =>{
-//     OpenMenu = !OpenMenu;
-//     window.onload = function () {
-//         if (OpenMenu) {
-//             document.getElementById("MenuOpenDrawer").click();
-//           return  document.getElementById("RightMenuContainer").style.display = "block";
-//         } 
-
-//     };
-//     alert(OpenMenu + "handleRightMenuOpenBtn")
-// }
-
-// const handleRightHeaderMenu = () => {
-//     if (OpenMenu) {
-//         OpenMenu = false;
-//          document.getElementById("RightMenuContainer").style.display = "none";
-//     } 
-
-//     alert(OpenMenu)
-// }
-
-
-
-console.log(document.getElementById("RightMenuContainer"))
-
-//     OpenMenu = !OpenMenu;
-//     if (!OpenMenu) {
-//         window.onload=function(){
-//             document.getElementById("MenuOpenDrawer").click();
-//           };
-//         return document.getElementById("RightMenuContainer").style.display="none";
-//     } else {
-//         document.getElementById("RightMenuContainer").style.display="block"
-//     document.getElementById("RightMenuContainer").innerHTML=`<div class="drawer drawer-end border border-red-600">
-//     <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
-//     <div class="drawer-content ">
-//     </div>
-//     <div class="drawer-side">
-//       <label for="my-drawer-4" id="DrawerClose" class="drawer-overlay"></label>
-//       <ul class="menu p-4 w-full max-w-[345px] bg-black z-50 text-base-content">
-//         <li><a>Sidebar Item 1</a></li>
-//         <li><a>Sidebar Item 2</a></li>
-//       </ul>
-//     </div>
-//   </div>`
-// }
-// style.display = "block"
-// const container=document.getElementById("RightMenuContainer");
-//     window.onload = function () {
-//                 document.getElementById("MenuOpenDrawer").click();
-//     };
-//     console.log(container)
-// }
-
-// const handleClose = (event) => {
-//     window.onload = function () {
-//         document.getElementById("RightMenuContainer").style.display = "block";
-//         document.getElementById("DrawerClose").click();
-//     };
-//     document.getElementById("RightMenuContainer").style.display = "none";
-// }
-
-
 // Setting Drawer Menu
 
 // Setting Button for Drawer Open
 
 let SettingOpenDrawerBtn = document.getElementById("SettingOpenDrawer");
 let SettingDrawerContainer = document.getElementById("SettingDrawerContainer");
+let SettingDrawerContent = document.getElementById("settingDrawerContent");
 
 let SettingOpen = false;
 SettingDrawerContainer.style.display = "none"
@@ -173,20 +109,17 @@ SettingDrawerContainer.style.display = "none"
 const handleSettingOpen = () => {
     SettingOpen = false;
     SettingDrawerContainer.style.display = "block"
-    window.onload = function () {
-        SettingOpenDrawerBtn.click();
-    };
-    SettingOpenDrawerBtn.style.opacity=0;
-    alert("Hellow!")
+    SettingOpenDrawerBtn.style.display = "none";
 }
 
 const handleSettingDrawer = () => {
-    if (!SettingOpen) {
-        return;
+    if (SettingOpen) {
+        SettingOpenDrawerBtn.style.display = "block";
+        setTimeout(function () {
+            SettingDrawerContainer.style.display = "none"
+        }, 200);
+        
+    } else {
+        SettingOpen = true;
     }
-    // else {
-    //     SettingOpen = true;
-    // }
-    // SettingDrawerContainer.style.display = "none"
-    // SettingOpenDrawerBtn.click();
 }

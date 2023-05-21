@@ -8873,8 +8873,8 @@ i{
   right: 1.25rem;
 }
 
-.right-6{
-  right: 1.5rem;
+.right-8{
+  right: 2rem;
 }
 
 .top-1\/2{
@@ -8887,18 +8887,6 @@ i{
 
 .top-14{
   top: 3.5rem;
-}
-
-.top-16{
-  top: 4rem;
-}
-
-.right-4{
-  right: 1rem;
-}
-
-.right-8{
-  right: 2rem;
 }
 
 .isolate{
@@ -9224,8 +9212,8 @@ i{
   width: 100vw;
 }
 
-.w-80{
-  width: 20rem;
+.max-w-5xl{
+  max-width: 64rem;
 }
 
 .max-w-\[250px\]{
@@ -9243,10 +9231,6 @@ i{
 .max-w-fit{
   max-width: -moz-fit-content;
   max-width: fit-content;
-}
-
-.max-w-5xl{
-  max-width: 64rem;
 }
 
 .flex-1{
@@ -10330,6 +10314,11 @@ i{
   background-color: rgb(101 101 101 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#919191\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(145 145 145 / var(--tw-bg-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -10344,14 +10333,9 @@ i{
   background-color: transparent;
 }
 
-.bg-base-100{
+.bg-\[\#191919\]{
   --tw-bg-opacity: 1;
-  background-color: hsl(var(--b1) / var(--tw-bg-opacity));
-}
-
-.bg-\[\#919191\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(145 145 145 / var(--tw-bg-opacity));
+  background-color: rgb(25 25 25 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-30{
@@ -10478,6 +10462,10 @@ i{
 
 .p-4{
   padding: 1rem;
+}
+
+.p-32{
+  padding: 8rem;
 }
 
 .px-0{
@@ -10677,6 +10665,14 @@ i{
   line-height: 1rem;
 }
 
+.text-\[13px\]{
+  font-size: 13px;
+}
+
+.text-\[34px\]{
+  font-size: 34px;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -10687,6 +10683,14 @@ i{
 
 .font-thin{
   font-weight: 100;
+}
+
+.font-extralight{
+  font-weight: 200;
+}
+
+.font-medium{
+  font-weight: 500;
 }
 
 .uppercase{
@@ -10779,6 +10783,10 @@ i{
 
 .leading-\[65px\]{
   line-height: 65px;
+}
+
+.leading-\[41px\]{
+  line-height: 41px;
 }
 
 .text-Green{
@@ -11315,10 +11323,6 @@ i{
 }
 
 @media (min-width: 576px){
-  .sm\:right-8{
-    right: 2rem;
-  }
-
   .sm\:my-\[116px\]{
     margin-top: 116px;
     margin-bottom: 116px;
@@ -11327,10 +11331,6 @@ i{
   .sm\:my-\[60px\]{
     margin-top: 60px;
     margin-bottom: 60px;
-  }
-
-  .sm\:mt-6{
-    margin-top: 1.5rem;
   }
 
   .sm\:grid-cols-2{
@@ -11375,14 +11375,6 @@ i{
     right: 4rem;
   }
 
-  .md\:top-16{
-    top: 4rem;
-  }
-
-  .md\:top-14{
-    top: 3.5rem;
-  }
-
   .md\:top-10{
     top: 2.5rem;
   }
@@ -11400,6 +11392,18 @@ i{
   .md\:my-\[60px\]{
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+
+  .md\:mb-14{
+    margin-bottom: 3.5rem;
+  }
+
+  .md\:mb-16{
+    margin-bottom: 4rem;
+  }
+
+  .md\:mb-7{
+    margin-bottom: 1.75rem;
   }
 
   .md\:block{
@@ -11444,6 +11448,10 @@ i{
 
   .md\:gap-6{
     gap: 1.5rem;
+  }
+
+  .md\:gap-10{
+    gap: 2.5rem;
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]){

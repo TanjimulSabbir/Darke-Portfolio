@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<!-- Animation Style Sheet -->
 	<link rel="stylesheet" href="./CSS/animation.css">
+	<!-- Setting Menu CSS Style Sheet -->
+	<link rel="stylesheet" href="./CSS/SettingMenu.css">
 	<!-- Icon -->
 	<link rel="stylesheet"
 		href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
@@ -24,16 +26,16 @@
 		<header class="">
 			<!-- Right Side Header Menu -->
 			<!-- onclick="handleRightMenuOpen()" id="MenuOpenDrawer"-->
-			<div onclick="handleRightMenuOpen()" class="fixed lg:absolute right-8 md:right-16 mt-4 md:top-10 lg:top-16">
-				<label for="Menu-Drawer" id="MenuOpenDrawer">
+			<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()" class="fixed lg:absolute right-8 md:right-16 mt-4 md:top-10 lg:top-16">
+				<label for="Menu-Drawer">
 					<p class="Rounded flex inset-0 items-center justify-center bg-black border cursor-pointer text-lg">
 						<i class="bi bi-grid"></i>
 					</p>
 				</label>
 			</div>
 			<!-- Left Side Header Menu -->
-			<div onclick="handleSettingOpen()" class="fixed left-[12px] top-14 z-50">
-				<label for="Setting-Drawer" id="SettingOpenDrawer">
+			<div id="SettingOpenDrawer" onclick="handleSettingOpen()" class="fixed left-[12px] top-14 z-50">
+				<label for="Setting-Drawer">
 				<p class="Rounded border-none hover:border-none cursor-pointer text-lg">
 					<i class="bi bi-gear text-Green"></i>
 				</p>
@@ -145,17 +147,52 @@
 
 		<!-- Setting Drawer Box -->
 		<div id="SettingDrawerContainer" onclick="handleSettingDrawer()">
-			<div class="absolute w-screen h-full min-h-full bg-black bg-opacity-30 z-30">
+			<div class="absolute w-full h-full min-h-full bg-black bg-opacity-30 z-30">
 				<div class="drawer drawer-end">
 					<input id="Setting-Drawer" type="checkbox" class="drawer-toggle" />
 					<div class="drawer-content">
 					</div> 
 					<div class="drawer-side">
-					  <label for="Setting-Drawer" class="drawer-overlay"></label>
-					  <ul class="menu p-4 w-full max-w-5xl bg-[#919191] text-base-content">
-						<li><a>Sidebar Item 1</a></li>
-						<li><a>Sidebar Item 2</a></li>
-					  </ul>
+						<label for="Setting-Drawer" class="drawer-overlay"></label>
+						<div class="w-full max-w-5xl bg-[#191919] p-32 text-white">
+							<div class="global-color">
+								<span class="setting-toggle">
+									<i class="las la-cog"></i>
+								</span>
+								<div class="inner">
+									<div class="overlay"></div>
+									<div class="global-color-option">
+										<span class="close-settings">
+											<i class="las la-times"></i>
+										</span>
+										<h2 class="text-[34px] font-extralight leading-[41px] mb-8 md:mb-14">Configuration</h2>
+										<div class="global-color-option-inner">
+											<p class="text-[13px] uppercase mb-4 md:mb-7">Colors</p>
+											<div class="color-boxed mb-8 md:mb-16">
+												<a href="#" class="clr-active" onclick="color1();"></a>
+												<a href="#" onclick="color2();"></a>
+												<a href="#" onclick="color3();"></a>
+												<a href="#" onclick="color4();"></a>
+												<a href="#" onclick="color5();"></a>
+												<a href="#" onclick="color6();"></a>
+												<a href="#" onclick="color7();"></a>
+												<a href="#" onclick="color8();"></a>
+											</div>
+						
+											<p class="text-Primary mb-4 md:mb-7 uppercase">THREE DIMENSIONAL SHAPES</p>
+											<ul class="text-sm font-medium grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-5 md:gap-10">
+												<li><a href="./home1.html">Earth Lines Sphere</a></li>
+												<li><a href="./home2.html">3D Abstract Ball</a></li>
+												<li><a href="./home3.html">Water Waves</a></li>
+												<li><a href="./home4.html">Liquids Wavy</a></li>
+												<li><a href="./home6.html">Solid Color</a></li>
+												<li><a href="./home5.html">Simple Strings</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>						
+						</div>
 					</div>
 				  </div>
 			</div>
