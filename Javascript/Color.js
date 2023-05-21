@@ -23,15 +23,15 @@ const handleChangeColor = (color) => {
     element.style.color = color; 
     });
 
-    const iElements = document.querySelectorAll("i");
-    iElements.forEach((iElement) => {
-        iElement.addEventListener("mouseover", function() {
-            this.style.color = color;
-        });
-        iElement.addEventListener("mouseout", function() {
-            this.style.color = "";
-          });
-    });
+    // const iElements = document.querySelectorAll("i");
+    // iElements.forEach((iElement) => {
+    //     iElement.addEventListener("mouseover", function() {
+    //         this.style.color = color;
+    //     });
+    //     iElement.addEventListener("mouseout", function() {
+    //         this.style.color = "";
+    //       });
+    // });
 
     const styleElement = document.createElement("style");
   styleElement.textContent = `
@@ -46,10 +46,6 @@ const handleChangeColor = (color) => {
     .Rounded:hover{
         border-color: ${color};
     }
-   
-    li:hover .group-hover: {
-        color: red; 
-      }
     .SkillBox:hover{
         border-color: ${color};
     }
@@ -65,14 +61,7 @@ const handleChangeColor = (color) => {
       .Pricing{
         border-color: ${color};
       }
-      @layer utilities{
-        li:hover i {
-          color: ${color};
-        }
-        .Btn:hover i{
-          color: ${color};
-      }
-      }
+     
   `;
 
     document.head.appendChild(styleElement);

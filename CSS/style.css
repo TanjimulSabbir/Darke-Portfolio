@@ -38,7 +38,7 @@
 
 @layer components{
  .Btn{
-  @apply w-full uppercase bg-Green text-black border-2 border-green-500 rounded-full transition duration-500 ease-in px-14 py-3 hover:bg-transparent hover:text-green-500;
+  @apply w-full uppercase bg-Green text-black border-2 border-green-500 rounded-full transition duration-500 ease-in px-14 py-3 hover:bg-transparent hover:text-Green;
  }
  .Rounded{
   @apply border-2 border-[#565656] text-Primary w-[50px] h-[50px] rounded-full transition duration-200 hover:text-Green hover:border-Green;
@@ -77,9 +77,9 @@
  
 /* 9783-C4CE */
 
-@layer utilities{
-  li:hover i {
+@layer utilities {
+  .group:hover li i {
     background-color: blue;
-    color: rgb(4, 143, 148);
+    color: red;
   }
 }

@@ -8560,7 +8560,7 @@ i{
 .Btn:hover{
   background-color: transparent;
   --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
+  color: rgb(40 233 140 / var(--tw-text-opacity));
 }
 
 .Rounded{
@@ -11210,9 +11210,9 @@ i{
   content: var(--tw-content);
 }
 
-li:hover i {
+.group:hover li i {
   background-color: blue;
-  color: rgb(4, 143, 148);
+  color: red;
 }
 
 /* 9783-C4CE */
