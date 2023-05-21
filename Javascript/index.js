@@ -171,23 +171,22 @@ let SettingOpen = false;
 SettingDrawerContainer.style.display = "none"
 
 const handleSettingOpen = () => {
-    if (SettingOpen) {
-        return ;
-    }
     SettingOpen = false;
-    SettingDrawerContainer.style.display="block"
+    SettingDrawerContainer.style.display = "block"
+    window.onload = function () {
+        SettingOpenDrawerBtn.click();
+    };
+    SettingOpenDrawerBtn.style.opacity=0;
+    alert("Hellow!")
 }
-
 
 const handleSettingDrawer = () => {
-    if (SettingOpen) {
-        console.log(SettingDrawerContainer)
-        if (SettingDrawerContainer) {
-            SettingDrawerContainer.style.display="none";
-        }
-        return SettingOpen = false;
-    } else {
-            return SettingOpen = true;
+    if (!SettingOpen) {
+        return;
     }
+    // else {
+    //     SettingOpen = true;
+    // }
+    // SettingDrawerContainer.style.display = "none"
+    // SettingOpenDrawerBtn.click();
 }
-alert(SettingOpen);
