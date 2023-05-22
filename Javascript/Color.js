@@ -61,7 +61,9 @@ const handleChangeColor = (color) => {
       .Pricing{
         border-color: ${color};
       }
-     
+        .Rounded:hover .custom-hover {
+          color: ${color};
+        }
   `;
 
     document.head.appendChild(styleElement);

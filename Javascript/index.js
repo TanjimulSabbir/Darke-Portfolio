@@ -21,17 +21,8 @@ let ContainerOff = false;
 document.getElementById("RightMenuContainer").style.display = "none";
 
 const handleRightMenuOpen = (event) => {
-    // StopClick = false;
-    // document.getElementById("RightMenuContainer").style.display = "block";
-    // document.getElementById("MenuOpenDrawer").style.display = "none";
-    // alert(StopClick+"1")
-
-    window.onload = function () { 
-        document.getElementById("MenuOpenDrawer").click();
-    }
     document.getElementById("RightMenuContainer").style.display = "block";
     document.getElementById("MenuOpenDrawer").style.display = "none";
-  
     StopClick = true;
 }
 
@@ -41,44 +32,20 @@ document.getElementById("drawerContentId").addEventListener("click", function ()
 
 const handleRightHeaderMenu = (event) => {
     if (StopClick) {
-        alert(`stopclick+ContactOff==${ContainerOff}`)
         if (!ContainerOff) {
             return ContainerOff = true;
         }
     }
     if (ContainerOff) {
-        alert("window function")
-        window.onload = function () { 
-            document.getElementById("MenuOpenDrawer").click();
-        }
-        document.getElementById("RightMenuContainer").style.display = "none";
+        setTimeout(function () {
+            document.getElementById("RightMenuContainer").style.display = "none";
+       },200)
         document.getElementById("MenuOpenDrawer").style.display = "block";
         StopClick = false;
         ContainerOff = false;
     }
-  
-
-
-
-    // event.target.style.display = "none";
-    //     window.onload = function () {
-    //         // document.getElementById("MenuOpenDrawer").style.display = "block";
-    //         document.getElementById("RightMenuContainer").style.display = "none";
-    //   }
-
-
-    // if (StopClick) {
-    //     alert(StopClick+"2")
-    //     setTimeout(function () {
-    //         document.getElementById("MenuOpenDrawer").style.display = "block";
-    //         document.getElementById("RightMenuContainer").style.display = "none";
-    //     }, 200);
-    // } else {
-    //     StopClick = true;
-    //     alert(StopClick+"2")
-    // }
-
 }
+
 const handleClicked = (event) => {
     document.getElementById("MenuOpenDrawer").click();
 }
@@ -89,13 +56,13 @@ RightSideFixedNav.innerHTML = `<ul class="Hovered menu text-white border border-
     
         <a class="tooltip tooltip-left text-xs bg-transparent" href="#home" data-tip="Home">
             <i
-                class="las la-home text-[20px] text-Primary group-hover:text-Green transition-all duration-500"></i>
+                class="las la-home text-[20px] text-Primary IconHover"></i>
         </a>
     
 </li>
 <li class="group">
         <a class="tooltip tooltip-left text-xs bg-transparent" href="#about" data-tip="About">
-            <i class="lar la-user text-[20px] text-Primary group-hover:text-Green transition-all duration-500 "
+            <i class="lar la-user text-[20px] text-Primary IconHover "
                 data-tip="about">
             </i>
         </a>
@@ -103,36 +70,36 @@ RightSideFixedNav.innerHTML = `<ul class="Hovered menu text-white border border-
 <li class="group">
         <a class="tooltip tooltip-left text-xs bg-transparent" href="#resume" data-tip="Resume">
             <i
-                class="las la-briefcase text-[20px] text-Primary group-hover:text-Green transition-all duration-500 ">
+                class="las la-briefcase text-[20px] text-Primary IconHover">
             </i>
         </a>
 </li>
 <li class="group">
-        <a class="tooltip tooltip-left text-xs bg-transparent" href="#services"  data-tip="Services">
+        <a class="tooltip tooltip-left text-xs bg-transparent" href="#services" data-tip="Services">
             <i
-                class="las la-stream text-[20px] text-Primary group-hover:text-Green transition-all duration-500 "></i>
+                class="las la-stream text-[20px] text-Primary IconHover"></i>
         </a>
 
 </li>
 <li class="group" >
         <a class="tooltip tooltip-left text-xs bg-transparent" href="#skills" data-tip="Skills">
             <i
-                class="las la-shapes text-[20px] text-Primary group-hover:text-Green transition-all duration-500"></i>
+                class="las la-shapes text-[20px] text-Primary IconHover"></i>
         </a>
 </li>
 <li class="group">
         <a class="tooltip tooltip-left text-xs bg-transparent" href="#portfolios" data-tip="Portfolios">
-            <i class="las la-grip-vertical text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500 "></i>
+            <i class="las la-grip-vertical text-[20px]  text-Primary IconHover"></i>
         </a>
 </li>
 <li class="group">
         <a class="tooltip tooltip-left text-xs bg-transparent" href="#testimonial" data-tip="Testimonial">
-            <i class="lar la-comment text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500 "></i>
+            <i class="lar la-comment text-[20px]  text-Primary IconHover"></i>
         </a>
 </li>
 <li class="group">
         <a class="tooltip tooltip-left text-xs bg-transparent" href="#contact" data-tip="Contact">
-            <i class="las la-envelope text-[20px] text-Primary group-hover:text-Green transition-all duration-500 "></i>
+            <i class="las la-envelope text-[20px] text-Primary IconHover"></i>
         </a>
 </li>
 </ul>`
@@ -143,7 +110,6 @@ RightSideFixedNav.innerHTML = `<ul class="Hovered menu text-white border border-
 
 let SettingOpenDrawerBtn = document.getElementById("SettingOpenDrawer");
 let SettingDrawerContainer = document.getElementById("SettingDrawerContainer");
-let SettingDrawerContent = document.getElementById("settingDrawerContent");
 
 let SettingOpen = false;
 SettingDrawerContainer.style.display = "none"
@@ -153,14 +119,15 @@ const handleSettingOpen = () => {
     SettingDrawerContainer.style.display = "block"
     SettingOpenDrawerBtn.style.display = "none";
 }
-
+document.getElementById("SettingDrawerContent").addEventListener("click", function () {
+    SettingOpen = false;
+})
 const handleSettingDrawer = () => {
     if (SettingOpen) {
         SettingOpenDrawerBtn.style.display = "block";
         setTimeout(function () {
             SettingDrawerContainer.style.display = "none"
         }, 200);
-
     } else {
         SettingOpen = true;
     }

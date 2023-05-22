@@ -10,7 +10,6 @@
     font-size: 16px;
     scroll-behavior: smooth;
     color: #999999;
-    background: black;
     line-height: 1.7;
     overflow-x: hidden;
     height: 100vh;
@@ -33,6 +32,7 @@
   }
   i{
     color: white;
+    font-size: 14px;
   }
 }
 
@@ -50,7 +50,7 @@
   @apply border border-Primary rounded-3xl px-[18px] py-[9px] uppercase text-white inline-flex justify-center items-center space-x-3 font-light text-xs;
  }
  .SkillBox{
-  @apply relative rounded-[85px] pt-[54px] pb-[48px] px-14 border-2 border-primary flex flex-col space-y-6 justify-center items-center mb-10;
+  @apply relative rounded-[85px] pt-[54px] pb-[48px] px-14 border-2 border-Primary flex flex-col space-y-6 justify-center items-center mb-10;
  }
  .SliderBtn{
   @apply bg-transparent border border-Primary hover:bg-transparent hover:text-Green hover:border-Green;
@@ -76,10 +76,3 @@
 }
  
 /* 9783-C4CE */
-
-@layer utilities {
-  .group:hover li i {
-    background-color: blue;
-    color: red;
-  }
-}

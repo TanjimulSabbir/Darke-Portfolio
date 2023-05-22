@@ -6,29 +6,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Main CSS Style Sheet -->
 	<link href="/dist/output.css" rel="stylesheet">
-	<!-- Fontawesome Icons-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 	<!-- Bootstrap Icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 	<!-- Animation Style Sheet -->
 	<link rel="stylesheet" href="./CSS/animation.css">
 	<!-- Setting Menu CSS Style Sheet -->
 	<link rel="stylesheet" href="./CSS/SettingMenu.css">
-	<!-- -->
-	<link rel="stylesheet"
-		href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<!--Icons -->
+	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+		<!-- Animation -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
 	<main class="my-5 md:mb-5 lg:mt-0">
-
 		<header class="">
 			<!-- Right Side Header Menu -->
 			<!-- onclick="handleRightMenuOpen()" id="MenuOpenDrawer"-->
 			<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()" class="fixed right-8 md:right-16 mt-4 md:top-10 lg:top-16 z-40">
 				<label for="Menu-Drawer">
-					<p class="Rounded flex inset-0 items-center justify-center bg-black border cursor-pointer text-lg">
-						<i class="bi bi-grid"></i>
+					<p class="Rounded flex inset-0 items-center justify-center bg-black cursor-pointer group">
+						<i class="bi bi-grid text-2xl IconHover transition duration-500"></i>
 					</p>
 				</label>
 			</div>
@@ -36,7 +34,7 @@
 			<div id="SettingOpenDrawer" onclick="handleSettingOpen()" class="fixed left-[12px] top-14 z-50">
 				<label for="Setting-Drawer">
 				<p class="Rounded border-none hover:border-none cursor-pointer text-lg">
-					<i class="bi bi-gear text-Green"></i>
+					<i class="las la-cog text-Green"></i>
 				</p>
 			</label>
 			</div>
@@ -58,14 +56,14 @@
 						<ul class="Hovered menu text-Primary">
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#home">
-									<i	class="las la-home text-[20px] text-Primary group-hover:text-Green transition-all duration-700"></i>
+									<i	class="las la-home text-[20px] text-Primary IconHover"></i>
 									<span class="text-xs group-hover:text-white transition-all duration-500">Home</span>
 								</a>
 							</li>
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#about">
 									<i
-										class="lar la-user text-[20px] text-Primary group-hover:text-Green transition-all duration-500"></i>
+										class="lar la-user text-[20px] text-Primary IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">About</span>
 								</a>
@@ -73,7 +71,7 @@
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#resume">
 									<i
-										class="las la-briefcase text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+										class="las la-briefcase text-[20px]  text-Primary  IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Resume</span>
 								</a>
@@ -81,7 +79,7 @@
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#services">
 									<i
-										class="las la-stream text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+										class="las la-stream text-[20px]  text-Primary  IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Services</span>
 								</a>
@@ -89,7 +87,7 @@
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#skills">
 									<i
-										class="las la-shapes text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+										class="las la-shapes text-[20px] text-Primary IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Skills</span>
 								</a>
@@ -97,7 +95,7 @@
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#portfolios">
 									<i
-										class="las la-grip-vertical text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+										class="las la-grip-vertical text-[20px]  text-Primary  IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Portfolios</span>
 								</a>
@@ -105,7 +103,7 @@
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#testimonial">
 									<i
-										class="lar la-comment text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+										class="lar la-comment text-[20px] text-Primary IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Testimonial</span>
 								</a>
@@ -113,7 +111,7 @@
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#contact">
 									<i
-										class="las la-envelope text-[20px]  text-Primary  group-hover:text-Green transition-all duration-500"></i>
+										class="custom-hover las la-envelope text-[20px] text-Primary IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Contact</span>
 								</a>
@@ -123,13 +121,13 @@
 							<p class="text-Primary mb-4">Social</p>
 							<ul class="flex items-center space-x-3">
 								<li class="group">
-									<a href=""><i class="lab la-twitter group-hover:text-Green duration-500"></i></a>
+									<a href=""><i class="custom-hover lab la-twitter IconHover"></i></a>
 								</li>
 								<li class="group">
-									<a href=""><i class="lab la-dribbble group-hover:text-Green duration-500"></i></a>
+									<a href=""><i class="custom-hover lab la-dribbble IconHover"></i></a>
 								</li>
 								<li class="group">
-									<a href=""><i class="lab la-instagram group-hover:text-Green duration-500"></i></a>
+									<a href=""><i class="custom-hover lab la-instagram IconHover"></i></a>
 								</li>
 							</ul>
 						</div>
@@ -138,7 +136,7 @@
 			</div>
 		</div>
 		<!--Right Side Fixed Navbar Icons Box -->
-		<div class="hidden lg:block fixed right-16 top-1/4">
+		<div class="hidden lg:block fixed right-16 top-1/4 z-10">
 			<div id="RightSideFixedNav" class="">
 			</div>
 		</div>
@@ -152,7 +150,7 @@
 					</div> 
 					<div class="drawer-side">
 						<label for="Setting-Drawer" class="drawer-overlay"></label>
-						<div class="w-full max-w-5xl bg-[#191919] p-4 md:p-32 text-white">
+						<div id="SettingDrawerContent" class="w-full max-w-5xl bg-[#191919] p-4 md:p-32 text-white">
 							<div class="global-color">
 								<div class="inner">
 									<div class="overlay"></div>
@@ -176,12 +174,12 @@
 											</div>
 											<p class="text-[13px] uppercase mb-5 md:mb-12">Three Dimension Shapes</p>
 											<ul class="text-sm font-medium grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-6 md:gap-12">
-												<li class="btn btn-accent" onclick="BackgroundColorChange('#B799FF')"><p>Earth Lines Sphere</p></li>
-												<li class="btn btn-accent" onclick="BackgroundColorChange('#ACBCFF')"><p>3D Abstract Ball</p></li>
-												<li class="btn btn-accent" onclick="BackgroundColorChange('#62B6B7')"><p>Water Waves</p></li>
-												<li class="btn btn-accent" onclick="BackgroundColorChange('#81C6E8')"><p>Liquids Wavy</p></li>
-												<li class="btn btn-accent" onclick="BackgroundColorChange('#231955')"><p>Solid Color</p></li>
-												<li class="btn btn-accent" onclick="BackgroundColorChange('#8294C4')"><p>Simple Strings</p></li>
+												<li class="btn" onclick="BackgroundColorChange('dracula')"><p>Earth Lines Sphere</p></li>
+												<li class="btn" onclick="BackgroundColorChange('night')"><p>3D Abstract Ball</p></li>
+												<li class="btn" onclick="BackgroundColorChange('aqua')"><p>Water Waves</p></li>
+												<li class="btn" onclick="BackgroundColorChange('business')"><p>Liquids Wavy</p></li>
+												<li class="btn" onclick="BackgroundColorChange('black')"><p>Solid Color</p></li>
+												<li class="btn" onclick="BackgroundColorChange('dark')"><p>Simple Strings</p></li>
 											</ul>
 										</div>
 									</div>
@@ -192,9 +190,8 @@
 				  </div>
 			</div>
 		</div>
-		<!--Section-1 & From Large Device Fixed-Left Section -->
-		<section
-			class="relative lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:h-screen border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-4 md:p-7 md:max-w-3xl lg:max-w-[392px] md:mx-auto" data-theme="dracula">
+		<!--Section-1 -->
+		<section  class="relative lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:h-screen border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-4 md:p-7 md:max-w-3xl lg:max-w-[392px] md:mx-auto z-10">
 			<div>
 				<div class="flex justify-between items-center">
 					<div>
@@ -217,22 +214,22 @@
 					<div>
 						<div class="Social flex py-6 justify-center items-center">
 							<a href="#" class="Rounded flex justify-center items-center">
-								<i class="fa-brands fa-twitter text-Primary"></i>
+								<i class="IconHover text-xl lab la-twitter text-Primary"></i>
 							</a>
 							<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
-								<i class="fa-brands fa-dribbble text-Primary"></i>
+								<i class="IconHover text-xl lab la-dribbble text-Primary"></i>
 							</a>
 							<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
-								<i class="fa-brands fa-instagram text-Primary"></i>
+								<i class="IconHover text-xl lab la-instagram text-Primary"></i>
 							</a>
 							<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
-								<i class="fa-brands fa-github text-Primary"></i>
+								<i class="IconHover text-xl lab la-github text-Primary"></i>
 							</a>
 						</div>
 
 						<div>
 							<button class="Btn flex justify-center items-center group">
-								<i class="las la-envelope mr-2 text-xl font-bold text-black group-hover:text-Green duration-500"></i>
+								<i class="las la-envelope mr-2 text-2xl font-bold text-black IconHover duration-500"></i>
 								<a>Hire Me!</a>
 							</button>
 						</div>
@@ -242,12 +239,14 @@
 		</section>
 		<!--From Large Device Main Right-Section -->
 
-		<div class="UniversalPadding lg:w-screen min-h-full lg:-ml-8 lg:flex lg:justify-end" data-theme="dracula">
+		<div data-aos="fade-up" class="UniversalPadding lg:w-screen min-h-full lg:-ml-8 lg:flex lg:justify-end">
 			<!-- Right Flex -->
 			<div class="lg:w-[392px]"></div>
 
-			<div class="w-full md:max-w-3xl mx-auto">
+			<!-- Main Section -->
+			<div data-aos="fade-up" class="w-full md:max-w-3xl mx-auto">
 				<!-- Section-2 & Introduce & Large Device Right-Top  -->
+
 				<section id="home" >
 						<div class="Heading mt-[60px] mb-14">
 							<p class="text-white">
@@ -255,7 +254,7 @@
 							</p>
 							<p>Introduce</p>
 						</div>
-						<div class="mb-10">
+						<div data-aos="fade-up" data-aos-delay="200"  class="mb-10">
 							<h1
 								class="text-[50px] leading-[65px] md:text-[58px] lg:text-[78px] font-light text-white scroll-p-5 lg:leading-[90px] mb-11">
 								Say Hi from <span class="ChangeColor text-Green">Drake</span>, Framer Designer and Developer</h1>
@@ -286,9 +285,9 @@
 						</div>
 				</section>
 				<!-- Section-3 && About -->
-				<section id="about" class="my-[64px] sm:my-[116px]">
+				<section data-aos="fade-up" id="about" class="my-[64px] sm:my-[116px]">
 					<!-- About Title -->
-					<div class="Heading my-[48px] md:my-[60px]">
+					<div class="Heading my-[48px] md:my-[60px]" data-aos="fade-up" data-aos-delay="100">
 						<p>
 							<i class="las la-user"></i>
 						</p>
@@ -296,7 +295,7 @@
 					</div>
 
 					<!-- About Heading-Text -->
-					<div class="mb-10">
+					<div class="mb-10" data-aos="fade-up" data-aos-delay="200">
 						<h1 class="text-[38px] sm:text-5xl leading-[50px] text-white sm:leading-[60px] font-light">Every
 							great design begin with
 							<br class="hidden md:block"> an even <span class="ChangeColor text-Green">better
@@ -304,7 +303,7 @@
 						</h1>
 					</div>
 					<!-- About Text -->
-					<div>
+					<div data-aos="fade-up" data-aos-delay="250">
 						<p class="text-Primary w-full lg:max-w-[610px] leading-[30px]">
 							Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work
 							for agencies, consulted for startups, and collaborated with talented people to create
@@ -315,24 +314,24 @@
 				</section>
 
 				<!-- Section-4 & Resume -->
-				<section id="resume" class="my-[58px] md:my-[116px]">
+				<section  id="resume" class="my-[58px] md:my-[116px]">
 					<!-- Resume Title -->
-					<div class="Heading my-10 sm:my-[60px]">
+					<div class="Heading my-10 sm:my-[60px]" data-aos="fade-down-left" data-aos-delay="300">
 						<p>
 							<i class="las la-briefcase"></i>
 						</p>
 						<p>Resume</p>
 					</div>
 					<!-- Resume Heading-Text -->
-					<div class="mb-12">
+					<div class="mb-12" data-aos="fade-up" data-aos-delay="100" data-aos-duration="3000">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light">
 							Education & <span class="ChangeColor text-Green">Experience</span>
 						</h1>
 					</div>
 					<!-- Expericen and Education -->
-					<div>
+					<div data-aos="fade-up-right">
 						<!-- 01 -->
-						<div class="ResumeBox relative">
+						<div class="ResumeBox relative" data-aos="fade-down-left" data-aos-delay="200" data-aos-duration="2000">
 							<p class="absolute TitleHover left-[74px] -top-3">2020 - Present</p>
 							<div
 								class="RoundedDot absolute bg-Secondary rounded-full w-3 h-3 text-Primary -top-[4px] -left-[6px] z-40">
@@ -352,7 +351,7 @@
 							</div>
 						</div>
 						<!-- 02 -->
-						<div class="ResumeBox relative border-l  border-primary space-y-5 pl-[74px] pb-[68px]">
+						<div class="ResumeBox relative border-l border-primary space-y-5 pl-[74px] pb-[68px]" data-aos="fade-down-left" data-aos-delay="100" data-aos-duration="2000">
 							<p class="TitleHover">2013 - 2019</p>
 							<div
 								class="RoundedDot absolute bg-Secondary rounded-full w-3 h-3 text-Primary -top-[12px] -left-[6px]">
@@ -372,7 +371,7 @@
 						</div>
 						<!-- 03 -->
 
-						<div class="ResumeBox relative border-l border-primary space-y-5 pl-[74px]">
+						<div class="ResumeBox relative border-l border-primary space-y-5 pl-[74px]" data-aos="fade-down-left" data-aos-delay="300" data-aos-duration="2000">
 							<p class="TitleHover">2010 - 2013</p>
 							<div
 								class="RoundedDot absolute bg-Secondary rounded-full w-3 h-3 text-Primary -top-[12px] -left-[6px]">
@@ -385,7 +384,7 @@
 					</div>
 				</section>
 				<!-- Section-5 & Service -->
-				<section id="services" class="my-[64px] md:my-[116px]">
+				<section data-aos="fade-up" id="services" class="my-[64px] md:my-[116px]">
 					<!-- Service Heading-Text -->
 					<div class="Heading my-[48px] sm:my-[60px]">
 						<p>
@@ -408,7 +407,7 @@
 							<h1 class="flex justify-between space-x-4 items-center mb-2">
 								<span class="text-xl lg:text-2xl text-white font-light">Website Design</span>
 								<span>
-									<i class="bi bi-columns text-Green"></i>
+									<i class="las la-bezier-curve text-Green"></i>
 								</span>
 							</h1>
 							<p class="text-sm text-Primary mb-8 leading-6">I created digital products with unique ideas
@@ -423,7 +422,7 @@
 							<h1 class="flex justify-between space-x-4 items-center mb-2">
 								<span class="text-xl lg:text-2xl text-white font-light">Development</span>
 								<span>
-									<i class="bi bi-code-slash text-Green"></i>
+									<i class="las la-code text-Green"></i>
 								</span>
 							</h1>
 							<p class="text-sm text-Primary mb-8 leading-6">I build website go live with Framer, Webflow
@@ -437,7 +436,7 @@
 							<h1 class="flex justify-between space-x-3 items-center mb-2">
 								<span class="text-xl lg:text-2xl text-white font-light">SEO/Marketing</span>
 								<span>
-									<i class="bi bi-braces text-Green"></i>
+									 bi-braces text-Green"></i>
 								</span>
 							</h1>
 							<p class="text-sm text-Primary mb-8 leading-6">Increase the traffic for your website with
@@ -449,7 +448,7 @@
 				</section>
 
 				<!-- Section-6 & Skills -->
-				<section id="skills" class="my-[64px] sm:my-[116px]">
+				<section data-aos="fade-up" id="skills" class="my-[64px] sm:my-[116px]">
 					<!-- Skill Title -->
 					<div class="Heading my-[48px] md:my-[60px]">
 						<p>
@@ -504,7 +503,7 @@
 					</div>
 				</section>
 				<!-- Section-7 & Portfolio -->
-				<section id="portfolios" class="my-[64px] sm:my-[116px]">
+				<section data-aos="fade-up" id="portfolios" class="my-[64px] sm:my-[116px]">
 					<!-- Portfolio Title -->
 					<div class="Heading my-[48px] sm:my-[60px]">
 						<p>
@@ -642,11 +641,11 @@
 					</div>
 				</section>
 				<!-- Section-8 & Testimonial-->
-				<section id="testimonial" aria-colcount="testimonial" class="my-[116px]">
+				<section data-aos="fade-up" id="testimonial" aria-colcount="testimonial" class="my-[116px]">
 					<!-- Testimonial Title -->
 					<div class="Heading my-[48px] sm:my-[60px]">
 						<p>
-							<i class="bi bi-chat-square-text text-white"></i>
+							<i class="lar la-comment text-white"></i>
 						</p>
 						<p>Testimonial</p>
 					</div>
@@ -733,7 +732,7 @@
 					<div id="SlideBtnDiv"
 						class="mt-16 flex justify-start items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
 						<a id="LeftBtn" href="" class="btn btn-circle SliderBtn border-2">
-							<i class="bi bi-chevron-left"></i>
+							<i class="las la-angle-left"></i>
 						</a>
 						<!-- carousel Number Display -->
 						<span class="mx-5 text-sm">
@@ -741,12 +740,12 @@
 						</span>
 
 						<a id="RightBtn" href="" class="btn btn-circle SliderBtn border-2"><i
-								class="bi bi-chevron-right"></i></a>
+								class="las la-angle-right"></i></a>
 					</div>
 				</section>
 
 				<!-- Section-9 & Brand -->
-				<section id="" class="my-[116px]">
+				<section data-aos="fade-up" id="" class="my-[116px]">
 					<!-- Brand Title -->
 					<div class="mb-[60px]">
 						<p class="text-sm text-white uppercase font-light">WORK WITH 60+ BRANDS WORLDWIDE</p>
@@ -790,7 +789,7 @@
 				</section>
 
 				<!-- Section-10 & Pricing -->
-				<section class="my-[116px]">
+				<section data-aos="fade-up" class="my-[116px]">
 					<!-- Pricing Title -->
 					<div class="Heading my-[48px] sm:my-[60px]">
 						<p>
@@ -886,11 +885,11 @@
 					</div>
 				</section>
 				<!-- Section-11 & Contact -->
-				<section id="contact" class="my-[116px]">
+				<section data-aos="fade-up" id="contact" class="my-[116px]">
 					<!-- Contact Title -->
 					<div class="Heading my-[48px] sm:my-[60px]">
 						<p>
-							<i class="bi bi-chat-dots text-white"></i>
+							<i class="las la-envelope text-white"></i>
 						</p>
 						<p>Contact</p>
 					</div>
@@ -979,7 +978,7 @@
 								</div>
 
 								<div class="mb-7 flex items-center justify-start space-x-2 mt-4">
-									<i class="bi bi-cloud-arrow-up text-sm text-white"></i>
+									<i class="las la-cloud-upload-alt text-white"></i>
 									<input type="file" id="selectedFile" style="display: none;" />
 									<p class="text-xs text-white uppercase cursor-pointer"
 										onclick="document.getElementById('selectedFile').click();">Add an Attachment</p>
@@ -998,6 +997,16 @@
 	<script src="./Javascript/Slide.js"></script>
  <script src="./Javascript/Color.js"></script>
  <script src="./Javascript/Background.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ <script>
+    AOS.init({
+		offset: 200, // Offset (in pixels) from the element's position to trigger the animation
+    duration: 600, // Animation duration (in milliseconds)
+    easing: 'ease-in-out', // Easing function
+    delay: 200, // Delay (in milliseconds) before animation starts
+    once: false,
+	});
+  </script>
 </body>
 
 </html>

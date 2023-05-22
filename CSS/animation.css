@@ -13,30 +13,36 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
+  .ResumeBox,.TitleHover,.RoundedDot{
+    transition: all;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
+  }
   .ResumeBox:hover .TitleHover {
     color: #28e98c;
-    transition: all;
-    transition-duration: .3s;
   }
   .ResumeBox:hover .RoundedDot {
     background-color: #28e98c;
+  }
+  .ServiceBox,.Projects{
     transition: all;
-    transition-duration: .3s;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
   }
   .ServiceBox:hover{
-    transition: all;
-    transition-duration: .3s;
     border-color: #28e98c;
   }
   .ServiceBox:hover .Projects{
-    transition: all;
-    transition-duration: .3s;
    text-decoration: underline;
+  }
+  .SkillBox{
+    border-color: #565656;
+    transition: all;
+    transition-duration: .6s;
+    transition-timing-function: ease-in-out;
   }
   .SkillBox:hover{
     border-color: #28e98c;
-    transition: all;
-    transition-duration: .3s;
   }
   .PortfolioBox img{
     border-radius: 40px;
@@ -48,32 +54,16 @@
     transition: .5s;
     text-transform: capitalize;
   }
-  /* .PortfolioBox:hover{
-    transition: all;
-    transition-duration: .2s;
-    cursor: pointer;
-  } */
-  /* .PortfolioBox:hover .Heading{
-    background-color: black;
-    color: white;
-    border: black;
-  }
-  
-  .PortfolioBox:hover .PortfolioButtomText::after{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: white;
-    transition: .5s;
-  }
-  .PortfolioButtomText{
-    font-weight: 300;
-    transition: all;
-  } */
 
-  .Rounded:hover i{
-color: #28e98c;
-
-  }
+.IconHover{
+transition: all;
+transition-duration: .5s;
+transition-timing-function: ease-in-out;
+}
+.group:hover .IconHover{
+  color: #28e98c;
+}
+.Rounded:hover .IconHover{
+  color: #28e98c;
+  transition-duration: .3s;
+}

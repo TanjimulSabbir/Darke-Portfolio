@@ -1621,7 +1621,6 @@ body {
   font-size: 16px;
   scroll-behavior: smooth;
   color: #999999;
-  background: black;
   line-height: 1.7;
   overflow-x: hidden;
   height: 100vh;
@@ -1647,6 +1646,7 @@ svg{
 
 i{
   color: white;
+  font-size: 14px;
 }
 
 *, ::before, ::after{
@@ -8641,7 +8641,7 @@ i{
   border-radius: 85px;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: hsl(var(--p) / var(--tw-border-opacity));
+  border-color: rgb(86 86 86 / var(--tw-border-opacity));
   padding-left: 3.5rem;
   padding-right: 3.5rem;
   padding-top: 54px;
@@ -8900,6 +8900,10 @@ i{
 
 .isolation-auto{
   isolation: auto;
+}
+
+.z-10{
+  z-index: 10;
 }
 
 .z-30{
@@ -9220,10 +9224,6 @@ i{
 
 .w-full{
   width: 100%;
-}
-
-.w-screen{
-  width: 100vw;
 }
 
 .max-w-5xl{
@@ -10354,10 +10354,6 @@ i{
   --tw-bg-opacity: 0.3;
 }
 
-.bg-opacity-0{
-  --tw-bg-opacity: 0;
-}
-
 .decoration-slice{
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -10476,16 +10472,8 @@ i{
   padding: 2.5rem;
 }
 
-.p-32{
-  padding: 8rem;
-}
-
 .p-4{
   padding: 1rem;
-}
-
-.p-6{
-  padding: 1.5rem;
 }
 
 .px-0{
@@ -11197,10 +11185,6 @@ i{
   transition-duration: 500ms;
 }
 
-.duration-700{
-  transition-duration: 700ms;
-}
-
 .ease-in{
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
@@ -11216,11 +11200,6 @@ i{
 .content-\[\'this-is-also-valid\]-weirdly-enough\'\]{
   --tw-content: 'this-is-also-valid]-weirdly-enough';
   content: var(--tw-content);
-}
-
-.group:hover li i {
-  background-color: blue;
-  color: red;
 }
 
 /* 9783-C4CE */
@@ -11334,11 +11313,6 @@ i{
 
 .hover\:focus\:text-center:focus:hover{
   text-align: center;
-}
-
-.group:hover .group-hover\:text-Green{
-  --tw-text-opacity: 1;
-  color: rgb(40 233 140 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-white{
@@ -11502,12 +11476,12 @@ i{
     border-radius: 1.5rem;
   }
 
-  .md\:p-7{
-    padding: 1.75rem;
-  }
-
   .md\:p-32{
     padding: 8rem;
+  }
+
+  .md\:p-7{
+    padding: 1.75rem;
   }
 
   .md\:text-5xl{
@@ -11528,10 +11502,6 @@ i{
 @media (min-width: 1250px){
   .lg\:fixed{
     position: fixed;
-  }
-
-  .lg\:absolute{
-    position: absolute;
   }
 
   .lg\:left-5{
