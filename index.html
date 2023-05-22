@@ -21,7 +21,7 @@
 
 <body>
 
-	<main class="py-10 md:mb-5 lg:py-0">
+	<main class="pb-10 md:mb-5 lg:py-0">
 		<div id="LoaderContainer">
 			<div id="Loader"></div>
 		</div>
@@ -29,8 +29,8 @@
 			<!-- Right Side Header Menu -->
 			<!-- onclick="handleRightMenuOpen()" id="MenuOpenDrawer"-->
 			<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()"
-				class="fixed right-8 md:right-[76px] mt-4 md:top-10 lg:top-12 z-40">
-				<label for="Menu-Drawer">
+				class="fixed right-8 md:right-[76px] mt-4 md:top-10 lg:top-12 z-30">
+				<label for="Menu-Drawer" id="DrawerBtn">
 					<p class="Rounded flex inset-0 items-center justify-center bg-black cursor-pointer group">
 						<i class="bi bi-grid text-xl IconHover transition duration-500"></i>
 					</p>
@@ -48,14 +48,7 @@
 		</header>
 
 	
-		<div id="scrollToTopButton" class="scroll-to-top z-50">
-			<div class="text-2xl cursor-pointer p-1" onclick="scrollToTop()">
-				<i class="bi bi-caret-up"></i>
-			</div>
-			<div class="text-2xl cursor-pointer p-1" onclick="scrollToBottom()" title="Scroll Down">
-				<i class="bi bi-caret-down"></i>
-			</div>
-		  </div>	
+			
 		<!-- Menu List Box -->
 		<div id="RightMenuContainer" onclick="handleRightHeaderMenu()"
 			class="absolute right-0 w-full h-full min-h-full z-30">
@@ -151,26 +144,28 @@
 
 		<!-- Setting Drawer Box -->
 		<div id="SettingDrawerContainer" onclick="handleSettingDrawer()">
-			<div class="fixed w-full h-full min-h-full bg-black bg-opacity-30 z-30">
+			<div class="fixed w-screen h-full min-h-full bg-black bg-opacity-30 z-40">
 				<div class="drawer drawer-end">
 					<input id="Setting-Drawer" type="checkbox" class="drawer-toggle" />
 					<div class="drawer-content">
 					</div>
 					<div class="drawer-side">
 						<label for="Setting-Drawer" class="drawer-overlay"></label>
-						<div id="SettingDrawerContent" class="w-full max-w-5xl bg-[#191919] p-4 md:p-32 text-white">
+						<div id="SettingDrawerContent" class="w-full min-h-screen md:max-w-5xl bg-[#191919] p-10 lg:p-32 text-white">
 							<div class="main-color-box">
 								<div class="inner">
 									<div class="main-color-option">
-										<span class="absolute right-5 top-5 text-xl cursor-pointer">
-											<i class="las la-times"></i>
+										<span class="absolute right-10 top-7 text-xl cursor-pointer p-3">
+											<label for="Setting-Drawer" class="cursor-pointer">
+											<i class="las la-times text-5xl"></i>
+										</label>
 										</span>
-										<h2 class="text-[34px] font-extralight leading-[1.2rem] mb-10 md:mb-20">
+										<h2 class="text-[34px] font-extralight leading-[1.2rem] my-20 md:mb-20">
 											Configuration</h2>
 										<div class="main-color-option-inner">
 											<p class="text-[13px] uppercase mb-4 md:mb-8">Colors</p>
-											<div class="colorContainer mb-6 md:mb-[100px] flex gap-7 pt-7">
-												<a href="#" class="clr-active"
+											<div class="colorContainer mb-16 md:mb-[100px] flex gap-3 md:gap-7 pt-7">
+												<a href="#"
 													onclick="handleChangeColor('#28e98c');"></a>
 												<a href="#" onclick="handleChangeColor('#e4af12')"></a>
 												<a href="#" onclick="handleChangeColor('#fe6f1d');"></a>
@@ -181,10 +176,10 @@
 												<a href="#" onclick="handleChangeColor('#ff99cc');"></a>
 												<a href="#" onclick="handleChangeColor('#cceb00');"></a>
 											</div>
-											<p class="text-[13px] uppercase mb-5 md:mb-12">Three Dimension Shapes</p>
+											<p class="text-[13px] uppercase mb-12">Three Dimension Shapes</p>
 											<ul
-												class="Bg-Color-Container text-sm font-medium grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-5 md:gap-10 text-black">
-												<li class="btn rounded-lg bg-Green text-blac"
+												class="Bg-Color-Container text-sm font-medium grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-4 sm:gap-5 md:gap-10 text-black">
+												<li class="btn rounded-lg bg-Green"
 													onclick="BackgroundColorChange('dracula')">
 													<p class="capitalize">Dracula Theme</p>
 												</li>
@@ -278,7 +273,7 @@
 						</p>
 						<p>Introduce</p>
 					</div>
-					<div data-aos="fade-up" data-aos-delay="200" class="mb-10">
+					<div data-aos="fade-up" class="mb-10">
 						<h1
 							class="text-[50px] leading-[65px] md:text-[58px] lg:text-[78px] font-light text-white scroll-p-5 lg:leading-[90px] mb-11">
 							Say Hi from <span class="ChangeColor text-Green">Drake</span>, Framer Designer and Developer
@@ -312,7 +307,7 @@
 				<!-- Section-3 && About -->
 				<section data-aos="fade-up" id="about" class="my-[64px] sm:my-[116px]">
 					<!-- About Title -->
-					<div class="Heading my-[48px] md:my-[60px]" data-aos="fade-up" data-aos-delay="100">
+					<div class="Heading my-[48px] md:my-[60px]" data-aos="fade-up">
 						<p>
 							<i class="las la-user"></i>
 						</p>
@@ -320,7 +315,7 @@
 					</div>
 
 					<!-- About Heading-Text -->
-					<div class="mb-10" data-aos="fade-up" data-aos-delay="200">
+					<div class="mb-10" data-aos="fade-up">
 						<h1 class="text-[38px] sm:text-5xl leading-[50px] text-white sm:leading-[60px] font-light">Every
 							great design begin with
 							<br class="hidden md:block"> an even <span class="ChangeColor text-Green">better
@@ -328,7 +323,7 @@
 						</h1>
 					</div>
 					<!-- About Text -->
-					<div data-aos="fade-up" data-aos-delay="250">
+					<div data-aos="fade-up">
 						<p class="text-Primary w-full lg:max-w-[610px] leading-[30px]">
 							Since beginning my journey as a freelance designer nearly 8 years ago, I've done remote work
 							for agencies, consulted for startups, and collaborated with talented people to create
@@ -348,7 +343,7 @@
 						<p>Resume</p>
 					</div>
 					<!-- Resume Heading-Text -->
-					<div class="mb-12" data-aos="fade-up" data-aos-duration="2000">
+					<div class="mb-12" data-aos="fade-up" data-aos-duration="1000">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light">
 							Education & <span class="ChangeColor text-Green">Experience</span>
 						</h1>
@@ -356,7 +351,7 @@
 					<!-- Expericen and Education -->
 					<div>
 						<!-- 01 -->
-						<div class="ResumeBox relative" data-aos="fade-down-left" data-aos-duration="1500">
+						<div class="ResumeBox relative" data-aos="fade-left" data-aos-duration="800">
 							<p class="absolute TitleHover left-[74px] -top-3">2020 - Present</p>
 							<div
 								class="RoundedDot absolute bg-Secondary rounded-full w-3 h-3 text-Primary -top-[4px] -left-[6px] z-40">
@@ -459,7 +454,7 @@
 						</div>
 						<!-- 03 -->
 						<div class="ServiceBox border border-Primary py-9 px-6 sm:px-6 sm:py-8 lg:px-12 lg:py-[44px] rounded-2xl md:rounded-3xl"
-							data-aos="fade-up" data-aos-duration="1100">
+							data-aos="fade-up" data-aos-duration="1000">
 							<h1 class="flex justify-between space-x-3 items-center mb-2">
 								<span class="text-xl lg:text-2xl text-white font-light">SEO/Marketing</span>
 								<span>
@@ -492,7 +487,7 @@
 					<!--Skills Border Box -->
 					<div class="grid grid-cols-2 md:grid-cols-4 gap-5 gap-y-12">
 						<!-- 01 -->
-						<div class="SkillBox" data-aos="fade-right" data-aos-duration="1200">
+						<div class="SkillBox" data-aos="fade-right" data-aos-duration="1000">
 							<img src="./Assets/images/figma.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">Figma</p>
@@ -504,7 +499,7 @@
 							<p class="absolute text-sm text-white -bottom-10">Framer</p>
 						</div>
 						<!-- 03 -->
-						<div class="SkillBox" data-aos="fade-down" data-aos-duration="1200">
+						<div class="SkillBox" data-aos="fade-down" data-aos-duration="1000">
 							<img src="./Assets/images/webflow.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">Webflow</p>
@@ -516,13 +511,13 @@
 							<p class="absolute text-sm text-white -bottom-10">React</p>
 						</div>
 						<!-- 05 -->
-						<div class="SkillBox" data-aos="fade-right" data-aos-duration="1200">
+						<div class="SkillBox" data-aos="fade-right" data-aos-duration="1000">
 							<img src="./Assets/images/wordpress.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">WordPress</p>
 						</div>
 						<!-- 06 -->
-						<div class="SkillBox" data-aos="fade-up" data-aos-duration="1500">
+						<div class="SkillBox" data-aos="fade-up" data-aos-duration="1200">
 							<img src="./Assets/images/laravel.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">Laravel/PHP</p>
@@ -548,7 +543,7 @@
 					<div class="space-y-40">
 						<!-- Image 01 -->
 						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100"
-							data-aos="fade-up" data-aos-duration="2000">
+							data-aos="fade-up" data-aos-duration="1000">
 							<!-- image -->
 							<div class="w-full h-[375px] lg:h-full">
 								<img class="h-full w-full object-cover overflow-hidden"
@@ -577,7 +572,7 @@
 						<!-- Image 02 + 03 -->
 						<div class="space-y-40 md:space-y-0 md:flex md:space-x-4">
 							<!--Image 02 -->
-							<div data-aos="fade-right" data-aos-duration="1500">
+							<div data-aos="fade-right" data-aos-duration="1000">
 								<div
 									class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100">
 									<!-- image -->
@@ -603,7 +598,7 @@
 								</div>
 							</div>
 							<!--Image 03 -->
-							<div data-aos="fade-left" data-aos-duration="1500">
+							<div data-aos="fade-left" data-aos-duration="1000">
 								<div
 									class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100">
 									<!-- image -->
@@ -632,7 +627,7 @@
 
 						<!-- Image 04 -->
 						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100"
-							data-aos="fade-up" data-aos-duration="1500">
+							data-aos="fade-up" data-aos-duration="1000">
 							<!-- image -->
 							<div class="w-full h-[375px] lg:h-full">
 								<img class="h-full w-full object-cover overflow-hidden"
@@ -656,7 +651,7 @@
 						</div>
 						<!-- Image 05 -->
 						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100"
-							data-aos="fade-right" data-aos-duration="2000">
+							data-aos="fade-right" data-aos-duration="1000">
 							<!-- image -->
 							<div class="w-full h-[375px] lg:h-full">
 								<img class="h-full w-full object-cover overflow-hidden"
@@ -785,7 +780,7 @@
 				<!-- Section-9 & Brand -->
 				<section data-aos="fade-up" id="" class="my-[116px]">
 					<!-- Brand Title -->
-					<div class="mb-[60px]" data-aos="fade-up" data-aos-duration="1500">
+					<div class="mb-[60px]" data-aos="fade-up" data-aos-duration="1000">
 						<p class="text-sm text-white uppercase font-light">WORK WITH 60+ BRANDS WORLDWIDE</p>
 					</div>
 					<!-- Brand Logo Image Box -->
@@ -808,19 +803,19 @@
 							<img src="./Assets/images/client-4.png" alt="" srcset="">
 						</div>
 						<!-- 05 -->
-						<div class="BrandImageHover" data-aos="fade-right" data-aos-duration="1200">
+						<div class="BrandImageHover" data-aos="fade-right" data-aos-duration="1000">
 							<img src="./Assets/images/client-5.png" alt="" srcset="">
 						</div>
 						<!-- 06 -->
-						<div class="BrandImageHover" data-aos="fade-up" data-aos-duration="1200">
+						<div class="BrandImageHover" data-aos="fade-up" data-aos-duration="1000">
 							<img src="./Assets/images/client-6.png" alt="" srcset="">
 						</div>
 						<!-- 07 -->
-						<div class="BrandImageHover" data-aos="fade-down" data-aos-duration="1200">
+						<div class="BrandImageHover" data-aos="fade-down" data-aos-duration="1000">
 							<img src="./Assets/images/client-7.png" alt="" srcset="">
 						</div>
 						<!-- 08 -->
-						<div class="BrandImageHover" data-aos="fade-right" data-aos-duration="1200">
+						<div class="BrandImageHover" data-aos="fade-right" data-aos-duration="1000">
 							<img src="./Assets/images/client-8.png" alt="" srcset="">
 						</div>
 					</div>
@@ -836,7 +831,7 @@
 						<p>Pricing</p>
 					</div>
 					<!-- Pricing Heading-Text -->
-					<div class="mb-12" data-aos="fade-up" data-aos-duration="2000">
+					<div class="mb-12" data-aos="fade-up" data-aos-duration="1000">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light">
 							My <span class="text-Green ChangeColor"> Pricing</span>
 						</h1>
@@ -943,7 +938,6 @@
 						<div class="lg:max-w-2xl">
 							<!--Form Error Display -->
 							<p id="errorText" class="text-sm text-[#fc4545] mb-10"></p>
-
 							<!-- Form -->
 							<form onsubmit="handleSubmit(event)" class="flex flex-col" data-aos="fade-up"
 								data-aos-duration="1000" data-aos-easing="ease-in-sine">
@@ -1031,6 +1025,14 @@
 				</section>
 			</div>
 		</div>
+		<div id="scrollToTopButton" class="scroll-to-top z-50">
+			<div class="cursor-pointer p-1" onclick="scrollToTop()">
+				<i class="bi bi-caret-up text-xl"></i>
+			</div>
+			<div class="cursor-pointer p-1" onclick="scrollToBottom()" title="Scroll Down">
+				<i class="bi bi-caret-down text-xl"></i>
+			</div>
+		  </div>
 	</main>
 	<script src="./Javascript/Loader.js"></script>
 	<script src="./Javascript/index.js"></script>

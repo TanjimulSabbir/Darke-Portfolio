@@ -46,8 +46,8 @@ const handleRightHeaderMenu = (event) => {
     }
 }
 
-const handleClicked = (event) => {
-    document.getElementById("MenuOpenDrawer").click();
+const handleClicked = () => {
+    document.getElementById("DrawerBtn").click();
 }
 
 const RightSideFixedNav = document.getElementById("RightSideFixedNav");
