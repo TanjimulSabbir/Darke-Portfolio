@@ -29,7 +29,7 @@
 			<!-- Right Side Header Menu -->
 			<!-- onclick="handleRightMenuOpen()" id="MenuOpenDrawer"-->
 			<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()"
-				class="fixed right-8 md:right-[76px] mt-4 md:top-10 lg:top-12 z-30">
+				class="fixed right-8 top-6 md:right-[76px] md:top-10 lg:top-12 z-40">
 				<label for="Menu-Drawer" id="DrawerBtn">
 					<p class="Rounded flex inset-0 items-center justify-center bg-black cursor-pointer group">
 						<i class="bi bi-grid text-xl IconHover transition duration-500"></i>
@@ -41,7 +41,7 @@
 				title="Menu Setting">
 				<label for="Setting-Drawer">
 					<p class="Rounded border-none hover:border-none cursor-pointer text-lg">
-						<i class="las la-cog text-Green text-xl"></i>
+						<i class="las la-cog text-white text-xl"></i>
 					</p>
 				</label>
 			</div>
@@ -98,7 +98,7 @@
 							</li>
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#portfolios">
-									<i class="las la-grip-vertical text-[20px]  text-Primary  IconHover"></i>
+									<i class="las la-grip-vertical text-[20px]  text-Primary IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Portfolios</span>
 								</a>
@@ -144,7 +144,7 @@
 
 		<!-- Setting Drawer Box -->
 		<div id="SettingDrawerContainer" onclick="handleSettingDrawer()">
-			<div class="fixed w-screen h-full min-h-full bg-black bg-opacity-30 z-40">
+			<div class="fixed w-screen h-screen min-h-full bg-black bg-opacity-30 z-50">
 				<div class="drawer drawer-end">
 					<input id="Setting-Drawer" type="checkbox" class="drawer-toggle" />
 					<div class="drawer-content">
@@ -160,7 +160,7 @@
 											<i class="las la-times text-5xl"></i>
 										</label>
 										</span>
-										<h2 class="text-[34px] font-extralight leading-[1.2rem] my-20 md:mb-20">
+										<h2 class="text-[34px] font-extralight leading-[1.2rem] my-20 md:mt-0 md:mb-20">
 											Configuration</h2>
 										<div class="main-color-option-inner">
 											<p class="text-[13px] uppercase mb-4 md:mb-8">Colors</p>
@@ -838,7 +838,7 @@
 					</div>
 
 					<!-- Pricing Table Box -->
-					<div class="flex flex-col md:flex-row justify-center h-full min-h-full gap-4 md:gap-6">
+					<div class="flex flex-col md:flex-row justify-center h-full min-h-full my-4 md:my-0 md:gap-6">
 						<!-- Table 01 -->
 						<div class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col p-10 transition-all hover:border-Green duration-300"
 							data-aos="fade-right" data-aos-duration="1000">
@@ -874,7 +874,7 @@
 							</div>
 						</div>
 						<!-- Table 02 -->
-						<div class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col  p-10 transition-all hover:border-Green duration-300"
+						<div class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col p-10 transition-all hover:border-Green duration-300"
 							data-aos="fade-left" data-aos-duration="1000">
 							<!-- 01 -->
 							<div class="flex justify-between mb-8">

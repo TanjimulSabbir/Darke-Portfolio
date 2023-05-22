@@ -43,9 +43,6 @@
  .Rounded{
   @apply border-2 border-[#565656] text-Primary w-[50px] h-[50px] rounded-full transition duration-200 hover:text-Green hover:border-Green;
  }
- .UniversalPadding{
-  @apply lg:px-3;
- }
  .Heading{
   @apply border border-Primary rounded-3xl px-[18px] py-[9px] uppercase text-white inline-flex justify-center items-center space-x-3 font-light text-xs;
  }
@@ -65,7 +62,7 @@
  @apply bg-black p-2 text-white rounded-md cursor-pointer;
  }
  .UniversalPadding{
-  @apply px-4 sm:px-6 md:px-10;
+  @apply px-4 sm:px-6 md:px-10 lg:mx-3;
 }
 .PortfolioFooterText{
   @apply decoration-1 group-hover:underline group-hover:underline-offset-8;

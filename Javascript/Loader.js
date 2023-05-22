@@ -1,8 +1,8 @@
 window.addEventListener("load", function () {
-    var LoaderContainer = document.getElementById('LoaderContainer');
-    var Loader = document.getElementById('Loader');
+    let LoaderContainer = document.getElementById('LoaderContainer');
+    let Loader = document.getElementById('Loader');
 
-    LoaderContainer.style.opacity = "1"; // Set initial opacity
+    LoaderContainer.style.opacity = "1";
 
     setTimeout(function () {
         LoaderContainer.style.opacity = "0";

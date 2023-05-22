@@ -47,6 +47,9 @@ const handleRightHeaderMenu = (event) => {
 }
 
 const handleClicked = () => {
+    // if (window.innerWidth >= 1249) {
+    //     return;
+    // }
     document.getElementById("DrawerBtn").click();
 }
 
