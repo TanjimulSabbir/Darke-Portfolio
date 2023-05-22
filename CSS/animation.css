@@ -1,69 +1,135 @@
 @keyframes rotate360 {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .rotate-animation {
-    animation-name: rotate360;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  .ResumeBox,.TitleHover,.RoundedDot{
-    transition: all;
-    transition-duration: .6s;
-    transition-timing-function: ease-in-out;
-  }
-  .ResumeBox:hover .TitleHover {
-    color: #28e98c;
-  }
-  .ResumeBox:hover .RoundedDot {
-    background-color: #28e98c;
-  }
-  .ServiceBox,.Projects{
-    transition: all;
-    transition-duration: .6s;
-    transition-timing-function: ease-in-out;
-  }
-  .ServiceBox:hover{
-    border-color: #28e98c;
-  }
-  .ServiceBox:hover .Projects{
-   text-decoration: underline;
-  }
-  .SkillBox{
-    border-color: #565656;
-    transition: all;
-    transition-duration: .6s;
-    transition-timing-function: ease-in-out;
-  }
-  .SkillBox:hover{
-    border-color: #28e98c;
-  }
-  .PortfolioBox img{
-    border-radius: 40px;
-  }
-  .PortfolioBox .Heading{
-    background: white;
-    color: black;
-    border: white;
-    transition: .5s;
-    text-transform: capitalize;
+  0% {
+    transform: rotate(0deg);
   }
 
-.IconHover{
-transition: all;
-transition-duration: .5s;
-transition-timing-function: ease-in-out;
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.group:hover .IconHover{
+#LoaderContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 99;
+  transition: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+#Loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #f7f8fa;
+  animation: Bounce 2s infinite;
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 2s ease-out;
+}
+
+@keyframes Bounce {
+  0%,100%{
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+}
+.rotate-animation {
+  animation-name: rotate360;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.ResumeBox,
+.TitleHover,
+.RoundedDot {
+  transition: all;
+  transition-duration: .6s;
+  transition-timing-function: ease-in-out;
+}
+
+.ResumeBox:hover .TitleHover {
   color: #28e98c;
 }
-.Rounded:hover .IconHover{
+
+.ResumeBox:hover .RoundedDot {
+  background-color: #28e98c;
+}
+
+.ServiceBox,
+.Projects {
+  transition: all;
+  transition-duration: .6s;
+  transition-timing-function: ease-in-out;
+}
+
+.ServiceBox:hover {
+  border-color: #28e98c;
+}
+
+.ServiceBox:hover .Projects {
+  text-decoration: underline;
+}
+
+.SkillBox {
+  border-color: #565656;
+  transition: all;
+  transition-duration: .6s;
+  transition-timing-function: ease-in-out;
+}
+
+.SkillBox:hover {
+  border-color: #28e98c;
+}
+
+.PortfolioBox img {
+  border-radius: 40px;
+}
+
+.PortfolioBox .Heading {
+  background: white;
+  color: black;
+  border: white;
+  transition: .5s;
+  text-transform: capitalize;
+}
+
+.IconHover {
+  transition: all;
+  transition-duration: .5s;
+  transition-timing-function: ease-in-out;
+}
+
+.group:hover .IconHover {
+  color: #28e98c;
+}
+
+.Rounded:hover .IconHover {
   color: #28e98c;
   transition-duration: .3s;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+
+.scroll-to-top.visible {
+  visibility: visible;
+  opacity: 1;
 }

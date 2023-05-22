@@ -13,105 +13,113 @@
 	<!-- Setting Menu CSS Style Sheet -->
 	<link rel="stylesheet" href="./CSS/SettingMenu.css">
 	<!--Icons -->
-	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-		<!-- Animation -->
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet"
+		href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+	<!-- Animation -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-	<main class="my-5 md:mb-5 lg:mt-0">
+
+	<main class="py-10 md:mb-5 lg:py-0">
+		<div id="LoaderContainer">
+			<div id="Loader"></div>
+		</div>
 		<header class="">
 			<!-- Right Side Header Menu -->
 			<!-- onclick="handleRightMenuOpen()" id="MenuOpenDrawer"-->
-			<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()" class="fixed right-8 md:right-16 mt-4 md:top-10 lg:top-16 z-40">
+			<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()"
+				class="fixed right-8 md:right-[76px] mt-4 md:top-10 lg:top-12 z-40">
 				<label for="Menu-Drawer">
 					<p class="Rounded flex inset-0 items-center justify-center bg-black cursor-pointer group">
-						<i class="bi bi-grid text-2xl IconHover transition duration-500"></i>
+						<i class="bi bi-grid text-xl IconHover transition duration-500"></i>
 					</p>
 				</label>
 			</div>
 			<!-- Left Side Header Menu -->
-			<div id="SettingOpenDrawer" onclick="handleSettingOpen()" class="fixed left-[12px] top-14 z-50">
+			<div id="SettingOpenDrawer" onclick="handleSettingOpen()" class="fixed left-[10px] top-14 z-50"
+				title="Menu Setting">
 				<label for="Setting-Drawer">
-				<p class="Rounded border-none hover:border-none cursor-pointer text-lg">
-					<i class="las la-cog text-Green"></i>
-				</p>
-			</label>
+					<p class="Rounded border-none hover:border-none cursor-pointer text-lg">
+						<i class="las la-cog text-Green text-xl"></i>
+					</p>
+				</label>
 			</div>
 		</header>
 
+	
+		<div id="scrollToTopButton" class="scroll-to-top z-50">
+			<div class="text-2xl cursor-pointer p-1" onclick="scrollToTop()">
+				<i class="bi bi-caret-up"></i>
+			</div>
+			<div class="text-2xl cursor-pointer p-1" onclick="scrollToBottom()" title="Scroll Down">
+				<i class="bi bi-caret-down"></i>
+			</div>
+		  </div>	
 		<!-- Menu List Box -->
-		<!-- id="RightMenuContainer"  onclick="handleRightHeaderMenu()" -->
-
 		<div id="RightMenuContainer" onclick="handleRightHeaderMenu()"
-			class="fixed right-0 w-full h-full min-h-full z-30">
+			class="absolute right-0 w-full h-full min-h-full z-30">
 			<div class="drawer drawer-end">
 				<input id="Menu-Drawer" type="checkbox" class="drawer-toggle" />
 				<div class="drawer-content ">
 				</div>
 				<div class="drawer-side">
 					<label for="Menu-Drawer" class="drawer-overlay"></label>
-					<div id="drawerContentId" class="pl-20 pt-14 h-full w-full max-w-[345px] bg-black text-base-content">
+					<div id="drawerContentId"
+						class="pl-20 pt-14 h-full w-full max-w-[345px] bg-black text-base-content">
 						<p class="pl-4 mb-7 text-lg text-Primary">Menu</p>
 						<ul class="Hovered menu text-Primary">
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#home">
-									<i	class="las la-home text-[20px] text-Primary IconHover"></i>
+									<i class="las la-home text-[20px] text-Primary IconHover"></i>
 									<span class="text-xs group-hover:text-white transition-all duration-500">Home</span>
 								</a>
 							</li>
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#about">
-									<i
-										class="lar la-user text-[20px] text-Primary IconHover"></i>
+									<i class="lar la-user text-[20px] text-Primary IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">About</span>
 								</a>
 							</li>
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#resume">
-									<i
-										class="las la-briefcase text-[20px]  text-Primary  IconHover"></i>
+									<i class="las la-briefcase text-[20px]  text-Primary  IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Resume</span>
 								</a>
 							</li>
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#services">
-									<i
-										class="las la-stream text-[20px]  text-Primary  IconHover"></i>
+									<i class="las la-stream text-[20px]  text-Primary  IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Services</span>
 								</a>
 							</li>
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#skills">
-									<i
-										class="las la-shapes text-[20px] text-Primary IconHover"></i>
+									<i class="las la-shapes text-[20px] text-Primary IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Skills</span>
 								</a>
 							</li>
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#portfolios">
-									<i
-										class="las la-grip-vertical text-[20px]  text-Primary  IconHover"></i>
+									<i class="las la-grip-vertical text-[20px]  text-Primary  IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Portfolios</span>
 								</a>
 							</li>
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#testimonial">
-									<i
-										class="lar la-comment text-[20px] text-Primary IconHover"></i>
+									<i class="lar la-comment text-[20px] text-Primary IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Testimonial</span>
 								</a>
 							</li>
 							<li class="group" onclick="handleClicked(event)">
 								<a class="hover:bg-transparent" href="#contact">
-									<i
-										class="custom-hover las la-envelope text-[20px] text-Primary IconHover"></i>
+									<i class="custom-hover las la-envelope text-[20px] text-Primary IconHover"></i>
 									<span
 										class="text-xs group-hover:text-white transition-all duration-500">Contact</span>
 								</a>
@@ -143,26 +151,27 @@
 
 		<!-- Setting Drawer Box -->
 		<div id="SettingDrawerContainer" onclick="handleSettingDrawer()">
-			<div class="absolute w-full h-full min-h-full bg-black bg-opacity-30 z-30">
+			<div class="fixed w-full h-full min-h-full bg-black bg-opacity-30 z-30">
 				<div class="drawer drawer-end">
 					<input id="Setting-Drawer" type="checkbox" class="drawer-toggle" />
 					<div class="drawer-content">
-					</div> 
+					</div>
 					<div class="drawer-side">
 						<label for="Setting-Drawer" class="drawer-overlay"></label>
 						<div id="SettingDrawerContent" class="w-full max-w-5xl bg-[#191919] p-4 md:p-32 text-white">
-							<div class="global-color">
+							<div class="main-color-box">
 								<div class="inner">
-									<div class="overlay"></div>
-									<div class="global-color-option">
+									<div class="main-color-option">
 										<span class="absolute right-5 top-5 text-xl cursor-pointer">
 											<i class="las la-times"></i>
 										</span>
-										<h2 class="text-[34px] font-extralight leading-[1.2rem] mb-10 md:mb-20">Configuration</h2>
-										<div class="global-color-option-inner">
+										<h2 class="text-[34px] font-extralight leading-[1.2rem] mb-10 md:mb-20">
+											Configuration</h2>
+										<div class="main-color-option-inner">
 											<p class="text-[13px] uppercase mb-4 md:mb-8">Colors</p>
-											<div class="color-boxed mb-10 md:mb-[109px] flex gap-7 pt-7">
-												<a href="#" class="clr-active" onclick="handleChangeColor('#28e98c');"></a>
+											<div class="colorContainer mb-6 md:mb-[100px] flex gap-7 pt-7">
+												<a href="#" class="clr-active"
+													onclick="handleChangeColor('#28e98c');"></a>
 												<a href="#" onclick="handleChangeColor('#e4af12')"></a>
 												<a href="#" onclick="handleChangeColor('#fe6f1d');"></a>
 												<a href="#" onclick="handleChangeColor('#14c5fd');"></a>
@@ -173,25 +182,39 @@
 												<a href="#" onclick="handleChangeColor('#cceb00');"></a>
 											</div>
 											<p class="text-[13px] uppercase mb-5 md:mb-12">Three Dimension Shapes</p>
-											<ul class="text-sm font-medium grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-6 md:gap-12">
-												<li class="btn" onclick="BackgroundColorChange('dracula')"><p>Earth Lines Sphere</p></li>
-												<li class="btn" onclick="BackgroundColorChange('night')"><p>3D Abstract Ball</p></li>
-												<li class="btn" onclick="BackgroundColorChange('aqua')"><p>Water Waves</p></li>
-												<li class="btn" onclick="BackgroundColorChange('business')"><p>Liquids Wavy</p></li>
-												<li class="btn" onclick="BackgroundColorChange('black')"><p>Solid Color</p></li>
-												<li class="btn" onclick="BackgroundColorChange('dark')"><p>Simple Strings</p></li>
+											<ul
+												class="Bg-Color-Container text-sm font-medium grid grid-cols-2 md:grid-cols-4 justify-center items-center gap-5 md:gap-10 text-black">
+												<li class="btn rounded-lg bg-Green text-blac"
+													onclick="BackgroundColorChange('dracula')">
+													<p class="capitalize">Dracula Theme</p>
+												</li>
+												<li class="btn rounded-lg" onclick="BackgroundColorChange('night')">
+													<p class="capitalize">Night Theme</p>
+												</li>
+												<li class="btn rounded-lg" onclick="BackgroundColorChange('aqua')">
+													<p class="capitalize">Aqua Theme</p>
+												</li>
+												<li class="btn rounded-lg" onclick="BackgroundColorChange('business')">
+													<p class="capitalize">Slow Dark</p>
+												</li>
+												<li class="btn rounded-lg" onclick="BackgroundColorChange('black')">
+													<p class="capitalize">Default Theme</p>
+												</li>
+												<li class="btn rounded-lg" onclick="BackgroundColorChange('dark')">
+													<p class="capitalize">Dark Theme</p>
+												</li>
 											</ul>
 										</div>
 									</div>
 								</div>
-							</div>						
+							</div>
 						</div>
 					</div>
-				  </div>
+				</div>
 			</div>
 		</div>
 		<!--Section-1 -->
-		<section  class="relative lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:h-screen border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-4 md:p-7 md:max-w-3xl lg:max-w-[392px] md:mx-auto z-10">
+		<section class="relative lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:h-screen border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-4 md:p-7 md:max-w-3xl lg:max-w-[392px] md:mx-auto z-10">
 			<div>
 				<div class="flex justify-between items-center">
 					<div>
@@ -229,7 +252,8 @@
 
 						<div>
 							<button class="Btn flex justify-center items-center group">
-								<i class="las la-envelope mr-2 text-2xl font-bold text-black IconHover duration-500"></i>
+								<i
+									class="las la-envelope mr-2 text-2xl font-bold text-black IconHover duration-500"></i>
 								<a>Hire Me!</a>
 							</button>
 						</div>
@@ -247,42 +271,43 @@
 			<div data-aos="fade-up" class="w-full md:max-w-3xl mx-auto">
 				<!-- Section-2 & Introduce & Large Device Right-Top  -->
 
-				<section id="home" >
-						<div class="Heading mt-[60px] mb-14">
-							<p class="text-white">
-								<i class="las la-home"></i>
+				<section id="home">
+					<div class="Heading mt-[60px] mb-14">
+						<p class="text-white">
+							<i class="las la-home"></i>
+						</p>
+						<p>Introduce</p>
+					</div>
+					<div data-aos="fade-up" data-aos-delay="200" class="mb-10">
+						<h1
+							class="text-[50px] leading-[65px] md:text-[58px] lg:text-[78px] font-light text-white scroll-p-5 lg:leading-[90px] mb-11">
+							Say Hi from <span class="ChangeColor text-Green">Drake</span>, Framer Designer and Developer
+						</h1>
+						<p class="mb-6 text-Primary w-full max-w-[480px]">I design and code beautifully simple
+							things and i love what i do. Just simple like that!</p>
+					</div>
+					<!-- Rotate Animation Image  -->
+					<div class="flex justify-start md:justify-end">
+						<div class="relative border border-Primary p-4 rounded-full">
+							<img class="rotate-animation" src="./Assets/images/round-text.png" alt="" srcset="">
+							<p class="absolute inset-0 flex justify-center items-center text-4xl text-white">
+								<i class="fa-solid fa-arrow-down-long font-thin"></i>
 							</p>
-							<p>Introduce</p>
 						</div>
-						<div data-aos="fade-up" data-aos-delay="200"  class="mb-10">
-							<h1
-								class="text-[50px] leading-[65px] md:text-[58px] lg:text-[78px] font-light text-white scroll-p-5 lg:leading-[90px] mb-11">
-								Say Hi from <span class="ChangeColor text-Green">Drake</span>, Framer Designer and Developer</h1>
-							<p class="mb-6 text-Primary w-full max-w-[480px]">I design and code beautifully simple
-								things and i love what i do. Just simple like that!</p>
-						</div>
-						<!-- Rotate Animation Image  -->
-						<div class="flex justify-start md:justify-end">
-							<div class="relative border border-Primary p-4 rounded-full">
-								<img class="rotate-animation" src="./Assets/images/round-text.png" alt="" srcset="">
-								<p class="absolute inset-0 flex justify-center items-center text-4xl text-white">
-									<i class="fa-solid fa-arrow-down-long font-thin"></i>
-								</p>
-							</div>
-						</div>
-						<!-- Experience -->
-						<div class="mt-14 flex justify-start items-center space-x-24">
-							<h1 class="space-y-7 flex flex-col">
-								<span class="text-Green text-5xl md:text-7xl font-light ChangeColor">10+</span>
-								<span class="text-sm leading-6">YEARS OF <br>
-									EXPERIENCE</span>
-							</h1>
-							<h1 class="space-y-7 flex flex-col">
-								<span class="text-Green text-5xl md:text-7xl font-light ChangeColor">182+</span>
-								<span class="text-sm leading-6">PROJECTS COMPLETED ON 15 <br> COUNTRIES
-								</span>
-							</h1>
-						</div>
+					</div>
+					<!-- Experience -->
+					<div class="mt-14 flex justify-start items-center space-x-24">
+						<h1 class="space-y-7 flex flex-col">
+							<span class="text-Green text-5xl md:text-7xl font-light ChangeColor">10+</span>
+							<span class="text-sm leading-6">YEARS OF <br>
+								EXPERIENCE</span>
+						</h1>
+						<h1 class="space-y-7 flex flex-col">
+							<span class="text-Green text-5xl md:text-7xl font-light ChangeColor">182+</span>
+							<span class="text-sm leading-6">PROJECTS COMPLETED ON 15 <br> COUNTRIES
+							</span>
+						</h1>
+					</div>
 				</section>
 				<!-- Section-3 && About -->
 				<section data-aos="fade-up" id="about" class="my-[64px] sm:my-[116px]">
@@ -314,24 +339,24 @@
 				</section>
 
 				<!-- Section-4 & Resume -->
-				<section  id="resume" class="my-[58px] md:my-[116px]">
+				<section id="resume" class="my-[58px] md:my-[116px]">
 					<!-- Resume Title -->
-					<div class="Heading my-10 sm:my-[60px]" data-aos="fade-down-left" data-aos-delay="300">
+					<div class="Heading my-10 sm:my-[60px]" data-aos="fade-up" data-aos-duration="500">
 						<p>
 							<i class="las la-briefcase"></i>
 						</p>
 						<p>Resume</p>
 					</div>
 					<!-- Resume Heading-Text -->
-					<div class="mb-12" data-aos="fade-up" data-aos-delay="100" data-aos-duration="3000">
+					<div class="mb-12" data-aos="fade-up" data-aos-duration="2000">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light">
 							Education & <span class="ChangeColor text-Green">Experience</span>
 						</h1>
 					</div>
 					<!-- Expericen and Education -->
-					<div data-aos="fade-up-right">
+					<div>
 						<!-- 01 -->
-						<div class="ResumeBox relative" data-aos="fade-down-left" data-aos-delay="200" data-aos-duration="2000">
+						<div class="ResumeBox relative" data-aos="fade-down-left" data-aos-duration="1500">
 							<p class="absolute TitleHover left-[74px] -top-3">2020 - Present</p>
 							<div
 								class="RoundedDot absolute bg-Secondary rounded-full w-3 h-3 text-Primary -top-[4px] -left-[6px] z-40">
@@ -351,7 +376,8 @@
 							</div>
 						</div>
 						<!-- 02 -->
-						<div class="ResumeBox relative border-l border-primary space-y-5 pl-[74px] pb-[68px]" data-aos="fade-down-left" data-aos-delay="100" data-aos-duration="2000">
+						<div class="ResumeBox relative border-l border-primary space-y-5 pl-[74px] pb-[68px]"
+							data-aos="fade-left" data-aos-duration="700">
 							<p class="TitleHover">2013 - 2019</p>
 							<div
 								class="RoundedDot absolute bg-Secondary rounded-full w-3 h-3 text-Primary -top-[12px] -left-[6px]">
@@ -371,7 +397,8 @@
 						</div>
 						<!-- 03 -->
 
-						<div class="ResumeBox relative border-l border-primary space-y-5 pl-[74px]" data-aos="fade-down-left" data-aos-delay="300" data-aos-duration="2000">
+						<div class="ResumeBox relative border-l border-primary space-y-5 pl-[74px]" data-aos="fade-left"
+							data-aos-duration="700">
 							<p class="TitleHover">2010 - 2013</p>
 							<div
 								class="RoundedDot absolute bg-Secondary rounded-full w-3 h-3 text-Primary -top-[12px] -left-[6px]">
@@ -386,14 +413,14 @@
 				<!-- Section-5 & Service -->
 				<section data-aos="fade-up" id="services" class="my-[64px] md:my-[116px]">
 					<!-- Service Heading-Text -->
-					<div class="Heading my-[48px] sm:my-[60px]">
+					<div data-aos="fade-up" class="Heading my-[48px] sm:my-[60px]">
 						<p>
 							<i class="las la-stream "></i>
 						</p>
 						<p>Service</p>
 					</div>
 					<!-- Service Heading-Text -->
-					<div class="mb-12">
+					<div class="mb-12" data-aos="fade-up" data-aos-duration="600">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light">
 							My <span class="ChangeColor text-Green">Specializations</span>
 						</h1>
@@ -401,13 +428,13 @@
 					<!--Service Border Box -->
 					<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-1 gap-4 md:gap-3">
 						<!-- 01 -->
-						<div
-							class="ServiceBox border border-Primary py-9 px-6 sm:px-6 sm:py-8 lg:px-12 lg:py-[44px] rounded-2xl md:rounded-3xl">
+						<div class="ServiceBox border border-Primary py-9 px-6 sm:px-6 sm:py-8 lg:px-12 lg:py-[44px] rounded-2xl md:rounded-3xl"
+							data-aos="fade-up" data-aos-duration="700">
 
 							<h1 class="flex justify-between space-x-4 items-center mb-2">
 								<span class="text-xl lg:text-2xl text-white font-light">Website Design</span>
 								<span>
-									<i class="las la-bezier-curve text-Green"></i>
+									<i class="las la-bezier-curve text-Green lg:text-xl"></i>
 								</span>
 							</h1>
 							<p class="text-sm text-Primary mb-8 leading-6">I created digital products with unique ideas
@@ -417,12 +444,12 @@
 
 						</div>
 						<!-- 02 -->
-						<div
-							class="ServiceBox border border-Primary py-9 px-6 sm:px-6 sm:py-8 lg:px-12 lg:py-[44px] rounded-2xl md:rounded-3xl">
+						<div class="ServiceBox border border-Primary py-9 px-6 sm:px-6 sm:py-8 lg:px-12 lg:py-[44px] rounded-2xl md:rounded-3xl"
+							data-aos="fade-up" data-aos-duration="900">
 							<h1 class="flex justify-between space-x-4 items-center mb-2">
 								<span class="text-xl lg:text-2xl text-white font-light">Development</span>
 								<span>
-									<i class="las la-code text-Green"></i>
+									<i class="las la-code text-Green lg:text-xl"></i>
 								</span>
 							</h1>
 							<p class="text-sm text-Primary mb-8 leading-6">I build website go live with Framer, Webflow
@@ -431,12 +458,12 @@
 								126 PROJECTS</h1>
 						</div>
 						<!-- 03 -->
-						<div
-							class="ServiceBox border border-Primary py-9 px-6 sm:px-6 sm:py-8 lg:px-12 lg:py-[44px] rounded-2xl md:rounded-3xl">
+						<div class="ServiceBox border border-Primary py-9 px-6 sm:px-6 sm:py-8 lg:px-12 lg:py-[44px] rounded-2xl md:rounded-3xl"
+							data-aos="fade-up" data-aos-duration="1100">
 							<h1 class="flex justify-between space-x-3 items-center mb-2">
 								<span class="text-xl lg:text-2xl text-white font-light">SEO/Marketing</span>
 								<span>
-									 bi-braces text-Green"></i>
+									<i class="las la-bezier-curve text-Green lg:text-xl"></i>
 								</span>
 							</h1>
 							<p class="text-sm text-Primary mb-8 leading-6">Increase the traffic for your website with
@@ -448,16 +475,16 @@
 				</section>
 
 				<!-- Section-6 & Skills -->
-				<section data-aos="fade-up" id="skills" class="my-[64px] sm:my-[116px]">
+				<section id="skills" class="my-[64px] sm:my-[116px]">
 					<!-- Skill Title -->
-					<div class="Heading my-[48px] md:my-[60px]">
+					<div class="Heading my-[48px] md:my-[60px]" data-aos="fade-up" data-aos-duration="700">
 						<p>
 							<i class="las la-shapes"></i>
 						</p>
 						<p>My Skills</p>
 					</div>
 					<!-- Skill Heading-Text -->
-					<div class="mb-12">
+					<div class="mb-12" data-aos="fade-up" data-aos-duration="1000">
 						<h1 class="text-[38px] md:text-5xl text-white font-light">
 							My <span class="ChangeColor text-Green">Advantages</span>
 						</h1>
@@ -465,37 +492,37 @@
 					<!--Skills Border Box -->
 					<div class="grid grid-cols-2 md:grid-cols-4 gap-5 gap-y-12">
 						<!-- 01 -->
-						<div class="SkillBox">
+						<div class="SkillBox" data-aos="fade-right" data-aos-duration="1200">
 							<img src="./Assets/images/figma.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">Figma</p>
 						</div>
 						<!-- 02 -->
-						<div class="SkillBox">
+						<div class="SkillBox" data-aos="fade-up" data-aos-duration="1000">
 							<img src="./Assets/images/framer.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">Framer</p>
 						</div>
 						<!-- 03 -->
-						<div class="SkillBox">
+						<div class="SkillBox" data-aos="fade-down" data-aos-duration="1200">
 							<img src="./Assets/images/webflow.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">Webflow</p>
 						</div>
 						<!-- 04 -->
-						<div class="SkillBox">
+						<div class="SkillBox" data-aos="fade-left" data-aos-duration="1000">
 							<img src="./Assets/images/react.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">React</p>
 						</div>
 						<!-- 05 -->
-						<div class="SkillBox">
+						<div class="SkillBox" data-aos="fade-right" data-aos-duration="1200">
 							<img src="./Assets/images/wordpress.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">WordPress</p>
 						</div>
 						<!-- 06 -->
-						<div class="SkillBox">
+						<div class="SkillBox" data-aos="fade-up" data-aos-duration="1500">
 							<img src="./Assets/images/laravel.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
 							<p class="absolute text-sm text-white -bottom-10">Laravel/PHP</p>
@@ -505,14 +532,14 @@
 				<!-- Section-7 & Portfolio -->
 				<section data-aos="fade-up" id="portfolios" class="my-[64px] sm:my-[116px]">
 					<!-- Portfolio Title -->
-					<div class="Heading my-[48px] sm:my-[60px]">
+					<div class="Heading my-[48px] sm:my-[60px]" data-aos="fade-up" data-aos-duration="500">
 						<p>
 							<i class="lar la-comment"></i>
 						</p>
 						<p>Portfolio</p>
 					</div>
 					<!-- Portfolio Heading-Text -->
-					<div class="mb-12">
+					<div class="mb-12" data-aos="fade-up" data-aos-duration="700">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light">
 							Featured <span class="ChangeColor text-Green"> Projects</span>
 						</h1>
@@ -520,7 +547,8 @@
 					<!--Image Box -->
 					<div class="space-y-40">
 						<!-- Image 01 -->
-						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100">
+						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100"
+							data-aos="fade-up" data-aos-duration="2000">
 							<!-- image -->
 							<div class="w-full h-[375px] lg:h-full">
 								<img class="h-full w-full object-cover overflow-hidden"
@@ -549,57 +577,64 @@
 						<!-- Image 02 + 03 -->
 						<div class="space-y-40 md:space-y-0 md:flex md:space-x-4">
 							<!--Image 02 -->
-							<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100">
-								<!-- image -->
-								<div class="w-full h-[375px]">
-									<img class="h-full w-full object-cover overflow-hidden"
-										src="./Assets/images/portfolio2.jpg" alt="" srcset="">
-								</div>
+							<div data-aos="fade-right" data-aos-duration="1500">
+								<div
+									class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100">
+									<!-- image -->
+									<div class="w-full h-[375px]">
+										<img class="h-full w-full object-cover overflow-hidden"
+											src="./Assets/images/portfolio2.jpg" alt="" srcset="">
+									</div>
 
-								<div class="absolute left-5 bottom-5 flex space-x-4 justify-start items-center ">
-									<!-- 01 -->
-									<div class="Heading PortfolioBtnHover">
-										<p>WordPress</p>
+									<div class="absolute left-5 bottom-5 flex space-x-4 justify-start items-center ">
+										<!-- 01 -->
+										<div class="Heading PortfolioBtnHover">
+											<p>WordPress</p>
+										</div>
+										<!-- 02 -->
+										<div class="Heading PortfolioBtnHover">
+											<p>PHP/Laravel</p>
+										</div>
 									</div>
-									<!-- 02 -->
-									<div class="Heading PortfolioBtnHover">
-										<p>PHP/Laravel</p>
-									</div>
+									<h1
+										class="PortfolioButtomText absolute PortfolioFooterText -bottom-16 text-xl sm:text-2xl text-white font-light">
+										Moonex WordPress
+										Theme</h1>
 								</div>
-								<h1
-									class="PortfolioButtomText absolute PortfolioFooterText -bottom-16 text-xl sm:text-2xl text-white font-light">
-									Moonex WordPress
-									Theme</h1>
 							</div>
 							<!--Image 03 -->
-							<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100">
-								<!-- image -->
-								<div class="w-full h-[375px]">
-									<img class="h-full w-full object-cover overflow-hidden"
-										src="./Assets/images/portfolio3.jpg" alt="" srcset="">
-								</div>
+							<div data-aos="fade-left" data-aos-duration="1500">
+								<div
+									class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100">
+									<!-- image -->
+									<div class="w-full h-[375px]">
+										<img class="h-full w-full object-cover overflow-hidden"
+											src="./Assets/images/portfolio3.jpg" alt="" srcset="">
+									</div>
 
-								<div class="absolute left-5 bottom-5 flex space-x-4 justify-start items-center ">
-									<!-- 01 -->
-									<div class="Heading PortfolioBtnHover">
-										<p>Figma</p>
+									<div class="absolute left-5 bottom-5 flex space-x-4 justify-start items-center ">
+										<!-- 01 -->
+										<div class="Heading PortfolioBtnHover">
+											<p>Figma</p>
+										</div>
+										<!-- 02 -->
+										<div class="Heading PortfolioBtnHover">
+											<p>Webflow</p>
+										</div>
 									</div>
-									<!-- 02 -->
-									<div class="Heading PortfolioBtnHover">
-										<p>Webflow</p>
-									</div>
+									<h1
+										class="PortfolioButtomText absolute PortfolioFooterText -bottom-16 text-xl sm:text-2xl text-white font-light">
+										Taskly Dashboard
+									</h1>
 								</div>
-								<h1
-									class="PortfolioButtomText absolute PortfolioFooterText -bottom-16 text-xl sm:text-2xl text-white font-light">
-									Taskly Dashboard
-								</h1>
 							</div>
 						</div>
 
 						<!-- Image 04 -->
-						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100">
+						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100"
+							data-aos="fade-up" data-aos-duration="1500">
 							<!-- image -->
-							<div class="w-full h-[375px] lg:h-full ">
+							<div class="w-full h-[375px] lg:h-full">
 								<img class="h-full w-full object-cover overflow-hidden"
 									src="./Assets/images/portfolio4.jpg" alt="" srcset="">
 							</div>
@@ -620,9 +655,10 @@
 								Estate Site Redesign</h1>
 						</div>
 						<!-- Image 05 -->
-						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100">
+						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100"
+							data-aos="fade-right" data-aos-duration="2000">
 							<!-- image -->
-							<div class="w-full h-[375px] lg:h-full ">
+							<div class="w-full h-[375px] lg:h-full">
 								<img class="h-full w-full object-cover overflow-hidden"
 									src="./Assets/images/portfolio5.jpg" alt="" srcset="">
 							</div>
@@ -640,24 +676,25 @@
 						</div>
 					</div>
 				</section>
+				<!-- Testing Code -->
 				<!-- Section-8 & Testimonial-->
-				<section data-aos="fade-up" id="testimonial" aria-colcount="testimonial" class="my-[116px]">
+				<section id="testimonial" data-aos="fade-up" class="my-[116px]">
 					<!-- Testimonial Title -->
-					<div class="Heading my-[48px] sm:my-[60px]">
+					<div class="Heading my-[48px] sm:my-[60px]" data-aos="fade-up" data-aos-duration="800">
 						<p>
 							<i class="lar la-comment text-white"></i>
 						</p>
 						<p>Testimonial</p>
 					</div>
 					<!-- Testimonial Heading-Text -->
-					<div class="mb-12">
+					<div class="mb-12" data-aos="fade-up" data-aos-duration="1000">
 						<h1 class="text-[38px] leading-[53px] sm:text-5xl sm:leading-[60px] text-white font-light">
 							Trusted by <span class="ChangeColor text-Green"> Hundered Clients</span>
 						</h1>
 					</div>
 					<!-- Testimonial Box -->
 					<!-- Carousel Box -->
-					<div class="carousel w-full">
+					<div id="carousel" class="carousel w-full h-full" data-aos="fade-right" data-aos-duration="1000">
 						<div id="item1" class="carousel-item w-full">
 							<!-- Box 01 -->
 							<div class="border-2 border-primary px-12 py-[48px] mb-[10px] rounded-3xl">
@@ -669,7 +706,7 @@
 										<h3 class="text-lg text-white">Paublo Dybala</h3>
 										<p class="text-sm">
 											<span class="text-Primary">CEO of </span>
-											<span class="ChangeColor text-Green">IBM Global</span>
+											<span class="ChangeColor text-Green">IBM main</span>
 										</p>
 									</div>
 								</div>
@@ -681,7 +718,7 @@
 									PROJECT</h1>
 							</div>
 						</div>
-						<div id="item2" class="carousel-item w-full">
+						<div id="item2" class="carousel-item w-full h-full">
 							<!-- Box 02 -->
 							<div class="border-2 border-primary px-12 py-[48px] mb-[10px] rounded-3xl">
 								<!-- Author image and Designation -->
@@ -704,7 +741,7 @@
 									PROJECT</h1>
 							</div>
 						</div>
-						<div id="item3" class="carousel-item w-full">
+						<div id="item3" class="carousel-item w-full h-full">
 							<!-- Box 03 -->
 							<div class="border-2 border-primary px-12 py-[48px] mb-[10px] rounded-3xl">
 								<!-- Author image and Designation -->
@@ -731,7 +768,7 @@
 					<!-- Left and Right carousel Button -->
 					<div id="SlideBtnDiv"
 						class="mt-16 flex justify-start items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
-						<a id="LeftBtn" href="" class="btn btn-circle SliderBtn border-2">
+						<a id="LeftBtn" href="#" class="btn btn-circle SliderBtn border-2">
 							<i class="las la-angle-left"></i>
 						</a>
 						<!-- carousel Number Display -->
@@ -739,50 +776,51 @@
 							<span id="SlideDisplay" class="text-white">1</span> / 3
 						</span>
 
-						<a id="RightBtn" href="" class="btn btn-circle SliderBtn border-2"><i
-								class="las la-angle-right"></i></a>
+						<a id="RightBtn" href="#" class="btn btn-circle SliderBtn border-2">
+							<i class="las la-angle-right"></i></a>
 					</div>
+
 				</section>
 
 				<!-- Section-9 & Brand -->
 				<section data-aos="fade-up" id="" class="my-[116px]">
 					<!-- Brand Title -->
-					<div class="mb-[60px]">
+					<div class="mb-[60px]" data-aos="fade-up" data-aos-duration="1500">
 						<p class="text-sm text-white uppercase font-light">WORK WITH 60+ BRANDS WORLDWIDE</p>
 					</div>
 					<!-- Brand Logo Image Box -->
 					<div
 						class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-14 md:gap-20 justify-center items-center">
 						<!-- 01 -->
-						<div class="BrandImageHover">
+						<div class="BrandImageHover" data-aos="fade-right" data-aos-duration="1000">
 							<img src="./Assets/images/client-1.png" alt="" srcset="">
 						</div>
 						<!-- 02 -->
-						<div class="BrandImageHover">
+						<div class="BrandImageHover" data-aos="fade-up" data-aos-duration="1000">
 							<img src="./Assets/images/client-2.png" alt="" srcset="">
 						</div>
 						<!-- 03 -->
-						<div class="BrandImageHover">
+						<div class="BrandImageHover" data-aos="fade-down" data-aos-duration="1000">
 							<img src="./Assets/images/client-3.png" alt="" srcset="">
 						</div>
 						<!-- 04 -->
-						<div class="BrandImageHover">
+						<div class="BrandImageHover" data-aos="fade-left" data-aos-duration="1000">
 							<img src="./Assets/images/client-4.png" alt="" srcset="">
 						</div>
 						<!-- 05 -->
-						<div class="BrandImageHover">
+						<div class="BrandImageHover" data-aos="fade-right" data-aos-duration="1200">
 							<img src="./Assets/images/client-5.png" alt="" srcset="">
 						</div>
 						<!-- 06 -->
-						<div class="BrandImageHover">
+						<div class="BrandImageHover" data-aos="fade-up" data-aos-duration="1200">
 							<img src="./Assets/images/client-6.png" alt="" srcset="">
 						</div>
 						<!-- 07 -->
-						<div class="BrandImageHover">
+						<div class="BrandImageHover" data-aos="fade-down" data-aos-duration="1200">
 							<img src="./Assets/images/client-7.png" alt="" srcset="">
 						</div>
 						<!-- 08 -->
-						<div class="BrandImageHover">
+						<div class="BrandImageHover" data-aos="fade-right" data-aos-duration="1200">
 							<img src="./Assets/images/client-8.png" alt="" srcset="">
 						</div>
 					</div>
@@ -798,7 +836,7 @@
 						<p>Pricing</p>
 					</div>
 					<!-- Pricing Heading-Text -->
-					<div class="mb-12">
+					<div class="mb-12" data-aos="fade-up" data-aos-duration="2000">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light">
 							My <span class="text-Green ChangeColor"> Pricing</span>
 						</h1>
@@ -807,8 +845,8 @@
 					<!-- Pricing Table Box -->
 					<div class="flex flex-col md:flex-row justify-center h-full min-h-full gap-4 md:gap-6">
 						<!-- Table 01 -->
-						<div
-							class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col p-10 transition-all hover:border-Green duration-300">
+						<div class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col p-10 transition-all hover:border-Green duration-300"
+							data-aos="fade-right" data-aos-duration="1000">
 							<!-- 01 -->
 							<div class="flex justify-between mb-8">
 								<h2 class="text-lg text-white font-light uppercase">Basic</h2>
@@ -841,8 +879,8 @@
 							</div>
 						</div>
 						<!-- Table 02 -->
-						<div
-							class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col  p-10 transition-all hover:border-Green duration-300">
+						<div class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col  p-10 transition-all hover:border-Green duration-300"
+							data-aos="fade-left" data-aos-duration="1000">
 							<!-- 01 -->
 							<div class="flex justify-between mb-8">
 								<h2 class="text-lg text-white font-light uppercase">PREMIUM</h2>
@@ -877,7 +915,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="text-sm text-white mt-16 space-y-[6px]">
+					<div class="text-sm text-white mt-16 space-y-[6px]" data-aos="fade-up" data-aos-duration="700">
 						<p>Don't find any package match with your plan!</p>
 						<p>Want to setup a new tailor-made package for only you?.
 							<a class="text-Green underline ChangeColor" href="#">Contact Us</a>
@@ -887,14 +925,14 @@
 				<!-- Section-11 & Contact -->
 				<section data-aos="fade-up" id="contact" class="my-[116px]">
 					<!-- Contact Title -->
-					<div class="Heading my-[48px] sm:my-[60px]">
+					<div class="Heading my-[48px] sm:my-[60px]" data-aos="fade-up" data-aos-duration="800">
 						<p>
 							<i class="las la-envelope text-white"></i>
 						</p>
 						<p>Contact</p>
 					</div>
 					<!-- Contact Heading-Text -->
-					<div class="my-[60px]">
+					<div class="my-[60px]" data-aos="fade-up" data-aos-duration="700">
 						<h1 class="text-[38px] sm:text-5xl text-white font-light mb-[33px]">
 							Let's Work <span class="text-Green ChangeColor">Together!</span>
 						</h1>
@@ -907,7 +945,8 @@
 							<p id="errorText" class="text-sm text-[#fc4545] mb-10"></p>
 
 							<!-- Form -->
-							<form onsubmit="handleSubmit(event)" class="flex flex-col">
+							<form onsubmit="handleSubmit(event)" class="flex flex-col" data-aos="fade-up"
+								data-aos-duration="1000" data-aos-easing="ease-in-sine">
 								<div class="md:flex md:justify-between">
 									<!-- Full Name + Phone Number + Budget -->
 									<div>
@@ -993,20 +1032,22 @@
 			</div>
 		</div>
 	</main>
+	<script src="./Javascript/Loader.js"></script>
 	<script src="./Javascript/index.js"></script>
 	<script src="./Javascript/Slide.js"></script>
- <script src="./Javascript/Color.js"></script>
- <script src="./Javascript/Background.js"></script>
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
- <script>
-    AOS.init({
-		offset: 200, // Offset (in pixels) from the element's position to trigger the animation
-    duration: 600, // Animation duration (in milliseconds)
-    easing: 'ease-in-out', // Easing function
-    delay: 200, // Delay (in milliseconds) before animation starts
-    once: false,
-	});
-  </script>
+	<script src="./Javascript/Color.js"></script>
+	<script src="./Javascript/Background.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: 100, // Offset (in pixels) from the element's position to trigger the animation
+			duration: 600, // Animation duration (in milliseconds)
+			easing: 'ease-in-out', // Easing function
+			delay: 100, // Delay (in milliseconds) before animation starts
+			once: false,
+			placement: "bottom-center"
+		});
+	</script>
 </body>
 
 </html>

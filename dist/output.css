@@ -8854,8 +8854,8 @@ i{
   left: 1.25rem;
 }
 
-.left-\[12px\]{
-  left: 12px;
+.left-\[10px\]{
+  left: 10px;
 }
 
 .left-\[74px\]{
@@ -9800,10 +9800,6 @@ i{
   gap: 1.25rem;
 }
 
-.gap-6{
-  gap: 1.5rem;
-}
-
 .gap-7{
   gap: 1.75rem;
 }
@@ -10188,6 +10184,10 @@ i{
   border-radius: 9999px;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
 .rounded-b{
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -10324,6 +10324,11 @@ i{
 .border-primary{
   --tw-border-opacity: 1;
   border-color: hsl(var(--p) / var(--tw-border-opacity));
+}
+
+.bg-Green{
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 233 140 / var(--tw-bg-opacity));
 }
 
 .bg-Secondary{
@@ -10476,6 +10481,14 @@ i{
   padding: 1rem;
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
 .px-0{
   padding-left: 0px;
   padding-right: 0px;
@@ -10519,6 +10532,11 @@ i{
 .py-\[48px\]{
   padding-top: 48px;
   padding-bottom: 48px;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-10{
@@ -11369,8 +11387,8 @@ i{
 }
 
 @media (min-width: 768px){
-  .md\:right-16{
-    right: 4rem;
+  .md\:right-\[76px\]{
+    right: 76px;
   }
 
   .md\:top-10{
@@ -11408,8 +11426,8 @@ i{
     margin-bottom: 2rem;
   }
 
-  .md\:mb-\[109px\]{
-    margin-bottom: 109px;
+  .md\:mb-\[100px\]{
+    margin-bottom: 100px;
   }
 
   .md\:block{
@@ -11444,8 +11462,8 @@ i{
     justify-content: space-between;
   }
 
-  .md\:gap-12{
-    gap: 3rem;
+  .md\:gap-10{
+    gap: 2.5rem;
   }
 
   .md\:gap-20{
@@ -11512,8 +11530,8 @@ i{
     top: 0.25rem;
   }
 
-  .lg\:top-16{
-    top: 4rem;
+  .lg\:top-12{
+    top: 3rem;
   }
 
   .lg\:-ml-8{
@@ -11590,6 +11608,11 @@ i{
     padding-bottom: 44px;
   }
 
+  .lg\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -11597,6 +11620,11 @@ i{
 
   .lg\:text-\[78px\]{
     font-size: 78px;
+  }
+
+  .lg\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:leading-\[90px\]{
