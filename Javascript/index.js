@@ -39,7 +39,7 @@ const handleRightHeaderMenu = (event) => {
     if (ContainerOff) {
         setTimeout(function () {
             document.getElementById("RightMenuContainer").style.display = "none";
-       },200)
+       },1000)
         document.getElementById("MenuOpenDrawer").style.display = "block";
         StopClick = false;
         ContainerOff = false;

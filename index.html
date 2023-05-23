@@ -20,35 +20,30 @@
 </head>
 
 <body>
-
-	<main class="pb-10 md:mb-5 lg:py-0">
-		<div id="LoaderContainer">
-			<div id="Loader"></div>
+	<div id="LoaderContainer">
+		<div id="Loader"></div>
+	</div>
+	<header>
+		<!-- Right Side Header Menu Button -->
+		<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()"
+			class="fixed right-5 top-6 md:right-[68px] md:top-10 lg:top-12 z-50 md:z-40">
+			<label for="Menu-Drawer" id="DrawerBtn">
+				<p class="Rounded flex inset-0 items-center justify-center bg-black cursor-pointer group">
+					<i class="bi bi-grid text-xl IconHover transition duration-500"></i>
+				</p>
+			</label>
 		</div>
-		<header class="">
-			<!-- Right Side Header Menu -->
-			<!-- onclick="handleRightMenuOpen()" id="MenuOpenDrawer"-->
-			<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()"
-				class="fixed right-8 top-6 md:right-[76px] md:top-10 lg:top-12 z-40">
-				<label for="Menu-Drawer" id="DrawerBtn">
-					<p class="Rounded flex inset-0 items-center justify-center bg-black cursor-pointer group">
-						<i class="bi bi-grid text-xl IconHover transition duration-500"></i>
-					</p>
-				</label>
-			</div>
-			<!-- Left Side Header Menu -->
-			<div id="SettingOpenDrawer" onclick="handleSettingOpen()" class="fixed left-[10px] top-14 z-50"
-				title="Menu Setting">
-				<label for="Setting-Drawer">
-					<p class="Rounded border-none hover:border-none cursor-pointer text-lg">
-						<i class="las la-cog text-white text-xl"></i>
-					</p>
-				</label>
-			</div>
-		</header>
+		<!-- Left Side Header Menu Button -->
+		<div id="SettingOpenDrawer" onclick="handleSettingOpen()" class="fixed left-[10px] top-14 z-50"
+			title="Menu Setting">
+			<label for="Setting-Drawer">
+				<p class="Rounded border-none hover:border-none cursor-pointer text-lg">
+					<i class="las la-cog text-white text-xl bg-black rounded-md"></i>
+				</p>
+			</label>
+		</div>
 
-	
-			
+
 		<!-- Menu List Box -->
 		<div id="RightMenuContainer" onclick="handleRightHeaderMenu()"
 			class="absolute right-0 w-full h-full min-h-full z-30">
@@ -137,8 +132,8 @@
 			</div>
 		</div>
 		<!--Right Side Fixed Navbar Icons Box -->
-		<div class="hidden lg:block fixed right-16 top-1/4 z-10">
-			<div id="RightSideFixedNav" class="">
+		<div class="hidden lg:block lg:fixed lg:right-16 top-1/4 z-10">
+			<div id="RightSideFixedNav">
 			</div>
 		</div>
 
@@ -151,22 +146,22 @@
 					</div>
 					<div class="drawer-side">
 						<label for="Setting-Drawer" class="drawer-overlay"></label>
-						<div id="SettingDrawerContent" class="w-full min-h-screen md:max-w-5xl bg-[#191919] p-10 lg:p-32 text-white">
+						<div id="SettingDrawerContent"
+							class="w-full min-h-screen md:max-w-5xl bg-[#191919] p-10 lg:p-32 text-white">
 							<div class="main-color-box">
 								<div class="inner">
 									<div class="main-color-option">
 										<span class="absolute right-10 top-7 text-xl cursor-pointer p-3">
 											<label for="Setting-Drawer" class="cursor-pointer">
-											<i class="las la-times text-5xl"></i>
-										</label>
+												<i class="las la-times text-5xl"></i>
+											</label>
 										</span>
 										<h2 class="text-[34px] font-extralight leading-[1.2rem] my-20 md:mt-0 md:mb-20">
 											Configuration</h2>
 										<div class="main-color-option-inner">
 											<p class="text-[13px] uppercase mb-4 md:mb-8">Colors</p>
 											<div class="colorContainer mb-16 md:mb-[100px] flex gap-3 md:gap-7 pt-7">
-												<a href="#"
-													onclick="handleChangeColor('#28e98c');"></a>
+												<a href="#" onclick="handleChangeColor('#28e98c');"></a>
 												<a href="#" onclick="handleChangeColor('#e4af12')"></a>
 												<a href="#" onclick="handleChangeColor('#fe6f1d');"></a>
 												<a href="#" onclick="handleChangeColor('#14c5fd');"></a>
@@ -208,8 +203,12 @@
 				</div>
 			</div>
 		</div>
+	</header>
+
+	<main class="main">
 		<!--Section-1 -->
-		<section class="relative lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:h-screen border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-4 md:p-7 md:max-w-3xl lg:max-w-[392px] md:mx-auto z-10">
+		<section
+			class="lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:max-w-[392px] lg:h-screen border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-5 md:p-7 md:max-w-3xl  md:mx-auto z-10">
 			<div>
 				<div class="flex justify-between items-center">
 					<div>
@@ -256,16 +255,13 @@
 				</div>
 			</div>
 		</section>
-		<!--From Large Device Main Right-Section -->
 
-		<div data-aos="fade-up" class="UniversalPadding lg:w-screen min-h-full lg:-ml-8 lg:flex lg:justify-end">
-			<!-- Right Flex -->
+		<!--Section-2-->
+		<div class="lg:w-screen min-h-full lg:-ml-8 lg:flex lg:justify-end 2xl:justify-center border">
 			<div class="lg:w-[392px]"></div>
-
-			<!-- Main Section -->
-			<div data-aos="fade-up" class="w-full md:max-w-3xl mx-auto">
-				<!-- Section-2 & Introduce & Large Device Right-Top  -->
-
+			
+			<div data-aos="fade-up" class="UniversalPadding w-full md:max-w-3xl mx-auto border border-Green">
+				<!-- Section-2 + Introduce -->
 				<section id="home">
 					<div class="Heading mt-[60px] mb-14">
 						<p class="text-white">
@@ -304,7 +300,7 @@
 						</h1>
 					</div>
 				</section>
-				<!-- Section-3 && About -->
+				<!-- Section-3 + About -->
 				<section data-aos="fade-up" id="about" class="my-[64px] sm:my-[116px]">
 					<!-- About Title -->
 					<div class="Heading my-[48px] md:my-[60px]" data-aos="fade-up">
@@ -333,7 +329,7 @@
 					</div>
 				</section>
 
-				<!-- Section-4 & Resume -->
+				<!-- Section-4 + Resume -->
 				<section id="resume" class="my-[58px] md:my-[116px]">
 					<!-- Resume Title -->
 					<div class="Heading my-10 sm:my-[60px]" data-aos="fade-up" data-aos-duration="500">
@@ -405,7 +401,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- Section-5 & Service -->
+				<!-- Section-5 + Service -->
 				<section data-aos="fade-up" id="services" class="my-[64px] md:my-[116px]">
 					<!-- Service Heading-Text -->
 					<div data-aos="fade-up" class="Heading my-[48px] sm:my-[60px]">
@@ -469,7 +465,7 @@
 					</div>
 				</section>
 
-				<!-- Section-6 & Skills -->
+				<!-- Section-6 + Skills -->
 				<section id="skills" class="my-[64px] sm:my-[116px]">
 					<!-- Skill Title -->
 					<div class="Heading my-[48px] md:my-[60px]" data-aos="fade-up" data-aos-duration="700">
@@ -524,7 +520,7 @@
 						</div>
 					</div>
 				</section>
-				<!-- Section-7 & Portfolio -->
+				<!-- Section-7 + Portfolio -->
 				<section data-aos="fade-up" id="portfolios" class="my-[64px] sm:my-[116px]">
 					<!-- Portfolio Title -->
 					<div class="Heading my-[48px] sm:my-[60px]" data-aos="fade-up" data-aos-duration="500">
@@ -671,8 +667,8 @@
 						</div>
 					</div>
 				</section>
-				<!-- Testing Code -->
-				<!-- Section-8 & Testimonial-->
+		
+				<!-- Section-8 + Testimonial-->
 				<section id="testimonial" data-aos="fade-up" class="my-[116px]">
 					<!-- Testimonial Title -->
 					<div class="Heading my-[48px] sm:my-[60px]" data-aos="fade-up" data-aos-duration="800">
@@ -777,7 +773,7 @@
 
 				</section>
 
-				<!-- Section-9 & Brand -->
+				<!-- Section-9 + Brand -->
 				<section data-aos="fade-up" id="" class="my-[116px]">
 					<!-- Brand Title -->
 					<div class="mb-[60px]" data-aos="fade-up" data-aos-duration="1000">
@@ -821,7 +817,7 @@
 					</div>
 				</section>
 
-				<!-- Section-10 & Pricing -->
+				<!-- Section-10 + Pricing -->
 				<section data-aos="fade-up" class="my-[116px]">
 					<!-- Pricing Title -->
 					<div class="Heading my-[48px] sm:my-[60px]">
@@ -838,7 +834,7 @@
 					</div>
 
 					<!-- Pricing Table Box -->
-					<div class="flex flex-col md:flex-row justify-center h-full min-h-full my-4 md:my-0 md:gap-6">
+					<div class="grid grid-cols-1 md:grid-cols-2 justify-center h-full min-h-full md:gap-6">
 						<!-- Table 01 -->
 						<div class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col p-10 transition-all hover:border-Green duration-300"
 							data-aos="fade-right" data-aos-duration="1000">
@@ -874,7 +870,7 @@
 							</div>
 						</div>
 						<!-- Table 02 -->
-						<div class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col p-10 transition-all hover:border-Green duration-300"
+						<div class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col p-10 transition-all hover:border-Green duration-300 mt-6 md:mt-0"
 							data-aos="fade-left" data-aos-duration="1000">
 							<!-- 01 -->
 							<div class="flex justify-between mb-8">
@@ -917,7 +913,7 @@
 						</p>
 					</div>
 				</section>
-				<!-- Section-11 & Contact -->
+				<!-- Section-11 + Contact -->
 				<section data-aos="fade-up" id="contact" class="my-[116px]">
 					<!-- Contact Title -->
 					<div class="Heading my-[48px] sm:my-[60px]" data-aos="fade-up" data-aos-duration="800">
@@ -1032,7 +1028,7 @@
 			<div class="cursor-pointer p-1" onclick="scrollToBottom()" title="Scroll Down">
 				<i class="bi bi-caret-down text-xl"></i>
 			</div>
-		  </div>
+		</div>
 	</main>
 	<script src="./Javascript/Loader.js"></script>
 	<script src="./Javascript/index.js"></script>
