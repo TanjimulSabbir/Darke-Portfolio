@@ -8715,6 +8715,11 @@ i{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.UniversalPadding{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 @media (min-width: 576px){
   .UniversalPadding{
     padding-left: 1.5rem;
@@ -8877,10 +8882,6 @@ i{
 
 .right-5{
   right: 1.25rem;
-}
-
-.top-0{
-  top: 0px;
 }
 
 .top-1\/2{
@@ -9268,14 +9269,6 @@ i{
   max-width: fit-content;
 }
 
-.max-w-screen-sm{
-  max-width: 576px;
-}
-
-.max-w-\[300px\]{
-  max-width: 300px;
-}
-
 .flex-1{
   flex: 1 1 0%;
 }
@@ -9482,10 +9475,6 @@ i{
 
 .snap-always{
   scroll-snap-stop: always;
-}
-
-.scroll-p-5{
-  scroll-padding: 1.25rem;
 }
 
 .list-inside{
