@@ -1,5 +1,5 @@
 <!doctype html>
-<html id="HtmlElement" data-theme="black" class="scroll-smooth scroll-pt-4">
+<html data-theme="black" class="scroll-smooth">
 
 <head>
 	<meta charset="UTF-8">
@@ -25,8 +25,7 @@
 	</div>
 	<header>
 		<!-- Right Side Header Menu Button -->
-		<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()"
-			class="fixed right-5 top-6 md:right-[68px] md:top-10 lg:top-12 z-50 md:z-40">
+		<div id="MenuOpenDrawer" onclick="handleRightMenuOpen()" class="fixed right-5 top-6 md:right-[68px] md:top-10 lg:top-12 z-50 md:z-40">
 			<label for="Menu-Drawer" id="DrawerBtn">
 				<p class="Rounded flex inset-0 items-center justify-center bg-black cursor-pointer group">
 					<i class="bi bi-grid text-xl IconHover transition duration-500"></i>
@@ -205,7 +204,7 @@
 		</div>
 	</header>
 
-	<main class="main">
+	<main class="main overflow-hidden">
 		<!--Section-1 -->
 		<section class="lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] md:max-w-3xl lg:max-w-[392px] lg:h-screen md:mx-auto z-10">
 			<div class="border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-5 md:p-7">
@@ -259,9 +258,9 @@
 
 		<!--Section-2-->
 		<div class="lg:w-screen min-h-full lg:-ml-8 2xl:m-0 lg:flex lg:justify-end 2xl:justify-center">
-			<div class="lg:w-[392px]"></div>
+			<div class="hidden lg:block lg:w-[392px]"></div>
 
-			<div data-aos="fade-up" class="UniversalPadding w-full md:max-w-3xl mx-auto">
+			<div class="UniversalPadding w-full md:max-w-3xl mx-auto">
 				<!-- Section-2 + Introduce -->
 				<section id="home">
 					<div class="Heading mt-[60px] mb-14">
@@ -272,7 +271,7 @@
 					</div>
 					<div data-aos="fade-up" class="mb-10">
 						<h1
-							class="text-[50px] leading-[65px] md:text-[58px] lg:text-[78px] font-light text-white scroll-p-5 lg:leading-[90px] mb-11">
+							class="text-[50px] leading-[65px] md:text-[58px] lg:text-[78px] font-light text-white lg:leading-[90px] mb-11">
 							Say Hi from <span class="ChangeColor text-Green">Drake</span>, Framer Designer and Developer
 						</h1>
 						<p class="mb-6 text-Primary w-full max-w-[480px]">I design and code beautifully simple
@@ -302,7 +301,7 @@
 					</div>
 				</section>
 				<!-- Section-3 + About -->
-				<section data-aos="fade-up" id="about" class="my-[64px] sm:my-[116px]">
+				<section id="about" class="my-[64px] sm:my-[116px]">
 					<!-- About Title -->
 					<div class="Heading my-[48px] md:my-[60px]" data-aos="fade-up">
 						<p>
@@ -423,7 +422,7 @@
 						<div data-aos="fade-up" data-aos-duration="700">
 						<div class="group hover:border-Green transition duration-500 border border-Primary py-9 px-6 sm:px-6 sm:py-8 lg:px-12 
 						lg:py-[44px] rounded-2xl md:rounded-3xl">
-							<h1 class="flex justify-between space-x-4 items-center mb-2">
+							<h1 class="flex justify-between space-x-2 items-center mb-2">
 								<span class="text-xl lg:text-2xl text-white font-light">Website Design</span>
 								<span>
 									<i class="las la-bezier-curve text-Green lg:text-xl"></i>
@@ -497,7 +496,7 @@
 						</div>
 					</div>
 						<!-- 02 -->
-						<div data-aos="fade-right" data-aos-duration="1000">
+						<div data-aos="fade-up" data-aos-duration="1000">
 						<div class="SkillBox">
 							<img src="./Assets/images/framer.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
@@ -505,7 +504,7 @@
 						</div>
 					</div>
 						<!-- 03 -->
-						<div data-aos="fade-right" data-aos-duration="1000">
+						<div data-aos="fade-down" data-aos-duration="1000">
 						<div class="SkillBox">
 							<img src="./Assets/images/webflow.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
@@ -513,7 +512,7 @@
 						</div>
 					</div>
 						<!-- 04 -->
-						<div data-aos="fade-right" data-aos-duration="1000">
+						<div data-aos="fade-left" data-aos-duration="1000">
 						<div class="SkillBox">
 							<img src="./Assets/images/react.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
@@ -529,7 +528,7 @@
 						</div>
 					</div>
 						<!-- 06 -->
-						<div data-aos="fade-right" data-aos-duration="1200">
+						<div data-aos="fade-up" data-aos-duration="1200">
 						<div class="SkillBox">
 							<img src="./Assets/images/laravel.png" alt="" srcset="">
 							<h1 class="ChangeColor text-Green text-[30px] font-light">92%</h1>
@@ -911,7 +910,7 @@
 						</div>
 					</div>
 						<!-- Table 02 -->
-						<div data-aos="fade-right" data-aos-duration="1000">
+						<div data-aos="fade-left" data-aos-duration="1000">
 						<div class="Pricing flex-1 border border-Primary rounded-3xl flex flex-col p-10 transition-all hover:border-Green duration-500 mt-6 md:mt-0">
 							<!-- 01 -->
 							<div class="flex justify-between mb-8">
@@ -981,7 +980,7 @@
 								data-aos-duration="1000" data-aos-easing="ease-in-sine">
 								<div class="md:flex md:justify-between">
 									<!-- Full Name + Phone Number + Budget -->
-									<div>
+									<div data-aos="zoom-out" data-aos-duration="1000">
 										<!-- Full Name -->
 										<div class="mb-7 flex flex-col">
 											<label for="fullName" class="text-xs uppercase text-white">Full Name <span
@@ -1048,15 +1047,20 @@
 										class="ContactPlaceHolder resize-none placeholder:font-Inter"></textarea>
 								</div>
 
+<div data-aos="fade-right" data-aos-duration="900">
+	
 								<div class="mb-7 flex items-center justify-start space-x-2 mt-4">
 									<i class="las la-cloud-upload-alt text-white"></i>
 									<input type="file" id="selectedFile" style="display: none;" />
 									<p class="text-xs text-white uppercase cursor-pointer"
 										onclick="document.getElementById('selectedFile').click();">Add an Attachment</p>
 								</div>
+							</div>
+								<div data-aos="fade-down" data-aos-duration="700">
 								<div class="mt-8 max-w-fit">
 									<button type="submit" class="Btn">Send Message</button>
 								</div>
+							</div>
 							</form>
 						</div>
 					</div>
@@ -1064,7 +1068,7 @@
 			</div>
 		</div>
 		<!-- Scroll Down+Up -->
-		<div id="scrollToTopButton" class="scroll-to-top z-50">
+		<div id="scrollToTopButton" class="absolute scroll-to-top z-50">
 			<div class="cursor-pointer p-1" onclick="scrollToTop()">
 				<i class="bi bi-caret-up text-xl"></i>
 			</div>
