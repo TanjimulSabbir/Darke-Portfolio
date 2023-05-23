@@ -47,13 +47,13 @@
   @apply border border-Primary rounded-3xl px-[18px] py-[9px] uppercase text-white inline-flex justify-center items-center space-x-3 font-light text-xs;
  }
  .SkillBox{
-  @apply relative rounded-[85px] pt-[54px] pb-[48px] px-14 border-2 border-Primary flex flex-col space-y-6 justify-center items-center mb-10;
+  @apply relative rounded-[85px] pt-[54px] pb-[48px] px-14 border-2 border-Primary flex flex-col space-y-6 justify-center items-center mb-10 hover:border-Green transition duration-500;
  }
  .SliderBtn{
   @apply bg-transparent border border-Primary hover:bg-transparent hover:text-Green hover:border-Green;
  }
  .BrandImageHover{
- @apply opacity-30 transition-all duration-300 hover:opacity-100;
+ @apply opacity-30 transition-all duration-500 hover:opacity-100;
  }
  .ContactPlaceHolder{
   @apply placeholder-Primary placeholder:opacity-50 border-none bg-transparent focus:outline-none py-2 placeholder:text-lg;

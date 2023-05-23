@@ -8639,6 +8639,16 @@ i{
   padding-right: 3.5rem;
   padding-top: 54px;
   padding-bottom: 48px;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.SkillBox:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(40 233 140 / var(--tw-border-opacity));
 }
 
 .SliderBtn{
@@ -8660,7 +8670,7 @@ i{
   opacity: 0.3;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition-duration: 500ms;
 }
 
 .BrandImageHover:hover{
@@ -9804,10 +9814,6 @@ i{
   gap: 3.5rem;
 }
 
-.gap-3{
-  gap: 0.75rem;
-}
-
 .gap-4{
   gap: 1rem;
 }
@@ -10330,11 +10336,6 @@ i{
 
 .border-none{
   border-style: none;
-}
-
-.border-Green{
-  --tw-border-opacity: 1;
-  border-color: rgb(40 233 140 / var(--tw-border-opacity));
 }
 
 .border-Primary{
@@ -10919,8 +10920,16 @@ i{
   text-decoration-style: wavy;
 }
 
+.decoration-1{
+  text-decoration-thickness: 1px;
+}
+
 .underline-offset-4{
   text-underline-offset: 4px;
+}
+
+.underline-offset-8{
+  text-underline-offset: 8px;
 }
 
 .antialiased{
@@ -11219,12 +11228,12 @@ i{
   transition-duration: 200ms;
 }
 
-.duration-300{
-  transition-duration: 300ms;
-}
-
 .duration-500{
   transition-duration: 500ms;
+}
+
+.duration-300{
+  transition-duration: 300ms;
 }
 
 .ease-in{
@@ -11355,9 +11364,18 @@ i{
   text-align: center;
 }
 
+.group:hover .group-hover\:bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .group:hover .group-hover\:text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:underline{
+  text-decoration-line: underline;
 }
 
 @media (min-width: 576px){

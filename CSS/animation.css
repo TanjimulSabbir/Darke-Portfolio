@@ -75,60 +75,9 @@
 .ResumeBox:hover .RoundedDot {
   background-color: #28e98c;
 }
-.ServiceBox{
-  transition: all;
-  transition-duration: .6s;
-  transition-timing-function: ease-in-out;
-}
-.UnderLine{
-  transition: all;
-  transition-duration: .6s;
-  transition-timing-function: ease-in-out;
-}
-.ServiceBox:hover {
-  border-color: #28e98c;
-}
 
-.ServiceBox:hover .UnderLine {
-  text-decoration: underline;
-}
-
-.SkillBox {
-  border-color: #565656;
-  transition: all;
-  transition-duration: .6s;
-  transition-timing-function: ease-in-out;
-}
-
-.SkillBox:hover {
-  border-color: #28e98c;
-}
-.PortfolioBox{
-  transition: all;
-  transition-duration: 2s;
-  transition-delay: 4s;
-  transition-timing-function: ease-in;
-}
-.PortfolioFooterText{
-  transition: all;
-  transition-duration: 2s;
-  transition-timing-function: ease-in-out;
-}
 .PortfolioBox img {
   border-radius: 40px;
-}
-.PortfolioBox:hover .PortfolioBtnHover{
-  background-color: rgb(17, 17, 17);
-  color: white;
-  transition-duration: .5s;
-  transition-timing-function: ease-in-out;
-}
-.PortfolioBox:hover .PortfolioFooterText{
-  text-decoration-thickness: 1px;
-  text-decoration-line: underline;
-  text-underline-offset: 8px;
-  transition-duration: .5s;
-  transition-timing-function: ease-in-out;
 }
 
 .PortfolioBox .Heading {
