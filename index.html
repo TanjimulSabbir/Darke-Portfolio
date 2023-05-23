@@ -46,7 +46,7 @@
 
 		<!-- Menu List Box -->
 		<div id="RightMenuContainer" onclick="handleRightHeaderMenu()"
-			class="absolute right-0 w-full h-full min-h-full z-30">
+			class="fixed right-0 w-screen h-screen min-h-full z-30">
 			<div class="drawer drawer-end">
 				<input id="Menu-Drawer" type="checkbox" class="drawer-toggle" />
 				<div class="drawer-content ">
@@ -207,49 +207,50 @@
 
 	<main class="main">
 		<!--Section-1 -->
-		<section
-			class="lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] lg:max-w-[392px] lg:h-screen border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-5 md:p-7 md:max-w-3xl  md:mx-auto z-10">
-			<div>
-				<div class="flex justify-between items-center">
-					<div>
-						<img src="./Assets/images/logo.png" alt="" srcset="">
-					</div>
-					<h1 class="text-white text-sm text-end">
-						Framer Designer <br>
-						<span> & Developer</span>
-					</h1>
-				</div>
+		<section class="lg:fixed lg:top-1 lg:left-5 lg:min-w-[350px] md:max-w-3xl lg:max-w-[392px] lg:h-screen md:mx-auto z-10">
+			<div class="border border-Primary lg:flex lg:justify-center lg:items-center rounded-3xl p-5 md:p-7">
 				<div>
-					<div class="flex justify-center items-center mt-8">
-						<img class="rounded-3xl max-w-[250px]" src="./Assets/images/My-Image.jpg" alt="" srcset="">
-					</div>
-					<div class="text-center text-white space-y-2 mt-11">
-						<p class="text-2xl">hello@drake.design</p>
-						<p class="text-2xl">Base in Los Angeles, CA</p>
-						<p class="text-[#999999] text-sm pt-6">© 2022 Drake. All Rights Reserved</p>
+					<div class="flex justify-between items-center">
+						<div>
+							<img src="./Assets/images/logo.png" alt="" srcset="">
+						</div>
+						<h1 class="text-white text-sm text-end">
+							Framer Designer <br>
+							<span> & Developer</span>
+						</h1>
 					</div>
 					<div>
-						<div class="Social flex py-6 justify-center items-center">
-							<a href="#" class="Rounded flex justify-center items-center">
-								<i class="IconHover text-xl lab la-twitter text-Primary"></i>
-							</a>
-							<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
-								<i class="IconHover text-xl lab la-dribbble text-Primary"></i>
-							</a>
-							<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
-								<i class="IconHover text-xl lab la-instagram text-Primary"></i>
-							</a>
-							<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
-								<i class="IconHover text-xl lab la-github text-Primary"></i>
-							</a>
+						<div class="flex justify-center items-center mt-8">
+							<img class="rounded-3xl max-w-[250px]" src="./Assets/images/My-Image.jpg" alt="" srcset="">
 						</div>
-
+						<div class="text-center text-white space-y-2 mt-11">
+							<p class="text-2xl">hello@drake.design</p>
+							<p class="text-2xl">Base in Los Angeles, CA</p>
+							<p class="text-[#999999] text-sm pt-6">© 2022 Drake. All Rights Reserved</p>
+						</div>
 						<div>
-							<button class="Btn flex justify-center items-center group">
-								<i
-									class="las la-envelope mr-2 text-2xl font-bold text-black IconHover duration-500"></i>
-								<a>Hire Me!</a>
-							</button>
+							<div class="Social flex py-6 justify-center items-center">
+								<a href="#" class="Rounded flex justify-center items-center">
+									<i class="IconHover text-xl lab la-twitter text-Primary"></i>
+								</a>
+								<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
+									<i class="IconHover text-xl lab la-dribbble text-Primary"></i>
+								</a>
+								<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
+									<i class="IconHover text-xl lab la-instagram text-Primary"></i>
+								</a>
+								<a href="#" class="Rounded flex justify-center items-center ml-[6px]">
+									<i class="IconHover text-xl lab la-github text-Primary"></i>
+								</a>
+							</div>
+
+							<div>
+								<button class="Btn flex justify-center items-center group">
+									<i
+										class="las la-envelope mr-2 text-2xl font-bold text-black IconHover duration-500"></i>
+									<a>Hire Me!</a>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -257,9 +258,9 @@
 		</section>
 
 		<!--Section-2-->
-		<div class="lg:w-screen min-h-full lg:-ml-8 lg:flex lg:justify-end 2xl:justify-center border">
+		<div class="lg:w-screen min-h-full lg:-ml-8 2xl:m-0 lg:flex lg:justify-end 2xl:justify-center border">
 			<div class="lg:w-[392px]"></div>
-			
+
 			<div data-aos="fade-up" class="UniversalPadding w-full md:max-w-3xl mx-auto border border-Green">
 				<!-- Section-2 + Introduce -->
 				<section id="home">
@@ -430,7 +431,7 @@
 							</h1>
 							<p class="text-sm text-Primary mb-8 leading-6">I created digital products with unique ideas
 								use Figma & Frame</p>
-							<h1 class="Projects text-xs text-white uppercase transition hover:underline duration-200">24
+							<h1 class="UnderLine text-xs text-white uppercase underline-offset-4">24
 								PROJECTS</h1>
 
 						</div>
@@ -445,7 +446,7 @@
 							</h1>
 							<p class="text-sm text-Primary mb-8 leading-6">I build website go live with Framer, Webflow
 								or WordPress</p>
-							<h1 class="Projects text-xs text-white uppercase transition hover:underline duration-200">
+							<h1 class="UnderLine text-xs text-white uppercase underline-offset-4">
 								126 PROJECTS</h1>
 						</div>
 						<!-- 03 -->
@@ -459,7 +460,7 @@
 							</h1>
 							<p class="text-sm text-Primary mb-8 leading-6">Increase the traffic for your website with
 								SEO optimized</p>
-							<h1 class="Projects text-xs text-white uppercase transition hover:underline duration-200">8
+							<h1 class="UnderLine text-xs text-white uppercase underline-offset-4">8
 								PROJECTS</h1>
 						</div>
 					</div>
@@ -538,7 +539,7 @@
 					<!--Image Box -->
 					<div class="space-y-40">
 						<!-- Image 01 -->
-						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100"
+						<div class="PortfolioBox relative cursor-pointer"
 							data-aos="fade-up" data-aos-duration="1000">
 							<!-- image -->
 							<div class="w-full h-[375px] lg:h-full">
@@ -546,7 +547,7 @@
 									src="./Assets/images/portfolio1.jpg" alt="" srcset="">
 							</div>
 
-							<div class="absolute left-5 bottom-5 flex space-x-4 justify-start items-center ">
+							<div class="absolute left-5 bottom-5 flex space-x-4 justify-start items-center">
 								<!-- 01 -->
 								<div class="Heading PortfolioBtnHover">
 									<p>Figma</p>
@@ -561,16 +562,17 @@
 								</div>
 							</div>
 							<h1
-								class="absolute PortfolioFooterText -bottom-16 text-xl sm:text-2xl text-white font-light">
+								class="PortfolioFooterText absolute -bottom-16 text-xl sm:text-2xl text-white font-light">
 								Bureau -
-								Architecture Studio Website</h1>
+								Architecture Studio Website
+							</h1>
 						</div>
 						<!-- Image 02 + 03 -->
 						<div class="space-y-40 md:space-y-0 md:flex md:space-x-4">
 							<!--Image 02 -->
 							<div data-aos="fade-right" data-aos-duration="1000">
 								<div
-									class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100">
+									class="PortfolioBox relative cursor-pointer">
 									<!-- image -->
 									<div class="w-full h-[375px]">
 										<img class="h-full w-full object-cover overflow-hidden"
@@ -588,15 +590,16 @@
 										</div>
 									</div>
 									<h1
-										class="PortfolioButtomText absolute PortfolioFooterText -bottom-16 text-xl sm:text-2xl text-white font-light">
+										class="PortfolioFooterText absolute -bottom-16 text-xl sm:text-2xl text-white font-light">
 										Moonex WordPress
-										Theme</h1>
+										Theme
+									</h1>
 								</div>
 							</div>
 							<!--Image 03 -->
 							<div data-aos="fade-left" data-aos-duration="1000">
 								<div
-									class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100">
+									class="PortfolioBox relative cursor-pointer">
 									<!-- image -->
 									<div class="w-full h-[375px]">
 										<img class="h-full w-full object-cover overflow-hidden"
@@ -614,7 +617,7 @@
 										</div>
 									</div>
 									<h1
-										class="PortfolioButtomText absolute PortfolioFooterText -bottom-16 text-xl sm:text-2xl text-white font-light">
+										class="PortfolioFooterText absolute -bottom-16 text-xl sm:text-2xl text-white font-light">
 										Taskly Dashboard
 									</h1>
 								</div>
@@ -622,7 +625,7 @@
 						</div>
 
 						<!-- Image 04 -->
-						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100"
+						<div class="PortfolioBox relative cursor-pointer"
 							data-aos="fade-up" data-aos-duration="1000">
 							<!-- image -->
 							<div class="w-full h-[375px] lg:h-full">
@@ -641,9 +644,10 @@
 								</div>
 							</div>
 							<h1
-								class="PortfolioButtomText absolute PortfolioFooterText -bottom-16 text-xl sm:text-2xl text-white font-light">
+								class="PortfolioFooterText absolute -bottom-16 text-xl sm:text-2xl text-white font-light">
 								Hinterland - Real
-								Estate Site Redesign</h1>
+								Estate Site Redesign
+							</h1>
 						</div>
 						<!-- Image 05 -->
 						<div class="PortfolioBox relative cursor-pointer group transition ease-in-out duration-100"
@@ -660,14 +664,15 @@
 								</div>
 							</div>
 							<h1
-								class="PortfolioButtomText absolute PortfolioFooterText -bottom-16 text-xl sm:text-2xl text-white font-light">
+								class="PortfolioFooterText absolute -bottom-16 text-xl sm:text-2xl text-white font-light">
 								Lewis
 								Portfolio
-								Framer Template</h1>
+								Framer Template
+							</h1>
 						</div>
 					</div>
 				</section>
-		
+
 				<!-- Section-8 + Testimonial-->
 				<section id="testimonial" data-aos="fade-up" class="my-[116px]">
 					<!-- Testimonial Title -->
@@ -1021,6 +1026,7 @@
 				</section>
 			</div>
 		</div>
+		<!-- Scroll Down+Up -->
 		<div id="scrollToTopButton" class="scroll-to-top z-50">
 			<div class="cursor-pointer p-1" onclick="scrollToTop()">
 				<i class="bi bi-caret-up text-xl"></i>

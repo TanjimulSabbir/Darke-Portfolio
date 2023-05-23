@@ -8731,22 +8731,6 @@ i{
   }
 }
 
-.PortfolioFooterText{
-  text-decoration-thickness: 1px;
-}
-
-.group:hover .PortfolioFooterText{
-  text-decoration-line: underline;
-  text-underline-offset: 8px;
-}
-
-.group:hover .PortfolioBtnHover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .main{
   padding-bottom: 2.5rem;
 }
@@ -8759,7 +8743,6 @@ i{
 
 @media (min-width: 1250px){
   .main{
-    padding-top: 0px;
     padding-bottom: 0px;
   }
 }
@@ -8983,11 +8966,6 @@ i{
   margin-bottom: 5rem;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .my-\[116px\]{
   margin-top: 116px;
   margin-bottom: 116px;
@@ -9109,16 +9087,16 @@ i{
   margin-top: 1rem;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .mt-8{
   margin-top: 2rem;
 }
 
 .mt-\[60px\]{
   margin-top: 60px;
-}
-
-.mt-6{
-  margin-top: 1.5rem;
 }
 
 .box-border{
@@ -9838,10 +9816,6 @@ i{
   gap: 1.25rem;
 }
 
-.gap-6{
-  gap: 1.5rem;
-}
-
 .gap-y-12{
   row-gap: 3rem;
 }
@@ -10358,6 +10332,11 @@ i{
   border-style: none;
 }
 
+.border-Green{
+  --tw-border-opacity: 1;
+  border-color: rgb(40 233 140 / var(--tw-border-opacity));
+}
+
 .border-Primary{
   --tw-border-opacity: 1;
   border-color: rgb(86 86 86 / var(--tw-border-opacity));
@@ -10366,11 +10345,6 @@ i{
 .border-primary{
   --tw-border-opacity: 1;
   border-color: hsl(var(--p) / var(--tw-border-opacity));
-}
-
-.border-Green{
-  --tw-border-opacity: 1;
-  border-color: rgb(40 233 140 / var(--tw-border-opacity));
 }
 
 .bg-Green{
@@ -10945,6 +10919,10 @@ i{
   text-decoration-style: wavy;
 }
 
+.underline-offset-4{
+  text-underline-offset: 4px;
+}
+
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11452,11 +11430,6 @@ i{
     margin-right: auto;
   }
 
-  .md\:my-0{
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .md\:my-\[116px\]{
     margin-top: 116px;
     margin-bottom: 116px;
@@ -11499,20 +11472,16 @@ i{
     max-width: 64rem;
   }
 
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:flex-row{
-    flex-direction: row;
   }
 
   .md\:justify-end{
@@ -11700,19 +11669,9 @@ i{
   }
 }
 
-@media (min-width: 1280px){
-  .xl\:hidden{
-    display: none;
-  }
-
-  .xl\:justify-start{
-    justify-content: flex-start;
-  }
-}
-
 @media (min-width: 1536px){
-  .\32xl\:hidden{
-    display: none;
+  .\32xl\:m-0{
+    margin: 0px;
   }
 
   .\32xl\:justify-center{
